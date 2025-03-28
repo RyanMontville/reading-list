@@ -1,0 +1,29 @@
+---
+import Books from "../components/books.astro";
+import Header from "../components/header.astro";
+import Year from "../components/year.astro";
+export async function getStaticPaths() {
+  return [
+    { params: { yearId: "2021" } },
+    { params: { yearId: "2022" } },
+    { params: { yearId: "2023" } },
+    { params: { yearId: "2024" } },
+    { params: { yearId: "2025" } },
+  ];
+}
+
+const { yearId } = Astro.params;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/reading-list/global.css" />
+    <title>Reading List</title>
+  </head>
+  <body>
+    <Header />
+    <Year year={yearId} />
+  </body>
+</html>

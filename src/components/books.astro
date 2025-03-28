@@ -1,9 +1,11 @@
 ---
-import type { Book } from "./Book";
+import type { Book } from "../types/Book";
 import Tags from "./tags.astro";
 import books from '../assets/books.json';
 
-const months = ["Jabuary", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const months: string[] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const years: string[] = ["2021", "2022", "2023", "2024", "2025"];
+let booksByYear: Book[][] = []
 
 function getYear(date: string) {
   let dateList = date.split("/");
@@ -16,81 +18,33 @@ function formatDate(date: string) {
   return months[monthNum - 1] + " " + dateList[2];
 }
 
-let books2021 = books.filter((book)=> {
-  if (getYear(book.dateRead) === "2021") {
-      return book;
-  }
-});
+function sortBooksByYear() {
+  let bookArray: Book[][] = []
+  years.forEach((year)=> {
+    let newYear: Book[] = books.filter((book)=> {
+      if (getYear(book.dateRead) === year) {
+        return book;
+      }
+    });
+    bookArray.push(newYear);
+  });
+  return bookArray;
+}
 
-let books2022 = books.filter((book)=> {
-  if (getYear(book.dateRead) === "2022") {
-      return book;
-  }
-});
-
-let books2023 = books.filter((book)=> {
-  if (getYear(book.dateRead) === "2023") {
-      return book;
-  }
-});
-
-let books2024 = books.filter((book)=> {
-  if (getYear(book.dateRead) === "2024") {
-      return book;
-  }
-});
-
-let books2025 = books.filter((book)=> {
-  if (getYear(book.dateRead) === "2025") {
-      return book;
-  }
-});
+booksByYear = sortBooksByYear();
 ---
-
     <main>
-      <h2 class="year">2021</h2>
-      {books2021.map((book) => (
-        <div class="book">
-          <h2>{book.title}</h2>
-          <h3>{book.authors}</h3>
-          <p>Finished: {formatDate(book.dateRead)}</p>
-          <Tags tags={book.tags} />
-        </div>
-      ))}
-      <h2 class="year">2022</h2>
-      {books2022.map((book) => (
-        <div class="book">
-          <h2>{book.title}</h2>
-          <h3>{book.authors}</h3>
-          <p>Finished: {formatDate(book.dateRead)}</p>
-          <Tags tags={book.tags} />
-        </div>
-      ))}
-      <h2 class="year">2023</h2>
-      {books2023.map((book) => (
-        <div class="book">
-          <h2>{book.title}</h2>
-          <h3>{book.authors}</h3>
-          <p>Finished: {formatDate(book.dateRead)}</p>
-          <Tags tags={book.tags} />
-        </div>
-      ))}
-      <h2 class="year">2024</h2>
-      {books2024.map((book) => (
-        <div class="book">
-          <h2>{book.title}</h2>
-          <h3>{book.authors}</h3>
-          <p>Finished: {formatDate(book.dateRead)}</p>
-          <Tags tags={book.tags} />
-        </div>
-      ))}
-      <h2 class="year">2025</h2>
-      {books2025.map((book) => (
-        <div class="book">
-          <h2>{book.title}</h2>
-          <h3>{book.authors}</h3>
-          <p>Finished: {formatDate(book.dateRead)}</p>
-          <Tags tags={book.tags} />
+      {booksByYear.map((byear) => (
+        <div>
+          <h2 class="year">{getYear(byear[0].dateRead)} [{byear.length} books]</h2>
+          {byear.map((book) => (
+            <div class="book">
+              <h2>{book.title}</h2>
+              <h3>{book.authors}</h3>
+              <p>Finished: {formatDate(book.dateRead)}</p>
+              <Tags tags={book.tags} />
+            </div>
+        ))}
         </div>
       ))}
     </main>
@@ -101,7 +55,7 @@ let books2025 = books.filter((book)=> {
   }
   .book {
     background-color: white;
-    padding: 25px;
+    padding: 10px 25px;
     border-radius: 25px;
     margin: 10px 20px;
     box-shadow:
