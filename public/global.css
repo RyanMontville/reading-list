@@ -13,3 +13,28 @@ header {
     align-items: center;
     margin: 10px 20px;
 }
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.year {
+    text-align: center;
+  }
+  .book {
+    background-color: white;
+    padding: 5px 25px;
+    border-radius: 25px;
+    margin: 10px 20px;
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.12),
+      0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  .bookTitle {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .bookAuthors {
+    font-weight: bold;
+  }

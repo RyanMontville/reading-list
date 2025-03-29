@@ -27,25 +27,10 @@ let filteredYear = books.filter((book)=>{
     <h2 class="year">{year} [{filteredYear.length} books]</h2>
     {filteredYear.map((book) => (
         <div class="book">
-          <h2>{book.title}</h2>
-          <h3>{book.authors}</h3>
-          <p>Finished: {formatDate(book.dateRead)}</p>
+          <p class="bookTitle">{book.title}</p>
+          <p class="bookAuthors">{book.authors}</p>
+          <p class="dateFinished">Date Finished: {formatDate(book.dateRead)}</p>
           <Tags tags={book.tags} />
         </div>
     ))}
 </main>
-
-<style>
-    .year {
-      text-align: center;
-    }
-    .book {
-      background-color: white;
-      padding: 10px 25px;
-      border-radius: 25px;
-      margin: 10px 20px;
-      box-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
-    }
-  </style>
