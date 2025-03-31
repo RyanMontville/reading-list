@@ -27,18 +27,23 @@ function formatDate(date: string | undefined) {
 }
 const { book } = Astro.props;
 ---
-<a href={book.moreInfo} target="_blank" class="moreinfo">
-  <div class="book">
+
+<div class="book">
+  <a href={book.moreInfo} target="_blank" class="moreinfo">
     <img
       src={book.cover}
       alt={`${book.title} - ${book.authors}`}
       class="bookCover"
     />
-    <section class="info">
-      <p class="bookTitle">{book.title}</p>
-      <p class="bookAuthors">{book.authors}</p>
-      <p class="dateFinished">Date Finished: {formatDate(book.dateRead)}</p>
-      <Tags tags={book.tags} />
-    </section>
-  </div>
-</a>
+  </a>
+  <section class="info">
+    <p class="bookTitle">{book.title}</p>
+    <p class="bookAuthors">{book.authors}</p>
+    <p class="dateFinished">Date Finished: {formatDate(book.dateRead)}</p>
+    <a href={book.moreInfo} target="_blank">
+      <span class="material-symbols-outlined">open_in_new</span>
+      View {book.title} on Story Graph</a>
+    </a>
+    <Tags tags={book.tags} />
+  </section>
+</div>
