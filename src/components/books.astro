@@ -44,6 +44,10 @@ function sortBooksByYear() {
   return bookArray;
 }
 
+function goToExternalUrl(externalUrl: string) {
+  window.location.href = externalUrl;
+}
+
 booksByYear = sortBooksByYear();
 ---
 
@@ -52,9 +56,10 @@ booksByYear = sortBooksByYear();
     booksByYear.map((byear) => (
       <div>
         <h2 class="year">
-          {getYear(byear[0].dateRead)} [{byear.length} books]
+          <a href={`${getYear(byear[0].dateRead)}`}>{getYear(byear[0].dateRead)} [{byear.length} books]</a>
         </h2>
         {byear.map((book) => (
+          <a href={book.moreInfo} target="_blank" class="moreinfo">
           <div class="book">
             <img src={book.cover} alt={`${book.title} - ${book.authors}`} class="bookCover" />
             <section class="info">
@@ -64,6 +69,7 @@ booksByYear = sortBooksByYear();
             <Tags tags={book.tags} />
             </section>
           </div>
+          </a>
         ))}
       </div>
     ))

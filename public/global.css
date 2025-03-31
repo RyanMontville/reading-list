@@ -25,17 +25,27 @@ main {
   .book {
     background-color: white;
     display: flex;
-    gap: 10px;
-    padding: 5px 25px;
-    border-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     margin: 10px 20px;
-    box-shadow:
-      0 1px 3px rgba(0, 0, 0, 0.12),
-      0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .moreinfo {
+    color: black;
+    text-decoration: none;
+  }
+  .book:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   .bookCover {
     display: inline;
     height: 100px;
+  }
+  .info {
+    padding: 5px 10px;
   }
 
   .bookTitle {
