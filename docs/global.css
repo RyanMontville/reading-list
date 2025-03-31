@@ -25,6 +25,7 @@ main {
   .book {
     background-color: white;
     display: flex;
+    align-items: center;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     margin: 10px 20px;

@@ -1,0 +1,44 @@
+---
+import type { Book } from "../types/Book";
+import Tags from "./tags.astro";
+
+const months: string[] = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+function formatDate(date: string | undefined) {
+  if (!date) {
+    return "Date Error";
+  }
+  let dateList = date.split("/");
+  let monthNum = parseInt(dateList[0]);
+  return months[monthNum - 1] + " " + dateList[2];
+}
+const { book } = Astro.props;
+---
+<a href={book.moreInfo} target="_blank" class="moreinfo">
+  <div class="book">
+    <img
+      src={book.cover}
+      alt={`${book.title} - ${book.authors}`}
+      class="bookCover"
+    />
+    <section class="info">
+      <p class="bookTitle">{book.title}</p>
+      <p class="bookAuthors">{book.authors}</p>
+      <p class="dateFinished">Date Finished: {formatDate(book.dateRead)}</p>
+      <Tags tags={book.tags} />
+    </section>
+  </div>
+</a>
