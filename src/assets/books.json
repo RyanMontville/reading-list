@@ -3,6 +3,8 @@
     "title": "Ready Player Two",
     "authors": "Ernest Cline",
     "isbn": 9781780897448,
+    "cover": "https://cdn.thestorygraph.com/jo2jz9fxlekkbc0z5epczzefx87u",
+    "moreInfo": "https://app.thestorygraph.com/books/1c5d26c0-1fc8-4fc2-b452-ae1e25bb5fed",
     "dateRead": "01/01/2021",
     "tags": ["Fiction", "Dystopian", "Science Fiction", "Adventurous", "Tense", "Medium-paced"]
   },
@@ -10,6 +12,8 @@
     "title": "The Ballad of Songbirds and Snakes",
     "authors": "Suzanne Collins",
     "isbn": 9781338635171,
+    "cover": "https://cdn.thestorygraph.com/jbvfo5ho5hy9wpr1obajk47f40zp",
+    "moreInfo": "https://app.thestorygraph.com/books/da391079-005c-41bf-8c1a-0fb155cd7677",
     "dateRead": "02/01/2021",
     "tags": ["Fiction","Dystopian","Science Fiction","Adventurous","Dark","Tense","Medium-paced"]
   },
@@ -17,6 +21,8 @@
     "title": "Carrie",
     "authors": "Stephen King",
     "isbn": 9781416524304,
+    "cover": "https://cdn.thestorygraph.com/y97buwsxerfc5q6368bizq359l0r",
+    "moreInfo": "https://app.thestorygraph.com/books/4ab33aec-8c16-4d65-a396-8155ca2f999f",
     "dateRead": "03/01/2021",
     "tags": ["Fiction", "Horror", "Thriller", "Dark", "Tense", "Medium-paced"]
   },
@@ -24,6 +30,8 @@
     "title": "This Present Darkness",
     "authors": "Frank E. Peretti",
     "isbn": 9781581345285,
+    "cover": "https://cdn.thestorygraph.com/1bhf0i93dr831hd658f55y4l0f14",
+    "moreInfo": "https://app.thestorygraph.com/books/cde49cfa-29b9-4bef-8273-33cc4d57a28f",
     "dateRead": "04/01/2021",
     "tags": ["Fiction","Fantasy","Dark","Reflective","Slow-paced"]
   },
@@ -31,6 +39,8 @@
     "title": "Not Quite the Classics",
     "authors": "Colin Mochrie",
     "isbn": 9780670066575,
+    "cover": "https://cdn.thestorygraph.com/29w43zjzd5znvlc06u6bzh2lrgdo",
+    "moreInfo": "https://app.thestorygraph.com/books/f5bb4765-a9a7-4c85-8d6f-ae7f4fea68a1",
     "dateRead": "05/01/2021",
     "tags": ["Fiction","Short Stories","Adventurous","Funny","Lighthearted","Medium-paced"]
   },
@@ -38,6 +48,8 @@
     "title": "Miss Peregrine's Home for Peculiar Children",
     "authors": "Ransom Riggs",
     "isbn": 9781594745133,
+    "cover": "https://cdn.thestorygraph.com/ussxnsd9bhddpnltu1apyoxj64rg",
+    "moreInfo": "https://app.thestorygraph.com/books/c7c86459-81ff-4ca9-8e01-8d5d2bf081c4",
     "dateRead": "07/01/2021",
     "tags": ["Fiction","Fantasy","Horror","Adventurous","Dark","Medium-paced"]
   },
@@ -45,6 +57,8 @@
     "title": "Hollow City",
     "authors": "Ransom Riggs",
     "isbn": 9781594747588,
+    "cover": "https://cdn.thestorygraph.com/2ehhjumyau9leho223mtl3x3t0n6",
+    "moreInfo": "https://app.thestorygraph.com/books/0287ded4-93b6-4518-8097-f0e7a03cc519",
     "dateRead": "08/01/2021",
     "tags": ["Fiction","Fantasy","Adventurous","Dark","Medium-paced"]
   },
@@ -52,6 +66,8 @@
     "title": "Library of Souls",
     "authors": "Ransom Riggs",
     "isbn": 9781594747588,
+    "cover": "https://cdn.thestorygraph.com/i3ilwiia4kzlmpqqqc8tzy28zemu",
+    "moreInfo": "https://app.thestorygraph.com/books/96131f8a-23b3-4706-b77c-f40d67062255",
     "dateRead": "08/01/2021",
     "tags": ["Fiction","Fantasy","Adventurous","Dark","Medium-paced"]
   },
@@ -59,20 +75,26 @@
     "title": "God Never Blinks: 50 Lessons for Life's Little Detours",
     "authors": "Regina Brett",
     "isbn": 9780446556521,
+    "cover": "https://cdn.thestorygraph.com/d18nwgpg4ujsehykusn91mnzlrs2",
+    "moreInfo": "https://app.thestorygraph.com/books/148e149f-437e-44ee-a3b9-7020d88f5aca",
     "dateRead": "09/01/2021",
     "tags": ["Nonfiction", "Self Help", "Reflective", "Medium-paced"]
   },
   {
     "title": "Dracula",
     "authors": "Bram Stoker",
-    "isbn": "Nina Auerbach (Contributor)",
+    "isbn": 9781503261389,
+    "cover": "https://cdn.thestorygraph.com/a43z0gheqf5hyk9dz4pounc9cey5",
+    "moreInfo": "https://app.thestorygraph.com/books/54200f47-3fe9-423c-9290-5a45ccf48ee2",
     "dateRead": "10/01/2021",
     "tags": ["Fiction", "Classics", "Horror", "Dark", "Tense", "Slow-paced"]
   },
   {
     "title": "Annabellia",
     "authors": "Sean O'Neill",
-    "isbn": "978-1649528094",
+    "isbn": 9781649528094,
+    "cover": "https://cdn.thestorygraph.com/oywdmqg1k79bkomqme3bzvup70jk",
+    "moreInfo": "https://app.thestorygraph.com/books/4c1e1a91-9f2d-48bd-a60f-58de1a0e27a8?redirect=true",
     "dateRead": "11/01/2021",
     "tags": ["Fiction","Fantasy","Medium-paced"]
   },
@@ -80,6 +102,8 @@
     "title": "The Great Train Robbery",
     "authors": "Michael Crichton",
     "isbn": 9780553129199,
+    "cover": "https://cdn.thestorygraph.com/r5ai4un3j8efzjya1a8kx8ftelnt",
+    "moreInfo": "https://app.thestorygraph.com/books/e07c27a2-a424-43a5-9c60-19384a917090",
     "dateRead": "12/01/2021",
     "tags": ["Fiction","Mystery","Thriller","Adventurous","Funny","Medium-paced"]
   },
@@ -87,6 +111,8 @@
     "title": "Artemis",
     "authors": "Andy Weir",
     "isbn": 9780553448122,
+    "cover": "https://cdn.thestorygraph.com/1ln6pkaos0nx006sp7j300h0i1vj",
+    "moreInfo": "https://app.thestorygraph.com/books/89ba2335-8865-4534-86a1-be2315090865",
     "dateRead": "01/01/2022",
     "tags": ["Fiction","Science Fiction","Adventurous","Funny","Fast-paced"]
   },
@@ -94,6 +120,8 @@
     "title": "Project Hail Mary",
     "authors": "Andy Weir",
     "isbn": 9780593135204,
+    "cover": "https://cdn.thestorygraph.com/myt2brttft7i9aj21rv9nlgxo1ck",
+    "moreInfo": "https://app.thestorygraph.com/books/ac3ea915-993d-4f30-8632-0f91e4ad0704",
     "dateRead": "02/01/2022",
     "tags": ["Fiction","Science Fiction","Adventurous","Funny","Medium-paced"]
   },
@@ -101,6 +129,8 @@
     "title": "The Apollo Murders",
     "authors": "Chris Hadfield",
     "isbn": 9780316264532,
+    "cover": "https://cdn.thestorygraph.com/d6zul208owz7jo3isvy5jn94s5uw",
+    "moreInfo": "https://app.thestorygraph.com/books/76fa557a-696e-4618-aff5-bd46e5a2844d",
     "dateRead": "03/01/2022",
     "tags": ["Fiction","Historical","Science Fiction","Adventurous","Tense","Medium-paced"]
   },
@@ -108,6 +138,8 @@
     "title": "Good Omens",
     "authors": "Neil Gaiman, Terry Pratchett",
     "isbn": 9780552167406,
+    "cover": "https://cdn.thestorygraph.com/ohsq4jax1wa28lkdguy2dsa2mnrd",
+    "moreInfo": "https://app.thestorygraph.com/books/40cda5a8-29f9-425a-9dc0-8e17b118d70b",
     "dateRead": "04/01/2022",
     "tags": ["Fiction", "Fantasy", "Adventurous", "Funny", "Lighthearted", "Medium-paced"]
   },
@@ -115,6 +147,8 @@
     "title": "The Magic Misfits",
     "authors": "Neil Patrick Harris",
     "isbn": 9780316391825,
+    "cover": "https://cdn.thestorygraph.com/p6yzqkdj83136y073n2bqjiduxlt",
+    "moreInfo": "https://app.thestorygraph.com/books/6a35418d-fbf2-4102-8f11-2606b283d439",
     "dateRead": "05/01/2022",
     "tags": ["Fiction","Fantasy","Adventurous","Lighthearted","Fast-paced"]
   },
@@ -122,6 +156,8 @@
     "title": "The Magic Misfits: The Second Story",
     "authors": "Neil Patrick Harris",
     "isbn": 9780316391856,
+    "cover": "https://cdn.thestorygraph.com/45bl1hdeed6e73ekqi4lq54a4p64",
+    "moreInfo": "https://app.thestorygraph.com/books/a2e09ceb-b3e9-4d5f-874c-3b50d3d4a1ad",
     "dateRead": "06/01/2022",
     "tags": ["Fiction","Fantasy","Adventurous","Lighthearted","Fast-paced"]
   },
@@ -129,6 +165,8 @@
     "title": "John Dies at the End",
     "authors": "David Wong",
     "isbn": 9780978970765,
+    "cover": "https://cdn.thestorygraph.com/e8lf1fmyj6fu0r7mfjljepgcrm15",
+    "moreInfo": "https://app.thestorygraph.com/books/8b4215ea-b066-4559-b315-084a3450c517",
     "dateRead": "07/01/2022",
     "tags": ["Fiction","Fantasy","Horror","Adventurous","Dark","Funny","Fast-paced"]
   },
@@ -136,6 +174,8 @@
     "title": "This Book Is Full of Spiders: Seriously, Dude, Don't Touch It",
     "authors": "Jason Pargin",
     "isbn": 9781250830524,
+    "cover": "https://cdn.thestorygraph.com/hxtmkgi0xi7ujcmv8ivlehxq2vz5",
+    "moreInfo": "https://app.thestorygraph.com/books/77ce65c8-298d-4237-8043-b24f3372c2f7",
     "dateRead": "08/01/2022",
     "tags": ["Fiction","Fantasy","Horror","Dark","Funny","Fast-paced"]
   },
@@ -143,6 +183,8 @@
     "title": "What the Hell Did I Just Read",
     "authors": "Jason Pargin",
     "isbn": 9781250830531,
+    "cover": "https://cdn.thestorygraph.com/3jkbictlslfwoyg6iyox19w5kjgc",
+    "moreInfo": "https://app.thestorygraph.com/books/b6ec7f71-1a05-428d-a223-9bcda18e1336",
     "dateRead": "09/01/2022",
     "tags": ["Fiction","Fantasy","Horror","Adventurous","Dark","Funny","Fast-paced"]
   },
@@ -150,6 +192,8 @@
     "title": "If This Book Exists, You're in the Wrong Universe",
     "authors": "Jason Pargin",
     "isbn": 9781250195821,
+    "cover": "https://cdn.thestorygraph.com/oogdb7pbbtv164kiz7i5l7mbnkur",
+    "moreInfo": "https://app.thestorygraph.com/books/ebe5fe68-4aad-4dd7-9df0-30b00405f6af",
     "dateRead": "10/01/2022",
     "tags": ["Fiction","Horror","Adventurous","Dark","Funny","Fast-paced"]
   },
@@ -157,6 +201,8 @@
     "title": "The Minor Third",
     "authors": "Neil Patrick Harris",
     "isbn": 9780316391870,
+    "cover": "https://cdn.thestorygraph.com/yncnffvao8m0sq0yde3qh43qzcty",
+    "moreInfo": "https://app.thestorygraph.com/books/96d058b2-046c-43f9-9479-59b0b1d4c10e",
     "dateRead": "11/01/2022",
     "tags": ["Fiction","Fantasy","Mystery","Adventurous","Lighthearted","Fast-paced"]
   },
@@ -164,6 +210,8 @@
     "title": "The Fourth Suit",
     "authors": "Neil Patrick Harris",
     "isbn": 9780316391955,
+    "cover": "https://cdn.thestorygraph.com/zu8v55nhb1df2h6kafxfvpjhvxw4",
+    "moreInfo": "https://app.thestorygraph.com/books/ff19e134-508d-4859-a228-77124663c0ac",
     "dateRead": "12/01/2022",
     "tags": ["Fiction","Fantasy","Adventurous","Funny","Lighthearted","Fast-paced"]
   },
@@ -171,6 +219,8 @@
     "title": "Wool",
     "authors": "Hugh Howey",
     "isbn": 9781780891248,
+    "cover": "https://cdn.thestorygraph.com/u9spqpcet0b2hf7xwga4eqyd9ps6",
+    "moreInfo": "https://app.thestorygraph.com/books/4cbd5c57-4f37-4399-a61b-206894d1a48f",
     "dateRead": "01/01/2023",
     "tags": ["Fiction", "Dystopian", "Science Fiction", "Adventurous", "Tense", "Medium-paced"]
   },
@@ -178,13 +228,17 @@
     "title": "Shift",
     "authors": "Hugh Howey",
     "isbn": 9781780891224,
+    "cover": "https://cdn.thestorygraph.com/0t5xg0hqqwszvo6vs6rnnf922anx",
+    "moreInfo": "https://app.thestorygraph.com/books/8b1582ca-1a5a-4298-9730-cc96d4e6946c",
     "dateRead": "02/01/2023",
     "tags": ["Fiction","Dystopian","Science Fiction","Dark","Tense","Medium-paced"]
   },
   {
     "title": "Who Censored Roger Rabbit?",
     "authors": "Gary K. Wolf",
-    "isbn": "151231501X",
+    "isbn": 151231501,
+    "cover": "https://cdn.thestorygraph.com/9xn0exldkbhs19mdmeaosr7xh6hm",
+    "moreInfo": "https://app.thestorygraph.com/books/67539e93-37d8-4f1c-bcee-c8ad202ebeb6",
     "dateRead": "03/01/2023",
     "tags": ["Fiction","Fantasy","Mystery","Dark","Funny","Fast-paced"]
   },
@@ -192,6 +246,8 @@
     "title": "How to Live Safely in a Science Fictional Universe",
     "authors": "Charles Yu",
     "isbn": 9780307379207,
+    "cover": "https://cdn.thestorygraph.com/i2npvrhfikcjprw6kvy7lfbjia1w",
+    "moreInfo": "https://app.thestorygraph.com/books/1fe8d65b-4eae-4fbd-8311-497ff60d1e58",
     "dateRead": "04/01/2023",
     "tags": ["Fiction", "Science Fiction", "Adventurous", "Emotional", "Reflective", "Medium-paced"]
   },
@@ -199,6 +255,8 @@
     "title": "Jumper",
     "authors": "Steven Gould",
     "isbn": 9780765342287,
+    "cover": "https://cdn.thestorygraph.com/9exqkaohx10ib5m6r58sk0gp7tyn",
+    "moreInfo": "https://app.thestorygraph.com/books/5fc1177b-8307-4e73-8a29-b15ae56d180a",
     "dateRead": "05/01/2023",
     "tags": ["Fiction","Fantasy","Science Fiction", "Adventurous", "Dark", "Tense","Fast-paced"]
   },
@@ -206,6 +264,8 @@
     "title": "Reflex",
     "authors": "Steven Gould",
     "isbn": 9780812578546,
+    "cover": "https://cdn.thestorygraph.com/rnkmhfv8eim8tu07jkzdgpcrwjv3",
+    "moreInfo": "https://app.thestorygraph.com/books/2b50ffe1-bfcc-4840-9173-c4a6c112293d",
     "dateRead": "06/01/2023",
     "tags": ["Fiction", "Fantasy", "Science Fiction", "Adventurous", "Dark", "Tense", "Medium-paced"]
   },
@@ -213,6 +273,8 @@
     "title": "Impulse",
     "authors": "Steven Gould",
     "isbn": 9780765327574,
+    "cover": "https://cdn.thestorygraph.com/lqj39pldxe9vrmlh2luhh5amsvga",
+    "moreInfo": "https://app.thestorygraph.com/books/34371d7c-0cf7-43d6-b264-c6189a0fdabf",
     "dateRead": "07/01/2023",
     "tags": ["Fiction", "Fantasy", "Science Fiction", "Tense", "Medium-paced"]
   },
@@ -220,6 +282,8 @@
     "title": "Exo",
     "authors": "Steven Gould",
     "isbn": 9780765336545,
+    "cover": "https://cdn.thestorygraph.com/jwbbo9bbowzvmleblrhs3p8o2n0v",
+    "moreInfo": "https://app.thestorygraph.com/books/bdfad06d-ed18-41e5-82a7-7c0988d235a7",
     "dateRead": "08/01/2023",
     "tags": ["Fiction","Fantasy","Science Fiction","Adventurous","Medium-paced"]
   },
@@ -227,6 +291,8 @@
     "title": "Dust",
     "authors": "Hugh Howey",
     "isbn": 9781804940846,
+    "cover": "https://cdn.thestorygraph.com/dlh9wr2fq1z3gdzz9s0i028y8jvq",
+    "moreInfo": "https://app.thestorygraph.com/books/d8e250c4-e7e5-40bf-98d0-fdc87785b528",
     "dateRead": "09/01/2023",
     "tags": ["Fiction","Dystopian","Science Fiction","Adventurous","Dark","Tense","Medium-paced"]
   },
@@ -234,6 +300,8 @@
     "title": "The Hitch Hiker's Guide to the Galaxy",
     "authors": "Douglas Adams",
     "isbn": 9780330258647,
+    "cover": "https://cdn.thestorygraph.com/9joawe17vigv7p82qvp7f3imags6",
+    "moreInfo": "https://app.thestorygraph.com/books/4ab24266-c944-47b0-8c9d-f84e0a56486a",
     "dateRead": "10/01/2023",
     "tags": ["Fiction", "Science Fiction", "Adventurous", "Funny", "Lighthearted", "Fast-paced"]
   },
@@ -241,6 +309,8 @@
     "title": "The Restaurant at the End of the Universe",
     "authors": "Douglas Adams",
     "isbn": 9780671442682,
+    "cover": "https://cdn.thestorygraph.com/mdwzfmqms0u9yc2tfsfekv1o7shx",
+    "moreInfo": "https://app.thestorygraph.com/books/ad1c8702-a140-4b32-a426-e21de2f65394",
     "dateRead": "11/01/2023",
     "tags": ["Fiction","Science Fiction","Adventurous","Funny","Lighthearted","Fast-paced"]
   },
@@ -248,6 +318,8 @@
     "title": "Life, the Universe and Everything",
     "authors": "Douglas Adams",
     "isbn": 9781529034547,
+    "cover": "https://cdn.thestorygraph.com/cr4uym090l2axpabpt8xz5rcdp2v",
+    "moreInfo": "https://app.thestorygraph.com/books/55fc0458-8f8f-4e05-b603-e7c7bae8d578",
     "dateRead": "12/01/2023",
     "tags": ["Fiction","Science Fiction","Adventurous","Funny","Lighthearted","Fast-paced"]
   },
@@ -255,13 +327,17 @@
     "title": "Humble Pi: A Comedy of Maths Errors",
     "authors": "Matt Parker",
     "isbn": 9780241360194,
+    "cover": "https://cdn.thestorygraph.com/viq0c5bt2pyxg4mfjj1ga7hksx42",
+    "moreInfo": "https://app.thestorygraph.com/books/14bf9567-51dc-42e1-8b52-bab0faa62585",
     "dateRead": "01/01/2024",
     "tags": ["Nonfiction", "Mathematics", "Science", "Funny", "Informative", "Lighthearted", "Fast-paced"]
   },
   {
     "title": "Gravity Falls: Lost Legends: 4 All-New Adventures!",
     "authors": "Alex Hirsch",
-    "isbn": "9781368021425",
+    "isbn": 9781368021425,
+    "cover": "https://cdn.thestorygraph.com/tjcdf6plbt6l794roogz8d13s3y0",
+    "moreInfo": "https://app.thestorygraph.com/books/11ee4e35-b350-4ab0-bdcb-8fa2064adeee",
     "dateRead": "02/01/2024",
     "tags": ["Fiction", "Comics", "Fantasy", "Adventurous", "Funny", "Lighthearted", "Fast-paced"]
   },
@@ -269,6 +345,8 @@
     "title": "Cheshire Crossing",
     "authors": "Andy Weir",
     "isbn": 9780399582073,
+    "cover": "https://cdn.thestorygraph.com/eod07woca23c8sq7tpajpneh89id",
+    "moreInfo": "https://app.thestorygraph.com/books/bec0397f-876f-4198-87c9-910e69b9fa66",
     "dateRead": "02/05/2024",
     "tags": ["Fiction","Comics","Fantasy","Graphic Novel","Adventurous","Fast-paced"]
   },
@@ -276,6 +354,8 @@
     "title": "Void Moon",
     "authors": "Michael Connelly",
     "isbn": 9780446694254,
+    "cover": "https://cdn.thestorygraph.com/xdvpwyaj9ub0slefuywznv4dt7x0",
+    "moreInfo": "https://app.thestorygraph.com/books/942b4d8b-cefe-42e1-a1a4-fd7d39671f8e",
     "dateRead": "02/12/2024",
     "tags": ["Fiction","Crime","Mystery","Thriller","Tense","Fast-paced"]
   },
@@ -283,6 +363,8 @@
     "title": "The Martian",
     "authors": "Andy Weir",
     "isbn": 9780804139021,
+    "cover": "https://cdn.thestorygraph.com/joslm6haahsurvyc8i86mhwzuf3g",
+    "moreInfo": "https://app.thestorygraph.com/books/977e301d-c438-40f4-810b-25a96dbee03e",
     "dateRead": "02/20/2024",
     "tags": ["Fiction","Science Fiction","Thriller","Adventurous","Funny","Tense","Medium-paced"]
   },
@@ -290,6 +372,8 @@
     "title": "Pirate Latitudes",
     "authors": "Michael Crichton",
     "isbn": 9780061929373,
+    "cover": "https://cdn.thestorygraph.com/mi5o2mgry9gd8aa2y2kalu88earw",
+    "moreInfo": "https://app.thestorygraph.com/books/6ba57d6c-c5bf-4a03-989a-967bc4dd659f",
     "dateRead": "03/01/2024",
     "tags": ["Fiction","Historical","Adventurous","Dark","Fast-paced"]
   },
@@ -297,6 +381,8 @@
     "title": "Dark Matter",
     "authors": "Blake Crouch",
     "isbn": 9781101904220,
+    "cover": "https://cdn.thestorygraph.com/73cokdgjh49npfxtu2r1cj48309w",
+    "moreInfo": "https://app.thestorygraph.com/books/de9876fa-b1e5-4ef9-afa4-a32d39af7cc4",
     "dateRead": "03/05/2024",
     "tags": ["Fiction","Science Fiction","Thriller","Adventurous","Dark","Tense","Fast=paced"]
   },
@@ -304,6 +390,8 @@
     "title": "Recursion",
     "authors": "Blake Crouch",
     "isbn": 9781524759780,
+    "cover": "https://cdn.thestorygraph.com/z9vmbbu06e8a0r1x9xs7i4ontf6e",
+    "moreInfo": "https://app.thestorygraph.com/books/bbc4a8fd-d198-4656-a800-ab3cdf140ad0",
     "dateRead": "03/10/2024",
     "tags": ["Fiction","Science Fiction","Thriller","Adventurous","Tense","Fast-paced"]
   },
@@ -311,6 +399,8 @@
     "title": "The Lies of Locke Lamora",
     "authors": "Scott Lynch",
     "isbn": 9780553804676,
+    "cover": "https://cdn.thestorygraph.com/6r6i9zzhpp76b9ys5ftdpvhpn1xf",
+    "moreInfo": "https://app.thestorygraph.com/books/3cfd6c5b-5ae5-44a5-a1a2-b14023f9b554",
     "dateRead": "04/01/2024",
     "tags": ["Fiction", "Fantasy", "Adventurous", "Dark", "Funny", "Medium-paced"]
   },
@@ -318,6 +408,8 @@
     "title": "Red Seas Under Red Skies",
     "authors": "Scott Lynch",
     "isbn": 9780553588958,
+    "cover": "https://cdn.thestorygraph.com/yvbvusv6wa04wqyu8zcez4pbfgzk",
+    "moreInfo": "https://app.thestorygraph.com/books/690b9bf9-3d4e-4ab1-85f8-90ac7ba56ddc",
     "dateRead": "04/05/2024",
     "tags": ["Fiction","Fantasy","Adventurous","Emotional","Funny","Medium-paced"]
   },
@@ -325,13 +417,26 @@
     "title": "The Republic of Thieves",
     "authors": "Scott Lynch",
     "isbn": 9780553804690,
+    "cover": "https://cdn.thestorygraph.com/3i9deydxk47qlfmre3vw9vtsxstz",
+    "moreInfo": "https://app.thestorygraph.com/books/04c64296-c600-4898-acd8-a93440259b3a",
     "dateRead": "04/10/2024",
     "tags": ["Fiction", "Fantasy", "Dark", "Funny", "Medium-paced"]
+  },
+  {
+    "title": "The Long Way to a Small, Angry Planet",
+    "authors": "Becky Chambers",
+    "isbn": 9781500453305,
+    "cover": "https://cdn.thestorygraph.com/i52kgzga405r8tnfyg08uo14xppc",
+    "moreInfo": "https://app.thestorygraph.com/books/9a95c81f-7a91-4087-971c-5ff14d5403dd",
+    "dateRead": "04/24/2024",
+    "tags": ["Fiction","LGBTQA+","Science Fiction","Adventurous","Emotional","Fast-paced"]
   },
   {
     "title": "A Closed and Common Orbit",
     "authors": "Becky Chambers",
     "isbn": 9781473621473,
+    "cover": "https://cdn.thestorygraph.com/0s0fr01mar7f7yqo003wet81xurq",
+    "moreInfo": "https://app.thestorygraph.com/books/5421593f-b0f3-4898-94e5-d844c2318f3d",
     "dateRead": "05/02/2024",
     "tags": ["Fiction", "LGBTQA+", "Science Fiction", "Adventurous", "Emotional", "Hopeful", "Medium-paced"]
   },
@@ -339,6 +444,8 @@
     "title": "Record of a Spaceborn Few",
     "authors": "Becky Chambers",
     "isbn": 9781473647602,
+    "cover": "https://cdn.thestorygraph.com/0arkfjq0ex1djne0eqc2jmqyinbc",
+    "moreInfo": "https://app.thestorygraph.com/books/cdd4e3c2-a389-43c7-bda3-3cef78113a8c",
     "dateRead": "05/10/2024",
     "tags": ["Fiction","Science Fiction","Emotional","Reflective","Medium-paced"]
   },
@@ -346,6 +453,8 @@
     "title": "The Galaxy, and the Ground Within",
     "authors": "Becky Chambers",
     "isbn": 9781473647664,
+    "cover": "https://cdn.thestorygraph.com/f9tyqxg70kgu864pm6qs1m3lvwld",
+    "moreInfo": "https://app.thestorygraph.com/books/51bc97bb-0cd2-49ae-a8b3-03823f2072e6",
     "dateRead": "05/16/2024",
     "tags": ["Fiction", "Science Fiction", "Emotional", "Hopeful", "Reflective", "Medium-paced"]
   },
@@ -353,6 +462,8 @@
     "title": "Grimms' Tales for Young and Old: The Complete Stories",
     "authors": "Jacob Grimm, Wilhelm Grimm",
     "isbn": 9780385189507,
+    "cover": "https://cdn.thestorygraph.com/iyhhk5jleyremk22xbw586uwwyv5",
+    "moreInfo": "https://app.thestorygraph.com/books/7057fe95-27a9-4b0c-9fe2-b3672b6c1063",
     "dateRead": "06/01/2024",
     "tags": ["Fiction","Classics","Fantasy","Adventurous","Medium-paced"]
   },
@@ -360,27 +471,26 @@
     "title": "Wanderer's Escape",
     "authors": "Simon Goodson",
     "isbn": 0,
+    "cover": "https://cdn.thestorygraph.com/vm8qlonc6vzk98bx8pw9hpvqq1r7",
+    "moreInfo": "https://app.thestorygraph.com/books/86f60d07-ffd9-4a2f-9052-67f4b9dcb3e5",
     "dateRead": "06/05/2024",
     "tags": ["Fiction","Science Fiction","Adventurous"]
-  },
-  {
-    "title": "The Long Way to a Small, Angry Planet",
-    "authors": "Becky Chambers",
-    "isbn": 9781500453305,
-    "dateRead": "06/15/2024",
-    "tags": ["Fiction","LGBTQA+","Science Fiction","Adventurous","Emotional","Fast-paced"]
   },
   {
     "title": "Girl, Alone",
     "authors": "Blake Pierce",
     "isbn": 9781094373560,
+    "cover": "https://cdn.thestorygraph.com/48zsh5sjlkkum6zvp8nobqfyoafu",
+    "moreInfo": "https://app.thestorygraph.com/books/04a94825-b8f4-4ce9-9e4a-85434185ee28",
     "dateRead": "07/01/2024",
     "tags": ["Fiction", "Crime", "Mystery", "Thriller", "Tense", "Fast-paced"]
   },
   {
     "title": "Girl, Taken",
     "authors": "Blake Pierce",
-    "isbn": "B08NM5XTZ6",
+    "isbn": 9781094391625,
+    "cover": "https://cdn.thestorygraph.com/prwelsv9iar8mshujt19g3cxfeta",
+    "moreInfo": "https://app.thestorygraph.com/books/cdc72d3a-812d-4215-b8c5-54a2e2af1952",
     "dateRead": "07/07/2024",
     "tags": ["Fiction","Mystery","Thriller","Dark","Tense","Medium-paced"]
   },
@@ -388,6 +498,8 @@
     "title": "The Wild Robot",
     "authors": "Peter Brown",
     "isbn": 9780316381994,
+    "cover": "https://cdn.thestorygraph.com/uf5o9o9r2n0enlqb5s88uv5iy2ky",
+    "moreInfo": "https://app.thestorygraph.com/books/18cb730b-6d4d-4e0e-b1b6-c3fdce938de8",
     "dateRead": "07/05/2024",
     "tags": ["Fiction", "Science Fiction", "Adventurous", "Lighthearted", "Medium-paced"]
   },
@@ -395,13 +507,17 @@
     "title": "The Bullet That Missed",
     "authors": "Richard Osman",
     "isbn": 9780241512425,
+    "cover": "https://cdn.thestorygraph.com/niy3kf9aoy2kkhfknd8v019yb4m2",
+    "moreInfo": "https://app.thestorygraph.com/books/e4cedf44-5cff-4ddf-816c-00ef488fc58b",
     "dateRead": "07/13/2024",
     "tags": ["Fiction","Crime","Mystery","Adventurous","Funny","Medium-paced"]
   },
   {
-    "title": "An Absolutely Remarkable Thing ",
+    "title": "An Absolutely Remarkable Thing",
     "authors": "Hank Green",
     "isbn": 9780593183915,
+    "cover": "https://cdn.thestorygraph.com/c3grj60mectfitv62qssjntfvl9l",
+    "moreInfo": "https://app.thestorygraph.com/books/5e5cf4af-9ce8-458d-9a15-ae955cfed7a8",
     "dateRead": "07/16/2024",
     "tags": ["Fiction","LGBTQA+","Science Fiction","Adventurous","Funny","Fast-paced"]
   },
@@ -409,6 +525,8 @@
     "title": "A Beautifully Foolish Endeavor",
     "authors": "Hank Green",
     "isbn": 9780593183915,
+    "cover": "https://cdn.thestorygraph.com/mbmk4yomilyo4v3qj2ly511f6oxk",
+    "moreInfo": "https://app.thestorygraph.com/books/f654de09-f01a-41be-b4ea-d1797df5ebd0",
     "dateRead": "07/23/2024",
     "tags": ["Fiction","LGBTQA+","Science Fiction","Adventurous","Reflective","Fast-paced"]
   },
@@ -416,6 +534,8 @@
     "title": "Darkly Dreaming Dexter",
     "authors": "Jeff Lindsay",
     "isbn": 9780385511230,
+    "cover": "https://cdn.thestorygraph.com/2s7pi83vjweu475lhnldf87paapy",
+    "moreInfo": "https://app.thestorygraph.com/books/55374ce0-9cb2-4fc0-bdf8-f40599793605",
     "dateRead": "08/01/2024",
     "tags": ["Fiction", "Crime", "Mystery", "Thriller", "Dark", "Tense", "Fast-paced"]
   },
@@ -423,6 +543,8 @@
     "title": "Dearly Devoted Dexter",
     "authors": "Jeff Lindsay",
     "isbn": 9781400095926,
+    "cover": "https://cdn.thestorygraph.com/6xwm0c5c2lq3wiid5jolxm53vp4z",
+    "moreInfo": "https://app.thestorygraph.com/books/0b069a46-c36b-4d14-a653-a4a69e0a1f01",
     "dateRead": "08/07/2024",
     "tags": ["Fiction", "Crime", "Mystery", "Thriller", "Dark", "Tense", "Medium-paced"]
   },
@@ -430,6 +552,8 @@
     "title": "The Book of Doors",
     "authors": "Gareth Brown",
     "isbn": 9780063323988,
+    "cover": "https://cdn.thestorygraph.com/zvn2hxs7rj807wwwly43mrmfqflf",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "08/16/2024",
     "tags": ["Fiction","Magical Realism","Adventurous","Dark","Medium-paced"]
   },
@@ -437,6 +561,8 @@
     "title": "Feet of Clay",
     "authors": "Terry Pratchett",
     "isbn": 9781473200241,
+    "cover": "https://cdn.thestorygraph.com/7t7htgpu05q03d2c9co3n94k2hpj",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "08/18/2024",
     "tags": ["Fiction","Magical Realism","Adventurous","Dark","Medium-paced"]
   },
@@ -444,12 +570,16 @@
     "title": "Only You Can Save Mankind",
     "authors": "Terry Pratchett",
     "isbn": 9780060541873,
+    "cover": "https://cdn.thestorygraph.com/o4baavyqy99gpwam1vtwjveqhqrq",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "08/20/2024",
     "tags": ["Fiction","Fantasy","Science Fiction","Adventurous","Funny","Fast-paced"]
   },
   {
     "title": "Lock In",
     "isbn": 9781466849358,
+    "cover": "https://cdn.thestorygraph.com/spo7fmho85m0mk1p95pl6joq629n",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "08/25/2024",
     "tags": ["Fiction","Mystery","Science Fiction","Adventurous","Fast-paced"]
   },
@@ -457,6 +587,8 @@
     "title": "Head On",
     "authors": "John Scalzi",
     "isbn": 9780765388919,
+    "cover": "https://cdn.thestorygraph.com/aac25e0jkc1e6fl4n4htksy4vf7x",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "09/01/2024",
     "tags": ["Fiction","Science Fiction","Adventurous","Fast-paced"]
   },
@@ -464,6 +596,8 @@
     "title": "Tomorrow, and Tomorrow, and Tomorrow",
     "authors": "Gabrielle Zevin",
     "isbn": 9780593321201,
+    "cover": "https://cdn.thestorygraph.com/wayoh6706s8ne2jo2swn5rlhpfl9",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "11/10/2024",
     "tags": ["Fiction","Emotional","Reflective","Medium-paced"]
   },
@@ -471,13 +605,17 @@
     "title": "I'm Starting to Worry About This Black Box of Doom",
     "authors": "Jason Pargin",
     "isbn": 9781250285959,
+    "cover": "https://cdn.thestorygraph.com/fvm5rbxpd8db70in772glxg9pdc5",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "11/13/2024",
     "tags": ["Fiction","Science Fiction","Thriller","Adventurous","Funny","Fast-paced"]
   },
   {
     "title": "Max and the Multiverse",
     "authors": "Zachry Wheeler",
-    "isbn": "B01MYGHQC1",
+    "isbn": 9781954153097,
+    "cover": "https://cdn.thestorygraph.com/0tj445gofgfkrd6uq2fbo7fv5tah",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "12/01/2024",
     "tags": ["Fiction", "Fatasy", "Science Fiction", "Adventurous", "Funny", "Fast-paced"]
   },
@@ -485,6 +623,8 @@
     "title": "Max and the Snoodlecock",
     "authors": "Zachry Wheeler",
     "isbn": 9780998204949,
+    "cover": "https://cdn.thestorygraph.com/jpqxebblagbmbbiwtjeahwztvpac",
+    "moreInfo": "https://app.thestorygraph.com/books/4dc710cb-a434-4b48-8ee5-ee649d929163",
     "dateRead": "12/05/2024",
     "tags": ["Fiction", "Science Fiction", "Adventurous", "Funny", "Lighthearted", "Medium-paced"]
   },
@@ -492,6 +632,8 @@
     "title": "Max and the Banjo Ferret",
     "authors": "Zachry Wheeler",
     "isbn": 9780998204963,
+    "cover": "https://cdn.thestorygraph.com/k6k2jpubw9154bx10hoo9jb5j8xz",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "12/15/2024",
     "tags": ["Fiction","LGBTQA+","Science Fiction","Adventurous","Funny","Fast-paced"]
   },
@@ -499,6 +641,8 @@
     "title": "The 7 1/2 Deaths of Evelyn Hardcastle",
     "authors": "Stuart Turton",
     "isbn": 9781492698333,
+    "cover": "https://cdn.thestorygraph.com/rn3kmkc8jqydvpzkixicq08x8o5p",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "01/13/2025",
     "tags": ["Fiction","Mystery","Thriller","Dark","Tense","Medium-paced"]
   },
@@ -506,6 +650,8 @@
     "title": "Tales of the Peculiar",
     "authors": "Ransom Riggs",
     "isbn": 9780399538537,
+    "cover": "https://cdn.thestorygraph.com/32ti6ermnd0fftihpswhchm76pxu",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "01/18/2025",
     "tags": ["Fiction","Fantasy","Short Stories","Adventurous","Fast-paced"]
   },
@@ -513,6 +659,8 @@
     "title": "Wildside",
     "authors": "Steven Gould",
     "isbn": 9780312854737,
+    "cover": "https://cdn.thestorygraph.com/3zsmrlqspawat697aqg3vclrrxcn",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "01/25/2025",
     "tags": ["Fiction", "Fantasy", "Science Fiction", "Adventurous", "Medium-paced"]
   },
@@ -520,6 +668,8 @@
     "title": "Hotel Magnifique",
     "authors": "Emily J. Taylor",
     "isbn": 9780593404515,
+    "cover": "https://cdn.thestorygraph.com/gzutcyl8xrcolga3tazmzp6op4wg",
+    "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
     "dateRead": "02/01/2025",
     "tags": ["Fiction", "Fantasy", "Mystery", "Adventurous", "Dark", "Medium-paced"]
   },
@@ -527,6 +677,8 @@
     "title": "Textbook Amy Krouse Rosenthal",
     "authors": "Amy Krouse Rosenthal",
     "isbn": 9781101984543,
+    "cover": "https://cdn.thestorygraph.com/telo3dtx48310muf7yperte2v0ix",
+    "moreInfo": "https://app.thestorygraph.com/books/fd490ef6-d015-471e-82de-47ef299df98d",
     "dateRead": "02/07/2025",
     "tags": ["Nonfiction","Autobiography","Memoir","Self Help","Reflective","Fast-paced"]
   },
@@ -534,6 +686,8 @@
     "title": "Starter Villain",
     "authors": "John Scalzi",
     "isbn": 9780765389220,
+    "cover": "https://cdn.thestorygraph.com/kn5gtwecz6l5z46ig3awwkydxqjg",
+    "moreInfo": "https://app.thestorygraph.com/books/98affc66-6322-47fc-a006-52534dc2b4e9",
     "dateRead": "02/10/2025",
     "tags": ["Fiction","Science Fiction","Adventurous","Funny","Lighthearted","Fast-paced"]
   },
@@ -541,6 +695,8 @@
     "title": "The Wee Free Men",
     "authors": "Terry Pratchett",
     "isbn": 9780060012380,
+    "cover": "https://cdn.thestorygraph.com/u0v02lhcgxyvivnh8ayjiytauk7l",
+    "moreInfo": "https://app.thestorygraph.com/books/b9dc77c7-8023-4fcc-82c1-b5c1bc7be996",
     "dateRead": "02/27/2025",
     "tags": ["Fiction","Fantasy","Adventurous","Funny","Lighthearted","Medium-paced"]
   },
@@ -548,6 +704,8 @@
     "title": "Johnny and the Dead",
     "authors": "Terry Pratchett",
     "isbn": 9780060541880,
+    "cover": "https://cdn.thestorygraph.com/p51hblzlzga4nrjy4rn7xvlqnydz",
+    "moreInfo": "https://app.thestorygraph.com/books/404e9f65-d240-4bdc-a328-b6dd5576e738",
     "dateRead": "03/03/2025",
     "tags": ["Fiction", "Fantasy", "Adventurous", "Funny", "Fast-paced"]
   },
@@ -555,6 +713,8 @@
     "title": "Shade",
     "authors": "Steven Gould",
     "isbn": 0,
+    "cover": "https://cdn.thestorygraph.com/1cdqdt8167g3hqj082iux37ogarz",
+    "moreInfo": "https://app.thestorygraph.com/books/44eec8b5-8e13-476c-9fa4-561bf26509c1",
     "dateRead": "03/04/2025",
     "tags": ["Fiction", "Fantasy", "Science Fiction", "Adventurous", "Medium-paced"]
   },
@@ -562,6 +722,8 @@
     "title": "Service Model",
     "authors": "Adrian Tchaikovsky",
     "isbn": 9781250290281,
+    "cover": "https://cdn.thestorygraph.com/csc3hi1osr6xctuux54ibo6sm0l1",
+    "moreInfo": "https://app.thestorygraph.com/books/497eb691-9889-4327-936e-65a48a04fb0c",
     "dateRead": "03/23/2025",
     "tags": ["Fiction", "Science Fiction", "Adventurous", "Funny", "Reflective", "Medium-paced"]
   },
@@ -569,6 +731,8 @@
     "title": "Who Could That Be at This Hour?",
     "authors": "Lemony Snicket",
     "isbn": 9780316123082,
+    "cover": "https://cdn.thestorygraph.com/ut6amliaynmh6r2ef6pv654ou9fk",
+    "moreInfo": "https://app.thestorygraph.com/books/c7a1b74d-c9b5-4b13-9239-124318b53057",
     "dateRead": "03/25/2025",
     "tags": ["Fiction","Mystery","Adventurous","Lighthearted","Fast-paced"]
   }

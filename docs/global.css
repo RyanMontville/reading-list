@@ -24,6 +24,8 @@ main {
   }
   .book {
     background-color: white;
+    display: flex;
+    gap: 10px;
     padding: 5px 25px;
     border-radius: 25px;
     margin: 10px 20px;
@@ -31,6 +33,11 @@ main {
       0 1px 3px rgba(0, 0, 0, 0.12),
       0 1px 2px rgba(0, 0, 0, 0.24);
   }
+  .bookCover {
+    display: inline;
+    height: 100px;
+  }
+
   .bookTitle {
     font-weight: bold;
     font-size: 20px;

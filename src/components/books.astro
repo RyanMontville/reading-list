@@ -1,11 +1,24 @@
 ---
 import type { Book } from "../types/Book";
 import Tags from "./tags.astro";
-import books from '../assets/books.json';
+import books from "../assets/books.json";
 
-const months: string[] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const months: string[] = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 const years: string[] = ["2021", "2022", "2023", "2024", "2025"];
-let booksByYear: Book[][] = []
+let booksByYear: Book[][] = [];
 
 function getYear(date: string) {
   let dateList = date.split("/");
@@ -19,9 +32,9 @@ function formatDate(date: string) {
 }
 
 function sortBooksByYear() {
-  let bookArray: Book[][] = []
-  years.forEach((year)=> {
-    let newYear: Book[] = books.filter((book)=> {
+  let bookArray: Book[][] = [];
+  years.forEach((year) => {
+    let newYear: Book[] = books.filter((book) => {
       if (getYear(book.dateRead) === year) {
         return book;
       }
@@ -33,18 +46,26 @@ function sortBooksByYear() {
 
 booksByYear = sortBooksByYear();
 ---
-    <main>
-      {booksByYear.map((byear) => (
-        <div>
-          <h2 class="year">{getYear(byear[0].dateRead)} [{byear.length} books]</h2>
-          {byear.map((book) => (
-            <div class="book">
-          <p class="bookTitle">{book.title}</p>
-          <p class="bookAuthors">{book.authors}</p>
-          <p class="dateFinished">Date Finished: {formatDate(book.dateRead)}</p>
-          <Tags tags={book.tags} />
-        </div>
+
+<main>
+  {
+    booksByYear.map((byear) => (
+      <div>
+        <h2 class="year">
+          {getYear(byear[0].dateRead)} [{byear.length} books]
+        </h2>
+        {byear.map((book) => (
+          <div class="book">
+            <img src={book.cover} alt={`${book.title} - ${book.authors}`} class="bookCover" />
+            <section class="info">
+              <p class="bookTitle">{book.title}</p>
+            <p class="bookAuthors">{book.authors}</p>
+            <p class="dateFinished">Date Finished: {formatDate(book.dateRead)}</p>
+            <Tags tags={book.tags} />
+            </section>
+          </div>
         ))}
-        </div>
-      ))}
-    </main>
+      </div>
+    ))
+  }
+</main>

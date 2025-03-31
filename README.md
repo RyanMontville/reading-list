@@ -1,2 +1,2 @@
 # reading-list
-Back in 2021 I set a goal for myself to read a book a month. In 2022 I got an ereader and started reading even more books. I built this Astro app to help me keep track of the books I have read since I started my challange.
+Back in 2021 I set a goal for myself to read a book a month. In 2022 I got an ereader and started reading even more books. I built this Astro app to help me keep track of the books I have read since I started my challange. This app is also allowing me to learn how to create web apps using the Astro framework.
