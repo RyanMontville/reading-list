@@ -1,6 +1,6 @@
 ---
-import BookDetails from "../components/bookDetail.astro"
-import Header from "../components/header.astro"
+import BookDetails from "../components/bookDetail.astro";
+import Header from "../components/header.astro";
 import type { Book } from "../types/Book";
 import books from "../assets/books.json";
 
@@ -39,6 +39,7 @@ function sortBooksByYear() {
   return bookArray;
 }
 
+
 booksByYear = sortBooksByYear();
 ---
 
@@ -51,20 +52,20 @@ booksByYear = sortBooksByYear();
   </head>
   <body>
     <Header />
-    
-<main>
-  {
-    booksByYear.map((byear) => (
-      <div>
-        <h2 class="year">
-          <a href={`${getYear(byear[0].dateRead)}`}>{getYear(byear[0].dateRead)} [{byear.length} books]</a>
-        </h2>
-        {byear.map((bookItem) => (
-          <BookDetails book={bookItem} />
-        ))}
-      </div>
-    ))
-  }
-</main>
+    <main>
+      {booksByYear.map((byear) => (
+            <div>
+              <h2 class="year">
+                <a href={`${getYear(byear[0].dateRead)}`}>
+                  {getYear(byear[0].dateRead)} [{byear.length} books]
+                </a>
+              </h2>
+              {byear.map((bookItem) => (
+                <BookDetails book={bookItem} />
+              ))}
+            </div>
+          ))
+      }
+    </main>
   </body>
 </html>
