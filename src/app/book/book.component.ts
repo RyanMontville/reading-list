@@ -11,6 +11,6 @@ export class BookComponent {
   @Input() book!: Book;
 
   formatAuthorsForRoute(author: string) {
-    return "/author/" + author.replace(" ", "-");
+    return "/reading-list/author/" + author.replace(" ", "-");
   }
 }

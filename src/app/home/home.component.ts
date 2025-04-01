@@ -36,4 +36,7 @@ export class HomeComponent implements OnInit {
       let dateList: string[] = date.split("/");
       return dateList[2];
     }
+    getYearURL(index: number) {
+      return "/reading-list/" + this.years[index];
+    }
   }

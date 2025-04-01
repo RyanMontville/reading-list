@@ -1,7 +1,7 @@
 <main>
     @for (bookYear of booksByYear; track bookYear; let index = $index) {
         <div>
-            <h2 class="year"><a [href]="years[index]">{{years[index]}} [{{bookYear.length}} books]</a></h2>
+            <h2 class="year"><a [href]="getYearURL(index)">{{years[index]}} [{{bookYear.length}} books]</a></h2>
             @for (book of bookYear; track book) {
                 <app-book [book]="book" />
             }
