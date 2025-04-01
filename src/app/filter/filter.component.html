@@ -1,0 +1,36 @@
+<main>
+    <div id="filterButtons">
+        <button (click)="showFiterOptions('year')">Filter By Year</button>
+        <button (click)="showFiterOptions('author')">Filter By Author</button>
+        <button (click)="showFiterOptions('genre')">Filter By Genre</button>
+    </div>
+    @if (showAuthors) {
+        <div id="filterButtons">
+            @for (author of authors; track $index) {
+                <button (click)="filterByAuthor(author)">{{author}}</button>
+            }
+        </div>
+    }
+    @if (showYears) {
+    <div id="filterButtons">
+        @for (year of years; track $index) {
+        <button (click)="filterByYear(year)">{{year}}</button>
+        }
+    </div>
+    }
+    @if (showGenres) {
+        <div id="filterButtons">
+            @for (genre of genres; track $index) {
+                <button (click)="toggleGenre(genre)" [class.selected]="selectedGenres.includes(genre)">{{genre}}</button>
+            }
+        </div>
+        <div id="filterButtons"><button (click)="filterBooks()">Filter Books for Selected Genres</button></div>
+    }
+    <hr />
+    @if (filter) {
+        <h2 class="year">{{filter}} [{{filteredBooks.length}}]</h2>
+    }
+    @for (book of filteredBooks; track $index) {
+    <app-book [book]="book" />
+    }
+</main>

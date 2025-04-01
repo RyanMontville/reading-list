@@ -13,6 +13,7 @@ import { BookComponent } from "../book/book.component";
 export class AuthorComponent implements OnInit {
   author: string = "";
   books: Book[] = [];
+  bookCount: number = 0;
 
   constructor(
     private route: ActivatedRoute,
@@ -34,6 +35,11 @@ export class AuthorComponent implements OnInit {
   loadBooks(): void {
     this.bookService.getBooks().subscribe((books) => {
       this.books = books;
+      books.forEach((book) => {
+        if (book.authors.includes(this.author)) {
+          this.bookCount += 1;
+        }
+      })
     });
   }
 }

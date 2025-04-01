@@ -8,6 +8,7 @@
 
 body {
   background-color: #e5e5e5;
+  font-family: 'Roboto Slab';
 }
 
 header {
@@ -28,6 +29,7 @@ main {
 
 .year {
     text-align: center;
+    font-family: 'Roboto';
   }
   .book {
     background-color: white;
@@ -86,4 +88,23 @@ main {
     border: 1px solid grey;
     border-radius: 5px;
     padding: 3px 5px;
+  }
+
+  #filterButtons {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+button {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px 0;
+  }
+
+button:hover {
+    background-color: black;
+    color: white;
   }

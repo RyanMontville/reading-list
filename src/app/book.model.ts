@@ -1,6 +1,6 @@
 export interface Book {
   title: string;
-  authors: string;
+  authors: string[];
   isbn: string;
   cover: string;
   moreInfo: string;

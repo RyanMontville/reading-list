@@ -37,6 +37,6 @@ export class HomeComponent implements OnInit {
       return dateList[2];
     }
     getYearURL(index: number) {
-      return "/reading-list/" + this.years[index];
+      return "/reading-list/year/" + this.years[index];
     }
   }
