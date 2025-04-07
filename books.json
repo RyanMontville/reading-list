@@ -736,5 +736,14 @@
     "moreInfo": "https://app.thestorygraph.com/books/c7a1b74d-c9b5-4b13-9239-124318b53057",
     "dateRead": "03/25/2025",
     "tags": ["Fiction","Mystery","Adventurous","Lighthearted","Fast-paced"]
+  },
+  {
+    "title": "The Library of the Unwritten",
+    "authors": ["A.J. Hackwith"],
+    "isbn": 9781984806376,
+    "cover": "https://cdn.thestorygraph.com/rmojvngyn4fk19ox9prupytp1sv0",
+    "moreInfo": "https://app.thestorygraph.com/books/37d2a575-c619-4ef2-92dc-f503d8404d4e",
+    "dateRead": "04/07/2025",
+    "tags": ["Fiction","Fantasy","LGBTQA+","Adventurous","Medium-paced"]
   }
 ]
