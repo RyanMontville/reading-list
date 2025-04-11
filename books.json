@@ -748,7 +748,7 @@
   },
   {
     "title": "A Good Heritic",
-    "authors": "Becky Chambers",
+    "authors": ["Becky Chambers"],
     "isbn": 9781789092912,
     "cover": "https://cdn.thestorygraph.com/6miux33xq6b99yfw1p5ijpnsioha",
     "moreInfo": "https://app.thestorygraph.com/books/d1ca0984-30e3-42b8-8c73-d3ee27b31fcd",
@@ -757,7 +757,7 @@
   },
   {
     "title": "A Psalm for the Wild-Built",
-    "authors": "Becky Chambers",
+    "authors": ["Becky Chambers"],
     "isbn": 9781250236210,
     "cover": "https://cdn.thestorygraph.com/crkyy7hkoah01xz5kyghu36eo8wf",
     "moreInfo": "https://app.thestorygraph.com/books/e630cc5f-0870-41cd-a76c-52a4373fa254",
