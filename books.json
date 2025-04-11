@@ -745,5 +745,23 @@
     "moreInfo": "https://app.thestorygraph.com/books/37d2a575-c619-4ef2-92dc-f503d8404d4e",
     "dateRead": "04/07/2025",
     "tags": ["Fiction","Fantasy","LGBTQA+","Adventurous","Medium-paced"]
+  },
+  {
+    "title": "A Good Heritic",
+    "authors": "Becky Chambers",
+    "isbn": 9781789092912,
+    "cover": "https://cdn.thestorygraph.com/6miux33xq6b99yfw1p5ijpnsioha",
+    "moreInfo": "https://app.thestorygraph.com/books/d1ca0984-30e3-42b8-8c73-d3ee27b31fcd",
+    "dateRead": "04/07/2025",
+    "tags": ["Fiction","Science Fiction","Short Stories","Emotional","Hopeful","Reflective","Fast-paced"]
+  },
+  {
+    "title": "A Psalm for the Wild-Built",
+    "authors": "Becky Chambers",
+    "isbn": 9781250236210,
+    "cover": "https://cdn.thestorygraph.com/crkyy7hkoah01xz5kyghu36eo8wf",
+    "moreInfo": "https://app.thestorygraph.com/books/e630cc5f-0870-41cd-a76c-52a4373fa254",
+    "dateRead": "04/10/2025",
+    "tags": ["Fiction", "LGBTQA+","Science Fiction","Hopeful","Inpiring","Reflective","Medium-paced"]
   }
 ]
