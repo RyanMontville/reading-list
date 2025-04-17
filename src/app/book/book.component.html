@@ -7,7 +7,7 @@
                 <li class="bookAuthor"><a [href]="formatAuthorsForRoute(author)">{{author}}</a>{{ !last ? ', ' : '' }}</li>
             }
         </ul>
-        <p class="dateFinished">Date Finished: {{book.dateRead}}</p>
+        <p class="dateFinished">Date Finished: {{formatDate(book.dateRead)}}</p>
         <a [href]="book.moreInfo" target="_blank">
             <span class="material-symbols-outlined">open_in_new</span>
             View {{book.title}} on Story Graph
