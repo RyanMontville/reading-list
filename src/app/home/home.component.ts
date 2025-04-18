@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Book } from '../book.model';
 import { BookService } from '../books.service';
 import { BookComponent } from "../book/book.component";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,14 +14,26 @@ export class HomeComponent implements OnInit {
     books: Book[] = [];
     booksByYear: Book[][] = [];
     years: string[] = ["2021", "2022", "2023", "2024", "2025"];
+    year: number = 0;
+    showAll: boolean = true;
+    showYear: boolean = false;
   
-    constructor(private bookService: BookService) {}
+    constructor(
+      private bookService: BookService,
+      private route: ActivatedRoute
+    ) {}
   
     ngOnInit(): void {
       this.bookService.getBooks().subscribe((books) => {
         this.books = books;
         this.sortBooksByYear();
       });
+      let yearParm = this.route.snapshot.queryParamMap.get('year');
+      if (yearParm) {
+        this.year = this.years.indexOf(yearParm);
+        this.showYear = true;
+        this.showAll = false;
+      }
     }
 
     sortBooksByYear() {

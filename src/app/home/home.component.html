@@ -1,10 +1,18 @@
 <main>
-    @for (bookYear of booksByYear; track bookYear; let index = $index) {
-        <div>
-            <h2 class="year"><a [href]="getYearURL(index)">{{years[index]}} [{{bookYear.length}} books]</a></h2>
-            @for (book of bookYear; track book) {
-                <app-book [book]="book" />
-            }
-        </div>
-      }
+    @if(showAll) {
+        @for (bookYear of booksByYear; track bookYear; let index = $index) {
+            <div>
+                <h2 class="year"><a [href]="getYearURL(index)">{{years[index]}} [{{bookYear.length}} books]</a></h2>
+                @for (book of bookYear; track book) {
+                    <app-book [book]="book" />
+                }
+            </div>
+          }
+    }
+    @if (showYear) {
+        <h2 class="year">{{years[year]}} [{{booksByYear[year].length}} books]</h2>
+        @for (book of booksByYear[year]; track $index) {
+            <app-book [book]="book" />
+        }
+    }
 </main>

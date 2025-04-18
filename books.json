@@ -763,5 +763,14 @@
     "moreInfo": "https://app.thestorygraph.com/books/e630cc5f-0870-41cd-a76c-52a4373fa254",
     "dateRead": "04/10/2025",
     "tags": ["Fiction", "LGBTQA+","Science Fiction","Hopeful","Inpiring","Reflective","Medium-paced"]
+  },
+  {
+    "title": "When the Moon Hits Your Eye",
+    "authors": ["John Scalzi"],
+    "isbn": 9780765389091,
+    "cover": "https://cdn.thestorygraph.com/718cb49yqfu02zekeq22yl8lgm8v",
+    "moreInfo": "https://app.thestorygraph.com/books/4f3c3b02-3d2b-4765-93ac-4656133bbec5",
+    "dateRead": "04/17/2025",
+    "tags": ["Fiction","Science Fiction","Funny","Lighthearted","Medium-paced"]
   }
 ]
