@@ -4,7 +4,7 @@
         <p class="bookTitle">{{book.title}}</p>
         <ul class="authorsList">
             @for (author of book.authors; track author; let last = $last) {
-                <li class="bookAuthor"><a [href]="formatAuthorsForRoute(author)">{{author}}</a>{{ !last ? ', ' : '' }}</li>
+                <li class="bookAuthor">{{author}}{{ !last ? ', ' : '' }}</li>
             }
         </ul>
         <p class="dateFinished">Date Finished: {{formatDate(book.dateRead)}}</p>

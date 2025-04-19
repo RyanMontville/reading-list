@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { BookService } from '../books.service';
 import { Book } from '../book.model';
 import { BookComponent } from "../book/book.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-filter',
-  imports: [BookComponent],
+  imports: [BookComponent, RouterLink],
   templateUrl: './filter.component.html',
   styleUrl: './filter.component.css'
 })
@@ -21,7 +22,9 @@ export class FilterComponent implements OnInit {
   filteredBooks: Book[] = [];
   filter: string | null = null;
 
-  constructor(private bookService: BookService) {}
+  constructor(
+    private bookService: BookService,
+  ) {}
   
   ngOnInit(): void {
     this.bookService.getBooks().subscribe((books) => {
@@ -81,21 +84,8 @@ export class FilterComponent implements OnInit {
     return dateList[2];
   }
 
-  filterByYear(year: string) {
-    this.showYears = false;
-    this.filter = year;
-    this.filteredBooks = this.books.filter((book) => this.getYear(book.dateRead) == year);
-  }
-
-  filterByAuthor(author: string) {
-    this.showAuthors = false;
-    this.filter = author;
-    this.filteredBooks = [];
-    this.books.forEach((book) => {
-      if (book.authors.includes(author)) {
-        this.filteredBooks.push(book);
-      }
-    });
+  formatAuthorForURL(author: string) {
+    return author.split(" ").join("_");
   }
 
   toggleGenre(genre: string) {
@@ -116,7 +106,6 @@ export class FilterComponent implements OnInit {
       this.filteredBooks = this.books; // Show all books if no genres are selected.
       return;
     }
-
     this.filteredBooks = this.books.filter(book => {
       return this.selectedGenres.every(selectedGenre => book.tags.includes(selectedGenre));
     });

@@ -7,3 +7,8 @@ export interface Book {
   dateRead: string;
   tags: string[];
 }
+
+export interface BookLink {
+  year: string;
+  books: Book[];
+}

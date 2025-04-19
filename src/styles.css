@@ -47,8 +47,8 @@ main {
   }
   .bookCover {
     display: inline;
-    height: 100px;
-    padding: 10px;
+    max-height: 150px;
+    
   }
   .info {
     padding: 5px 10px;
