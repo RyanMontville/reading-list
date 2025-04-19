@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
       this.bookService.getBooks().subscribe((books) => {
         this.books = books;
         this.sortBooksByYear();
-        this.checkForParams()
+        this.checkForParams();
       });
     }
 

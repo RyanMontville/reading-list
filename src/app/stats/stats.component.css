@@ -1,0 +1,36 @@
+.split-bar-container {
+    display: flex;
+}
+
+.tag-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.tag-label {
+    padding-bottom: 10px;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .progress-bar-container {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    overflow: hidden; 
+    width: 100%; 
+    max-width: 500px; 
+  }
+  
+  .progress-bar {
+    background-color: #b81f24; 
+    color: white;
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px;
+    width: 0%; 
+    transition: width 0.3s ease-out; 
+  }
