@@ -1,2 +1,8 @@
-<app-header />
+<h2 class="app-title"><span class="material-symbols-outlined header-icon"> menu_book </span> Reading List</h2>
+<button (click)="showMenu = !showMenu" class="menu-button"><span class="material-symbols-outlined">
+    menu
+    </span></button>
+@if (showMenu) {
+    <app-menu class="menu"/>
+}
 <router-outlet />

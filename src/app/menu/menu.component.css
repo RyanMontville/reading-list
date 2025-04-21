@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px 10px 10px 10px;
+    text-align: center;
+}
+
+nav a {
+    font-size: 25px;
+}
+@media only screen and (min-width: 671px) {
+    nav h2 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .menu {
+        width: 90%;
+    }
+}
