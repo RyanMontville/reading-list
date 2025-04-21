@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MenuComponent } from "./menu/menu.component";
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { trigger, state, style, transition, animate, useAnimation } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -9,21 +9,26 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   animations: [
-    trigger('cardAnimation', [
-      state('in', style({ opacity: 1, transform: 'translateX(0)' })),
-      state('out', style({ opacity: 0, transform: 'translateX(100%)' })),
-      transition('void => in', [ // Animate in from the left
-        style({ opacity: 0, transform: 'translateX(-100%)' }),
+    trigger('slideMenu', [
+      state('open', style({
+        transform: 'translateX(0)',
+        visibility: 'visible'
+      })),
+      state('closed', style({
+        transform: 'translateX(100%)',
+        visibility: 'hidden'
+      })),
+      transition('closed => open', [
+        style({ transform: 'translateX(100%)', visibility: 'visible' }), // Initial style before animation
         animate('300ms ease-in')
       ]),
-      transition('in => out', [
-        animate('300ms ease-out')
-      ]),
-      transition('void => *', animate('0ms')),
-    ]),
-  ],
+      transition('open => closed', [
+        animate('300ms ease-out', style({ transform: 'translateX(100%)', visibility: 'hidden' }))
+      ])
+    ])
+  ]
 })
 export class AppComponent {
   title = 'reading-list';
-  showMenu: boolean = false;
+  isOpen: boolean = false;
 }
