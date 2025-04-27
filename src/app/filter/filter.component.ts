@@ -15,12 +15,15 @@ export class FilterComponent implements OnInit {
   authors: string[] = [];
   genres: string[] = [];
   selectedGenres: string[] = [];
+  genresParamString: string = "";
   years: string[] = [];
   showYears: boolean = false;
   showAuthors: boolean = false;
   showGenres: boolean = false;
   filteredBooks: Book[] = [];
   filter: string | null = null;
+  specailTags: string[] = ["Fiction", "Nonfiction", "Slow-paced", "Medium-paced", "Fast-paced"];
+  
 
   constructor(
     private bookService: BookService,
@@ -39,7 +42,7 @@ export class FilterComponent implements OnInit {
           }
         });
         book.tags.forEach((tag) => {
-          if (!this.genres.includes(tag)) {
+          if (!this.genres.includes(tag) && !this.specailTags.includes(tag)) {
             this.genres.push(tag);
           }
         });
@@ -90,9 +93,14 @@ export class FilterComponent implements OnInit {
 
   toggleGenre(genre: string) {
     if (this.selectedGenres.includes(genre)) {
-      this.selectedGenres = this.selectedGenres.filter(g => g !== genre);
+      console.log("already added");
     } else {
       this.selectedGenres.push(genre);
+      if (this.selectedGenres.length === 1) {
+        this.genresParamString = genre;
+      } else {
+        this.genresParamString = this.genresParamString + "_" + genre;
+      }
     }
   }
 

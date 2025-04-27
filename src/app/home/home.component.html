@@ -1,25 +1,8 @@
 <main>
-    @if(showAll) {
-        @for (bookYear of booksByYear; track bookYear; let index = $index) {
-            <div>
-                
-                <h2 class="year">{{bookYear.year}} [{{bookYear.books.length}} books]</h2>
-                @for (book of bookYear.books; track book) {
-                    <app-book [book]="book" />
-                }
-            </div>
-          }
-    }
-    @if (showYear) {
-        <h2 class="year">{{years[year]}} [{{booksByYear[year].books.length}} books]</h2>
-        @for (book of booksByYear[year].books; track $index) {
+    <div [@listAnimation]="booksToShow.length">
+        <h2 class="year">{{bookCount}} Book{{ bookCount > 1 ? 's' : ''}} {{listTitle}}</h2>
+        @for (book of booksToShow; track book) {
             <app-book [book]="book" />
         }
-    }
-    @if (showFiltered) {
-        <h2 class="year">{{filteredTitle}}</h2>
-        @for (book of filteredBooks; track $index) {
-            <app-book [book]="book" />
-        }
-    }
+    </div>
 </main>

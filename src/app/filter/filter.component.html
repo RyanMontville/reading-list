@@ -20,11 +20,18 @@
     }
     @if (showGenres) {
         <div id="filterButtons">
+            <button (click)="toggleGenre('Fiction')" [class.selected]="selectedGenres.includes('Fiction')">Fiction</button>
+            <button (click)="toggleGenre('Nonfiction')" [class.selected]="selectedGenres.includes('Nonfiction')">Nonfiction</button>
+            <button (click)="toggleGenre('Slow-paced')" [class.selected]="selectedGenres.includes('Slow-paced')">Slow-paced</button>
+            <button (click)="toggleGenre('Medium-paced')" [class.selected]="selectedGenres.includes('Medium-paced')">Medium-paced</button>
+            <button (click)="toggleGenre('Fast-paced')" [class.selected]="selectedGenres.includes('Fast-paced')">Fast-paced</button>
+        </div>
+        <div id="filterButtons">
             @for (genre of genres; track $index) {
                 <button (click)="toggleGenre(genre)" [class.selected]="selectedGenres.includes(genre)">{{genre}}</button>
             }
         </div>
-        <div id="filterButtons"><button (click)="filterBooks()">Filter Books for Selected Genres</button></div>
+        <div id="filterButtons"><button [routerLink]="['/']" [queryParams]="{tags: selectedGenres}">Filter Books for Selected Genres</button></div>
     }
     @if (filter) {
         <hr />

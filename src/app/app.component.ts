@@ -9,26 +9,34 @@ import { trigger, state, style, transition, animate, useAnimation } from '@angul
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   animations: [
-    trigger('slideMenu', [
-      state('open', style({
-        transform: 'translateX(0)',
-        visibility: 'visible'
-      })),
-      state('closed', style({
-        transform: 'translateX(100%)',
-        visibility: 'hidden'
-      })),
-      transition('closed => open', [
-        style({ transform: 'translateX(100%)', visibility: 'visible' }), // Initial style before animation
+    trigger('menuAnimation', [
+      state('in', style({ opacity: 1, transform: 'translateX(0)' })),
+      state('out', style({ opacity: 0, transform: 'translateX(100%)' })),
+      transition('void => in', [
+        style({ opacity: 0, transform: 'translateX(100%)' }),
         animate('300ms ease-in')
       ]),
-      transition('open => closed', [
-        animate('300ms ease-out', style({ transform: 'translateX(100%)', visibility: 'hidden' }))
-      ])
-    ])
-  ]
+      transition('in => out', [
+        animate('300ms ease-out', style({ opacity: 0, transform: 'translateX(100%)' }))
+      ]),
+      transition('void => *', animate('0ms')),
+    ]),
+  ],
 })
 export class AppComponent {
   title = 'reading-list';
-  isOpen: boolean = false;
+  isMenuOpen: boolean = false;
+  menuState: string = 'out';
+
+  toggleMenu() {
+    if (this.isMenuOpen) {
+      this.menuState = 'out';
+      setTimeout(() => {
+        this.isMenuOpen = false;
+      }, 300);
+    } else {
+      this.isMenuOpen = true;
+      this.menuState = 'in';
+    }
+  }
 }

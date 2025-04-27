@@ -1,8 +1,8 @@
 <h2 class="app-title"><span class="material-symbols-outlined header-icon"> menu_book </span> Reading List</h2>
-<button (click)="isOpen = !isOpen" class="menu-button"><span class="material-symbols-outlined">
+<button (click)="toggleMenu()" class="menu-button"><span class="material-symbols-outlined">
     menu
     </span></button>
-@if (isOpen) {
-    <app-menu class="menu" [@slideMenu]="isOpen ? 'open' : 'closed'" />
+@if (isMenuOpen) {
+    <app-menu class="menu" [@menuAnimation]="menuState" />
 }
 <router-outlet />
