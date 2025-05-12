@@ -783,12 +783,21 @@
     "tags": ["Fiction","Fantasy","Science Fiction","Young Adult", "Adventurous", "Emotional", "Reflective", "Fast-paced"]
   },
   {
-    "title": "A Prayer for the Crown-Shy ",
+    "title": "A Prayer for the Crown-Shy",
     "authors": ["Becky Chambers"],
     "isbn": 9781250236234,
     "cover": "https://cdn.thestorygraph.com/uhb1bfusqnte7ya8qw0dgqbrfddl",
     "moreInfo": "https://app.thestorygraph.com/books/33b2f7d2-82ee-4a0a-8519-71e1d988f378",
     "dateRead": "04/28/2025",
     "tags": ["Fiction","LGBTQA+","Science Fiction","Hopeful","Inpiring","Reflective","Medium-paced"]
+  },
+  {
+    "title": "Upgrade",
+    "authors": ["Blake Crouch"],
+    "isbn": 9780593157527,
+    "cover": "https://cdn.thestorygraph.com/sow53ryij3w5aqwbin7tyfiwyijj",
+    "moreInfo": "https://app.thestorygraph.com/books/7c4b3726-d4d3-40d1-a828-82e74998fc87",
+    "dateRead": "5/11/2025",
+    "tags": ["Fiction","Science Fiction","Thriller","Adventurous","Tense","Medium-paced"]
   }
 ]
