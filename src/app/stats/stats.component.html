@@ -1,34 +1,29 @@
 <main>
     <h2>Fiction vs Nonfiction Books</h2>
     <div class="split-bar-container">
-        <div class="progress-bar" 
-            [style.width.px]="getBarWidth(getSpecialPercentage('fiction'))"
+        <div class="progress-bar" [style.width.px]="getBarWidth(getSpecialPercentage('fiction'))"
             [style.backgroundColor]="'blue'"
             [title]="fiction + ': ' + getSpecialPercentage('fiction').toFixed(2) + '%'">
             {{fiction}}
         </div>
         <div class="progress-bar" [style.width.px]="getBarWidth(getSpecialPercentage('nonfiction'))"
+            [style.backgroundColor]="'green'"
             [title]="nonfiction + ': ' + getSpecialPercentage('nonfiction').toFixed(2) + '%'">
             {{nonfiction}}
         </div>
     </div>
     <h2>Slow-paced vs Medium-paced vs Fast-paced Books</h2>
     <div class="split-bar-container">
-        <div class="progress-bar" 
-            [style.width.px]="getBarWidth(getSpecialPercentage('slow'))"
-            [style.backgroundColor]="'green'"
-            [title]="fiction + ': ' + getSpecialPercentage('slow').toFixed(2) + '%'">
+        <div class="progress-bar" [style.width.px]="getBarWidth(getSpecialPercentage('slow'))"
+            [style.backgroundColor]="'red'" [title]="fiction + ': ' + getSpecialPercentage('slow').toFixed(2) + '%'">
             {{slowPaced}}
         </div>
-        <div class="progress-bar" 
-            [style.width.px]="getBarWidth(getSpecialPercentage('medium'))"
-            [style.backgroundColor]="'blue'"
-            [title]="fiction + ': ' + getSpecialPercentage('medium').toFixed(2) + '%'">
+        <div class="progress-bar" [style.width.px]="getBarWidth(getSpecialPercentage('medium'))"
+            [style.backgroundColor]="'blue'" [title]="fiction + ': ' + getSpecialPercentage('medium').toFixed(2) + '%'">
             {{mediumPaced}}
         </div>
-        <div class="progress-bar" 
-            [style.width.px]="getBarWidth(getSpecialPercentage('fast'))"
-            [title]="fiction + ': ' + getSpecialPercentage('fast').toFixed(2) + '%'">
+        <div class="progress-bar" [style.width.px]="getBarWidth(getSpecialPercentage('fast'))"
+            [style.backgroundColor]="'green'" [title]="fiction + ': ' + getSpecialPercentage('fast').toFixed(2) + '%'">
             {{fastPaced}}
         </div>
     </div>

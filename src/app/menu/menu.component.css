@@ -4,10 +4,13 @@ nav {
     gap: 10px;
     margin: 50px 10px 10px 10px;
     text-align: center;
+    background-color: var(--main-background);
+    color: var(--main-color);
 }
 
 nav a {
     font-size: 25px;
+    color: var(--main-color);
 }
 @media only screen and (min-width: 671px) {
     nav h2 {
