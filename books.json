@@ -817,5 +817,14 @@
     "moreInfo": "https://app.thestorygraph.com/books/be242631-cd01-41f4-90c3-ac21591ee12d",
     "dateRead": "6/7/2025",
     "tags": ["Fiction","Science Fiction","Adventurous","Funny","Fast-paced"]
+  },
+  {
+    "title": "Futuristic Violence and Fancy Suits",
+    "authors": ["Jason Pargin"],
+    "isbn": 9781250040190,
+    "cover": "https://cdn.thestorygraph.com/75yqzvd5vpj3mnnoubbvqsrkoid8",
+    "moreInfo": "https://app.thestorygraph.com/books/b3027e37-fa29-4149-9999-5478e74d3dc5",
+    "dateRead": "6/20/2025",
+    "tags": ["Fiction","Fantasy","Science Fiction","Funny","Fast-paced"]
   }
 ]
