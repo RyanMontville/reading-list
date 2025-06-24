@@ -4,8 +4,6 @@ import { BookService } from '../books.service';
 import { BookComponent } from "../book/book.component";
 import { ActivatedRoute, Router, Params } from '@angular/router';
 import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
-import { filter, map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +12,7 @@ import { Observable } from 'rxjs';
   styleUrl: './home.component.css',
   animations: [
     trigger('listAnimation', [
-      transition('* => *', [ // any state to any state
+      transition('* => *', [
         query(':enter', [
           style({ opacity: 0, transform: 'translateY(-20px)' }),
           stagger('100ms', animate('300ms ease-out', style({ opacity: 1, transform: 'translateY(0)' })))

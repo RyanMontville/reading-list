@@ -1,476 +1,58 @@
 [
     {
-        "book_id": 1,
-        "book_title": "Dear America: Notes of an Undocumented Citizen",
-        "author": "Jose Antonio Vargas ",
-        "who_recommended": "John",
-        "media_title": "11 Great Books You Probably Haven't Read- Bookshop.org storefront",
-        "recommended_on": "Bookshop.org",
-        "first_recommended": "09-28-2021",
-        "type": "nonfiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1534366728i/36544614.jpg"
-    },
-    {
-        "book_id": 2,
-        "book_title": "The Hour of Our Death",
-        "author": "Philippe Aries ",
-        "who_recommended": "John",
-        "media_title": "12 Great Books You Probably Haven't Read- Bookshop.org storefront",
-        "recommended_on": "Bookshop.org",
-        "first_recommended": "09-28-2021",
-        "type": "nonfiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1175359092i/507908.jpg"
-    },
-    {
-        "book_id": 3,
-        "book_title": "The End of Everything",
-        "author": "Katie Mack ",
-        "who_recommended": "John",
-        "media_title": "13 Great Books You Probably Haven't Read- Bookshop.org storefront",
-        "recommended_on": "Bookshop.org",
-        "first_recommended": "09-28-2021",
-        "type": "nonfiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1574199214i/52767659.jpg"
-    },
-    {
-        "book_id": 4,
-        "book_title": "Piecing Me Together",
-        "author": "Renee Watson",
-        "who_recommended": "John",
-        "media_title": "JUN 14, 2017 Livestream",
-        "recommended_on": "Dear Hank and John Patreon: Monthly Livestream",
-        "first_recommended": "06-14-2020",
-        "type": "fiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1466549070i/25566675.jpg"
-    },
-    {
-        "book_id": 5,
-        "book_title": "The Hate U Give",
-        "author": "Angie Thomas",
-        "who_recommended": "John",
-        "media_title": "JUN 14, 2017 Livestream",
-        "recommended_on": "Dear Hank and John Patreon: Monthly Livestream",
-        "first_recommended": "06-15-2020",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1636851138i/58651625.jpg"
-    },
-    {
-        "book_id": 6,
-        "book_title": "The Calculating Stars",
-        "author": "Mary Robinette Kowal",
+        "book_id": 319,
+        "book_title": "Jurassic Park",
+        "author": "Michael Crichton",
         "who_recommended": "Hank",
-        "media_title": "Hank AMA No Spoilers",
-        "recommended_on": "FAART Discord",
-        "first_recommended": "10-04-2018",
+        "media_title": null,
+        "recommended_on": null,
+        "first_recommended": null,
         "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1539850192i/33080122.jpg"
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529604411i/40604658.jpg"
     },
     {
-        "book_id": 7,
-        "book_title": "Akata Witch",
-        "author": "Nnedi Okorafor",
+        "book_id": 321,
+        "book_title": "Mostly Dead Things",
+        "author": "Kristen Arnett",
         "who_recommended": "Hank",
-        "media_title": "Hank AMA No Spoilers",
-        "recommended_on": "FAART Discord",
-        "first_recommended": "10-04-2018",
+        "media_title": null,
+        "recommended_on": "Twitter",
+        "first_recommended": null,
         "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347794798i/7507944.jpg"
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1543595464i/41817578.jpg"
     },
     {
-        "book_id": 8,
-        "book_title": "Akata Warrior",
-        "author": "Nnedi Okorafor",
+        "book_id": 346,
+        "book_title": "A Deadly Education",
+        "author": "Naomi Novik",
         "who_recommended": "Hank",
-        "media_title": "Hank AMA No Spoilers",
-        "recommended_on": "FAART Discord",
-        "first_recommended": "10-04-2018",
+        "media_title": null,
+        "recommended_on": "Twitter",
+        "first_recommended": null,
         "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1484628903i/18746776.jpg"
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596909044i/50548197.jpg"
     },
     {
-        "book_id": 9,
-        "book_title": "A Field Guide to Getting Lost ",
-        "author": "Rebecca Solnit",
-        "who_recommended": "John",
-        "media_title": "Life's Library",
-        "recommended_on": "Life's Library",
-        "first_recommended": "02-05-2019",
-        "type": "nonfiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1422984723i/76479.jpg"
-    },
-    {
-        "book_id": 10,
-        "book_title": "We Crossed a Bridge and It Trembled",
-        "author": "Wendy Pearlman",
-        "who_recommended": "John",
-        "media_title": "Life's Library",
-        "recommended_on": "Life's Library",
-        "first_recommended": "03-19-2019",
-        "type": "nonfiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1482905295i/32051585.jpg"
-    },
-    {
-        "book_id": 11,
-        "book_title": "Mountains Beyond Mountains: The Quest of Dr. Paul Farmer, a Man Who Would Cure the World",
-        "author": "Tracy Kidder",
-        "who_recommended": "John",
-        "media_title": "Life's Library",
-        "recommended_on": "Life's Library",
-        "first_recommended": "09-03-2019",
-        "type": "nonfiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433156001i/10235.jpg"
-    },
-    {
-        "book_id": 12,
-        "book_title": "The Summer Book",
-        "author": "Tove Jansson",
-        "who_recommended": "John",
-        "media_title": "Life's Library",
-        "recommended_on": "Life's Library",
-        "first_recommended": "11-25-2019",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1390613592i/79550.jpg"
-    },
-    {
-        "book_id": 13,
-        "book_title": "All Systems Red ",
-        "author": "Martha Wells",
+        "book_id": 347,
+        "book_title": "The Last Graduate",
+        "author": "Naomi Novik",
         "who_recommended": "Hank",
-        "media_title": "Life's Library",
-        "recommended_on": "Life's Library",
-        "first_recommended": "03-11-2020",
+        "media_title": null,
+        "recommended_on": "Twitter",
+        "first_recommended": null,
         "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631585309i/32758901.jpg"
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1604391810i/55559887.jpg"
     },
     {
-        "book_id": 14,
-        "book_title": "Teaching a Stone to Talk",
-        "author": "Annie Dillard",
-        "who_recommended": "John",
-        "media_title": "Life's Library",
-        "recommended_on": "Life's Library",
-        "first_recommended": "09-26-2020",
-        "type": "nonfiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1385256610i/12534.jpg"
-    },
-    {
-        "book_id": 15,
-        "book_title": "Roll of Thunder, Hear My Cry",
-        "author": "Mildred D. Taylor",
-        "who_recommended": "John",
-        "media_title": "Their Eyes Were Watching God Podcast",
-        "recommended_on": "Life's Library",
-        "first_recommended": "01-20-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388345167i/310459.jpg"
-    },
-    {
-        "book_id": 16,
-        "book_title": "American Gods",
-        "author": "Neil Gainman",
-        "who_recommended": "John",
-        "media_title": "Song of Achillies QnA",
-        "recommended_on": "Life's Library",
-        "first_recommended": "06-24-2021",
-        "type": "fiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1462924585i/30165203.jpg"
-    },
-    {
-        "book_id": 17,
-        "book_title": "The Dawn of Everything",
-        "author": "David Graeber and David Wengrow",
-        "who_recommended": "John",
-        "media_title": "Life's Library Livestream",
-        "recommended_on": "Life's Library",
-        "first_recommended": "11-01-2021",
-        "type": "nonfiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1717101866i/56269264.jpg"
-    },
-    {
-        "book_id": 18,
-        "book_title": "The Gold Bug Variations",
-        "author": "Richard Powers",
-        "who_recommended": "John",
-        "media_title": "A Field Guide to Getting Lost by Rebecca Solnit QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "03-15-2019",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439346118i/23012.jpg"
-    },
-    {
-        "book_id": 19,
-        "book_title": "The House of the Spirits",
-        "author": "Isabel Allende",
-        "who_recommended": "John",
-        "media_title": "The House of Spirits QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "06-06-2019",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1621672028i/9328.jpg"
-    },
-    {
-        "book_id": 20,
-        "book_title": "Stories of Your Life and Others",
-        "author": "Ted Chiang",
-        "who_recommended": "John",
-        "media_title": "Stories of your Life and Others QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "08-29-2019",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356138316i/223380.jpg"
-    },
-    {
-        "book_id": 21,
-        "book_title": "Ulysses",
-        "author": "James Joyce",
-        "who_recommended": "John",
-        "media_title": "Stories of your Life and Others QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "08-29-2019",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1428891345i/338798.jpg"
-    },
-    {
-        "book_id": 22,
-        "book_title": "In the Company of the Poor: Conversations with Dr. Paul Farmer and Fr. Gustavo Gutierrez",
-        "author": "Paul Farmer",
-        "who_recommended": "John",
-        "media_title": "Mountains Beyond Mountains QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "09-10-2019",
-        "type": "nonfiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1369820914i/17470207.jpg"
-    },
-    {
-        "book_id": 23,
-        "book_title": "A Heartbreaking Work of Staggering Genius",
-        "author": "Dave Eggers",
-        "who_recommended": "John",
-        "media_title": "The Summer BookQnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "11-25-2019",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327714834i/4953.jpg"
-    },
-    {
-        "book_id": 24,
-        "book_title": "Howl's Moving Castle",
-        "author": "Diana Wynne Jones",
-        "who_recommended": "John",
-        "media_title": "Howl\u00e2\u20ac\u2122s Moving CastleQnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "01-23-2020",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630502935i/6294.jpg"
-    },
-    {
-        "book_id": 25,
-        "book_title": "Journey to the Centre [Interior] of the Earth",
-        "author": "Jules Verne",
-        "who_recommended": "John",
-        "media_title": "Journey to the Centre [Interior] of the Earth QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "05-21-2020",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1678245564i/78852184.jpg"
-    },
-    {
-        "book_id": 26,
-        "book_title": "Faces in the Crowd",
-        "author": "Valeria Luiselli",
-        "who_recommended": "John",
-        "media_title": "Faces in the CrowdQnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "09-17-2020",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1413517356i/18528038.jpg"
-    },
-    {
-        "book_id": 27,
-        "book_title": "The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power",
-        "author": "Shoshana Zuboff",
-        "who_recommended": "John",
-        "media_title": "Faces in the Crowd QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "09-17-2020",
-        "type": "nonfiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1521733914i/26195941.jpg"
-    },
-    {
-        "book_id": 28,
-        "book_title": "Everything I Never Told You",
-        "author": "Celeste Ng",
-        "who_recommended": "John",
-        "media_title": "On ImmunityQnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "11-09-2020",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386795198i/18693763.jpg"
-    },
-    {
-        "book_id": 29,
-        "book_title": "Fevers, Feuds, and Diamonds: Ebola and the Ravages of History",
-        "author": "Paul Farmer",
-        "who_recommended": "John",
-        "media_title": "PIH QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "12-14-2020",
-        "type": "nonfiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586828713i/45892236.jpg"
-    },
-    {
-        "book_id": 30,
-        "book_title": "The Amistad Rebellion: An Atlantic Odyssey of Slavery and Freedom",
-        "author": "Markus Rediker",
-        "who_recommended": "John",
-        "media_title": "PIH QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "12-14-2020",
-        "type": "nonfiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1340807244i/13589160.jpg"
-    },
-    {
-        "book_id": 31,
-        "book_title": "Whose Names Are Unknown",
-        "author": "Sanora Babb",
-        "who_recommended": "John",
-        "media_title": "PIH QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "12-14-2020",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328814759i/1197158.jpg"
-    },
-    {
-        "book_id": 32,
-        "book_title": "Oreo ",
-        "author": "Fran Ross",
-        "who_recommended": "John",
-        "media_title": "Their Eyes Were Watching God QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "02-21-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1358755478i/1007499.jpg"
-    },
-    {
-        "book_id": 33,
-        "book_title": " Pilgrim at Tinker Creek",
-        "author": "Annie Dillard",
-        "who_recommended": "John",
-        "media_title": "How to Write an Autobiographical Novel QnA",
-        "recommended_on": "Life's Library Discord ",
-        "first_recommended": "03-29-2021",
-        "type": "nonfiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388717988i/12527.jpg"
-    },
-    {
-        "book_id": 34,
-        "book_title": "Stormlight Archives",
-        "author": "Brandon Sanderson",
+        "book_id": 348,
+        "book_title": "The Golden Enclaves",
+        "author": "Naomi Novik",
         "who_recommended": "Hank",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
+        "media_title": null,
+        "recommended_on": "Twitter",
+        "first_recommended": null,
         "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659905828i/7235533.jpg"
-    },
-    {
-        "book_id": 35,
-        "book_title": "Devil in a Blue Dress",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336545202i/37100.jpg"
-    },
-    {
-        "book_id": 36,
-        "book_title": "Infinite Jest",
-        "author": "David Foster Wallace",
-        "who_recommended": "John",
-        "media_title": "I'm John Green, author of The Fault in Our Stars and Turtles All the Way Down. I'm in a bus for the next eight hours. AMA.",
-        "recommended_on": "Reddit AMA",
-        "first_recommended": "10-12-2017",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1446876799i/6759.jpg"
-    },
-    {
-        "book_id": 37,
-        "book_title": "The Pale King",
-        "author": "David Foster Wallace",
-        "who_recommended": "John",
-        "media_title": "I'm John Green, author of The Fault in Our Stars and Turtles All the Way Down. I'm in a bus for the next eight hours. AMA.",
-        "recommended_on": "Reddit AMA",
-        "first_recommended": "10-12-2017",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1324405497i/9443405.jpg"
-    },
-    {
-        "book_id": 38,
-        "book_title": "Textbook Amy Krouse Rosenthal",
-        "author": "Amy Krouse Rosenthal",
-        "who_recommended": "John",
-        "media_title": "Auld Lang Syne",
-        "recommended_on": "The Anthropecene Reviewed",
-        "first_recommended": "05-18-2021",
-        "type": "nonfiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1460910709i/27833861.jpg"
-    },
-    {
-        "book_id": 39,
-        "book_title": "Between Two Kingdoms",
-        "author": "Suleika Jaouad",
-        "who_recommended": "Hank",
-        "media_title": "We're In Your Inbox!! ",
-        "recommended_on": "We're Here Newsletter",
-        "first_recommended": "03-29-2024",
-        "type": "nonfiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1579614170i/50743767.jpg"
-    },
-    {
-        "book_id": 40,
-        "book_title": "Warriors books",
-        "author": "Erin Hunter",
-        "who_recommended": "Hank",
-        "media_title": "Geese and Awesome Socks",
-        "recommended_on": "We're Here Newsletter",
-        "first_recommended": "04-26-2024",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552089220i/41571738.jpg"
-    },
-    {
-        "book_id": 41,
-        "book_title": "A Body Made of Glass",
-        "author": "Caroline Crampton",
-        "who_recommended": "John",
-        "media_title": "Pelicans and World Records",
-        "recommended_on": "We're Here Newsletter",
-        "first_recommended": "05-17-2024",
-        "type": "nonfiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1691094866i/181109940.jpg"
-    },
-    {
-        "book_id": 42,
-        "book_title": "The Thursday Murder Club Series",
-        "author": "Richard Osman",
-        "who_recommended": "Hank",
-        "media_title": "Goldfish and Expensive Candles",
-        "recommended_on": "We're Here Newsletter",
-        "first_recommended": "06-07-2024",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/nophoto/book/111x148.png"
-    },
-    {
-        "book_id": 43,
-        "book_title": "Gratitude Journal",
-        "author": "Kurzgesagt",
-        "who_recommended": "John",
-        "media_title": "Gratitude Journal",
-        "recommended_on": "We're Here Newsletter",
-        "first_recommended": "11-29-2024",
-        "type": "nonfiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1584097390i/50498399.jpg"
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1642265345i/55858638.jpg"
     },
     {
         "book_id": 45,
@@ -900,6 +482,39 @@
         "first_recommended": "04-28-2009",
         "type": "fiction",
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386924665i/270363.jpg"
+    },
+    {
+        "book_id": 339,
+        "book_title": "Gifts",
+        "author": "Ursula K. Le Guin",
+        "who_recommended": "Hank",
+        "media_title": "10 Book Reviews in 4 Minutes",
+        "recommended_on": "Youtube: Vlogbrothers",
+        "first_recommended": "04-28-2009",
+        "type": "fiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1441129920i/13648.jpg"
+    },
+    {
+        "book_id": 340,
+        "book_title": "Vioces",
+        "author": "Ursula K. Le Guin",
+        "who_recommended": "Hank",
+        "media_title": "10 Book Reviews in 4 Minutes",
+        "recommended_on": "Youtube: Vlogbrothers",
+        "first_recommended": "04-28-2009",
+        "type": "fiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1441499185i/13647.jpg"
+    },
+    {
+        "book_id": 341,
+        "book_title": "Powers",
+        "author": "Ursula K. Le Guin",
+        "who_recommended": "Hank",
+        "media_title": "10 Book Reviews in 4 Minutes",
+        "recommended_on": "Youtube: Vlogbrothers",
+        "first_recommended": "04-28-2009",
+        "type": "fiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1440562098i/68020.jpg"
     },
     {
         "book_id": 85,
@@ -2321,6 +1936,50 @@
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1445606162i/27213168.jpg"
     },
     {
+        "book_id": 342,
+        "book_title": "The Raven Boys",
+        "author": "Maggie Stiefvater ",
+        "who_recommended": "John",
+        "media_title": "Exactly Like the Human Sternum",
+        "recommended_on": "Youtube: Vlogbrothers",
+        "first_recommended": "12-06-2016",
+        "type": "fiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1573508485i/17675462.jpg"
+    },
+    {
+        "book_id": 343,
+        "book_title": "The Dream Thieves",
+        "author": "Maggie Stiefvater ",
+        "who_recommended": "John",
+        "media_title": "Exactly Like the Human Sternum",
+        "recommended_on": "Youtube: Vlogbrothers",
+        "first_recommended": "12-06-2016",
+        "type": "fiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1477103777i/17347389.jpg"
+    },
+    {
+        "book_id": 344,
+        "book_title": "Blue Lily, Lily Blue",
+        "author": "Maggie Stiefvater ",
+        "who_recommended": "John",
+        "media_title": "Exactly Like the Human Sternum",
+        "recommended_on": "Youtube: Vlogbrothers",
+        "first_recommended": "12-06-2016",
+        "type": "fiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1477103826i/17378508.jpg"
+    },
+    {
+        "book_id": 345,
+        "book_title": "The Raven King",
+        "author": "Maggie Stiefvater ",
+        "who_recommended": "John",
+        "media_title": "Exactly Like the Human Sternum",
+        "recommended_on": "Youtube: Vlogbrothers",
+        "first_recommended": "12-06-2016",
+        "type": "fiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1477103790i/17378527.jpg"
+    },
+    {
         "book_id": 215,
         "book_title": "1984",
         "author": "George Orwell",
@@ -2497,6 +2156,28 @@
         "cover_url": "https://www.goodreads.com/book/show/34523152-the-water-will-come?from_search=true&from_srp=true&qid=0B2Uf0EJZC&rank=1"
     },
     {
+        "book_id": 36,
+        "book_title": "Infinite Jest",
+        "author": "David Foster Wallace",
+        "who_recommended": "John",
+        "media_title": "I'm John Green, author of The Fault in Our Stars and Turtles All the Way Down. I'm in a bus for the next eight hours. AMA.",
+        "recommended_on": "Reddit AMA",
+        "first_recommended": "10-12-2017",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1446876799i/6759.jpg"
+    },
+    {
+        "book_id": 37,
+        "book_title": "The Pale King",
+        "author": "David Foster Wallace",
+        "who_recommended": "John",
+        "media_title": "I'm John Green, author of The Fault in Our Stars and Turtles All the Way Down. I'm in a bus for the next eight hours. AMA.",
+        "recommended_on": "Reddit AMA",
+        "first_recommended": "10-12-2017",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1324405497i/9443405.jpg"
+    },
+    {
         "book_id": 231,
         "book_title": "An Introduction to Global Health Delivery",
         "author": "Joia S Mukherjee",
@@ -2574,6 +2255,39 @@
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1512071034i/36692478.jpg"
     },
     {
+        "book_id": 6,
+        "book_title": "The Calculating Stars",
+        "author": "Mary Robinette Kowal",
+        "who_recommended": "Hank",
+        "media_title": "Hank AMA No Spoilers",
+        "recommended_on": "FAART Discord",
+        "first_recommended": "10-04-2018",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1539850192i/33080122.jpg"
+    },
+    {
+        "book_id": 7,
+        "book_title": "Akata Witch",
+        "author": "Nnedi Okorafor",
+        "who_recommended": "Hank",
+        "media_title": "Hank AMA No Spoilers",
+        "recommended_on": "FAART Discord",
+        "first_recommended": "10-04-2018",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347794798i/7507944.jpg"
+    },
+    {
+        "book_id": 8,
+        "book_title": "Akata Warrior",
+        "author": "Nnedi Okorafor",
+        "who_recommended": "Hank",
+        "media_title": "Hank AMA No Spoilers",
+        "recommended_on": "FAART Discord",
+        "first_recommended": "10-04-2018",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1484628903i/18746776.jpg"
+    },
+    {
         "book_id": 238,
         "book_title": "If You Come Softly",
         "author": "Jacqueline Woodson",
@@ -2583,6 +2297,39 @@
         "first_recommended": "10-16-2018",
         "type": "fiction",
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1172281920i/159903.jpg"
+    },
+    {
+        "book_id": 9,
+        "book_title": "A Field Guide to Getting Lost ",
+        "author": "Rebecca Solnit",
+        "who_recommended": "John",
+        "media_title": "Life's Library",
+        "recommended_on": "Life's Library",
+        "first_recommended": "02-05-2019",
+        "type": "nonfiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1422984723i/76479.jpg"
+    },
+    {
+        "book_id": 18,
+        "book_title": "The Gold Bug Variations",
+        "author": "Richard Powers",
+        "who_recommended": "John",
+        "media_title": "A Field Guide to Getting Lost by Rebecca Solnit QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "03-15-2019",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439346118i/23012.jpg"
+    },
+    {
+        "book_id": 10,
+        "book_title": "We Crossed a Bridge and It Trembled",
+        "author": "Wendy Pearlman",
+        "who_recommended": "John",
+        "media_title": "Life's Library",
+        "recommended_on": "Life's Library",
+        "first_recommended": "03-19-2019",
+        "type": "nonfiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1482905295i/32051585.jpg"
     },
     {
         "book_id": 239,
@@ -2651,6 +2398,17 @@
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545496316i/38532177.jpg"
     },
     {
+        "book_id": 19,
+        "book_title": "The House of the Spirits",
+        "author": "Isabel Allende",
+        "who_recommended": "John",
+        "media_title": "The House of Spirits QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "06-06-2019",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1621672028i/9328.jpg"
+    },
+    {
         "book_id": 245,
         "book_title": "The Value of Everything: Making and Taking in the Global Economy",
         "author": "Mariana Mazzucato",
@@ -2684,6 +2442,50 @@
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1722944318i/6149.jpg"
     },
     {
+        "book_id": 20,
+        "book_title": "Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "who_recommended": "John",
+        "media_title": "Stories of your Life and Others QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "08-29-2019",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356138316i/223380.jpg"
+    },
+    {
+        "book_id": 21,
+        "book_title": "Ulysses",
+        "author": "James Joyce",
+        "who_recommended": "John",
+        "media_title": "Stories of your Life and Others QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "08-29-2019",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1428891345i/338798.jpg"
+    },
+    {
+        "book_id": 11,
+        "book_title": "Mountains Beyond Mountains: The Quest of Dr. Paul Farmer, a Man Who Would Cure the World",
+        "author": "Tracy Kidder",
+        "who_recommended": "John",
+        "media_title": "Life's Library",
+        "recommended_on": "Life's Library",
+        "first_recommended": "09-03-2019",
+        "type": "nonfiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433156001i/10235.jpg"
+    },
+    {
+        "book_id": 22,
+        "book_title": "In the Company of the Poor: Conversations with Dr. Paul Farmer and Fr. Gustavo Gutierrez",
+        "author": "Paul Farmer",
+        "who_recommended": "John",
+        "media_title": "Mountains Beyond Mountains QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "09-10-2019",
+        "type": "nonfiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1369820914i/17470207.jpg"
+    },
+    {
         "book_id": 248,
         "book_title": "The Human Stain",
         "author": "Philip Roth",
@@ -2704,6 +2506,50 @@
         "first_recommended": "11-07-2019",
         "type": "fiction",
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442169447i/52397.jpg"
+    },
+    {
+        "book_id": 12,
+        "book_title": "The Summer Book",
+        "author": "Tove Jansson",
+        "who_recommended": "John",
+        "media_title": "Life's Library",
+        "recommended_on": "Life's Library",
+        "first_recommended": "11-25-2019",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1390613592i/79550.jpg"
+    },
+    {
+        "book_id": 23,
+        "book_title": "A Heartbreaking Work of Staggering Genius",
+        "author": "Dave Eggers",
+        "who_recommended": "John",
+        "media_title": "The Summer BookQnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "11-25-2019",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327714834i/4953.jpg"
+    },
+    {
+        "book_id": 24,
+        "book_title": "Howl's Moving Castle",
+        "author": "Diana Wynne Jones",
+        "who_recommended": "John",
+        "media_title": "Howl\u00e2\u20ac\u2122s Moving CastleQnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "01-23-2020",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630502935i/6294.jpg"
+    },
+    {
+        "book_id": 13,
+        "book_title": "All Systems Red ",
+        "author": "Martha Wells",
+        "who_recommended": "Hank",
+        "media_title": "Life's Library",
+        "recommended_on": "Life's Library",
+        "first_recommended": "03-11-2020",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631585309i/32758901.jpg"
     },
     {
         "book_id": 250,
@@ -2772,6 +2618,39 @@
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586827318i/44890080.jpg"
     },
     {
+        "book_id": 25,
+        "book_title": "Journey to the Centre [Interior] of the Earth",
+        "author": "Jules Verne",
+        "who_recommended": "John",
+        "media_title": "Journey to the Centre [Interior] of the Earth QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "05-21-2020",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1678245564i/78852184.jpg"
+    },
+    {
+        "book_id": 4,
+        "book_title": "Piecing Me Together",
+        "author": "Renee Watson",
+        "who_recommended": "John",
+        "media_title": "JUN 14, 2017 Livestream",
+        "recommended_on": "Dear Hank and John Patreon: Monthly Livestream",
+        "first_recommended": "06-14-2020",
+        "type": "fiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1466549070i/25566675.jpg"
+    },
+    {
+        "book_id": 5,
+        "book_title": "The Hate U Give",
+        "author": "Angie Thomas",
+        "who_recommended": "John",
+        "media_title": "JUN 14, 2017 Livestream",
+        "recommended_on": "Dear Hank and John Patreon: Monthly Livestream",
+        "first_recommended": "06-15-2020",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1636851138i/58651625.jpg"
+    },
+    {
         "book_id": 257,
         "book_title": "The Bell Jar",
         "author": "Sylvia Plath",
@@ -2805,6 +2684,39 @@
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348897705i/4045950.jpg"
     },
     {
+        "book_id": 26,
+        "book_title": "Faces in the Crowd",
+        "author": "Valeria Luiselli",
+        "who_recommended": "John",
+        "media_title": "Faces in the CrowdQnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "09-17-2020",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1413517356i/18528038.jpg"
+    },
+    {
+        "book_id": 27,
+        "book_title": "The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power",
+        "author": "Shoshana Zuboff",
+        "who_recommended": "John",
+        "media_title": "Faces in the Crowd QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "09-17-2020",
+        "type": "nonfiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1521733914i/26195941.jpg"
+    },
+    {
+        "book_id": 14,
+        "book_title": "Teaching a Stone to Talk",
+        "author": "Annie Dillard",
+        "who_recommended": "John",
+        "media_title": "Life's Library",
+        "recommended_on": "Life's Library",
+        "first_recommended": "09-26-2020",
+        "type": "nonfiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1385256610i/12534.jpg"
+    },
+    {
         "book_id": 260,
         "book_title": "Promise Me, Dad: A Year of Hope, Hardship, and Purpose",
         "author": "Joe Biden",
@@ -2814,6 +2726,17 @@
         "first_recommended": "10-27-2020",
         "type": "nonfiction",
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1504625848i/35633343.jpg"
+    },
+    {
+        "book_id": 28,
+        "book_title": "Everything I Never Told You",
+        "author": "Celeste Ng",
+        "who_recommended": "John",
+        "media_title": "On ImmunityQnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "11-09-2020",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386795198i/18693763.jpg"
     },
     {
         "book_id": 261,
@@ -2838,6 +2761,50 @@
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607132695i/56164548.jpg"
     },
     {
+        "book_id": 29,
+        "book_title": "Fevers, Feuds, and Diamonds: Ebola and the Ravages of History",
+        "author": "Paul Farmer",
+        "who_recommended": "John",
+        "media_title": "PIH QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "12-14-2020",
+        "type": "nonfiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586828713i/45892236.jpg"
+    },
+    {
+        "book_id": 30,
+        "book_title": "The Amistad Rebellion: An Atlantic Odyssey of Slavery and Freedom",
+        "author": "Markus Rediker",
+        "who_recommended": "John",
+        "media_title": "PIH QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "12-14-2020",
+        "type": "nonfiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1340807244i/13589160.jpg"
+    },
+    {
+        "book_id": 31,
+        "book_title": "Whose Names Are Unknown",
+        "author": "Sanora Babb",
+        "who_recommended": "John",
+        "media_title": "PIH QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "12-14-2020",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328814759i/1197158.jpg"
+    },
+    {
+        "book_id": 15,
+        "book_title": "Roll of Thunder, Hear My Cry",
+        "author": "Mildred D. Taylor",
+        "who_recommended": "John",
+        "media_title": "Their Eyes Were Watching God Podcast",
+        "recommended_on": "Life's Library",
+        "first_recommended": "01-20-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388345167i/310459.jpg"
+    },
+    {
         "book_id": 263,
         "book_title": "Just Kids",
         "author": "Patti Smith",
@@ -2847,6 +2814,39 @@
         "first_recommended": "02-04-2021",
         "type": "nonfiction",
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1706691407i/206318521.jpg"
+    },
+    {
+        "book_id": 32,
+        "book_title": "Oreo ",
+        "author": "Fran Ross",
+        "who_recommended": "John",
+        "media_title": "Their Eyes Were Watching God QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "02-21-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1358755478i/1007499.jpg"
+    },
+    {
+        "book_id": 33,
+        "book_title": " Pilgrim at Tinker Creek",
+        "author": "Annie Dillard",
+        "who_recommended": "John",
+        "media_title": "How to Write an Autobiographical Novel QnA",
+        "recommended_on": "Life's Library Discord ",
+        "first_recommended": "03-29-2021",
+        "type": "nonfiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388717988i/12527.jpg"
+    },
+    {
+        "book_id": 38,
+        "book_title": "Textbook Amy Krouse Rosenthal",
+        "author": "Amy Krouse Rosenthal",
+        "who_recommended": "John",
+        "media_title": "Auld Lang Syne",
+        "recommended_on": "The Anthropecene Reviewed",
+        "first_recommended": "05-18-2021",
+        "type": "nonfiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1460910709i/27833861.jpg"
     },
     {
         "book_id": 264,
@@ -2871,6 +2871,17 @@
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600787680i/54860610.jpg"
     },
     {
+        "book_id": 16,
+        "book_title": "American Gods",
+        "author": "Neil Gainman",
+        "who_recommended": "John",
+        "media_title": "Song of Achillies QnA",
+        "recommended_on": "Life's Library",
+        "first_recommended": "06-24-2021",
+        "type": "fiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1462924585i/30165203.jpg"
+    },
+    {
         "book_id": 266,
         "book_title": "Narratives, Nerdfighters and New Media",
         "author": "Jennifer Burek Pierce",
@@ -2891,6 +2902,39 @@
         "first_recommended": "09-21-2021",
         "type": "nonfiction",
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1418306701i/12530.jpg"
+    },
+    {
+        "book_id": 1,
+        "book_title": "Dear America: Notes of an Undocumented Citizen",
+        "author": "Jose Antonio Vargas ",
+        "who_recommended": "John",
+        "media_title": "11 Great Books You Probably Haven't Read",
+        "recommended_on": "Bookshop.org",
+        "first_recommended": "09-28-2021",
+        "type": "nonfiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1534366728i/36544614.jpg"
+    },
+    {
+        "book_id": 2,
+        "book_title": "The Hour of Our Death",
+        "author": "Philippe Aries ",
+        "who_recommended": "John",
+        "media_title": "12 Great Books You Probably Haven't Read",
+        "recommended_on": "Bookshop.org",
+        "first_recommended": "09-28-2021",
+        "type": "nonfiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1175359092i/507908.jpg"
+    },
+    {
+        "book_id": 3,
+        "book_title": "The End of Everything",
+        "author": "Katie Mack ",
+        "who_recommended": "John",
+        "media_title": "13 Great Books You Probably Haven't Read",
+        "recommended_on": "Bookshop.org",
+        "first_recommended": "09-28-2021",
+        "type": "nonfiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1574199214i/52767659.jpg"
     },
     {
         "book_id": 268,
@@ -3012,6 +3056,215 @@
         "first_recommended": "09-28-2021",
         "type": "nonfiction",
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394326064i/9381964.jpg"
+    },
+    {
+        "book_id": 17,
+        "book_title": "The Dawn of Everything",
+        "author": "David Graeber and David Wengrow",
+        "who_recommended": "John",
+        "media_title": "Life's Library Livestream",
+        "recommended_on": "Life's Library",
+        "first_recommended": "11-01-2021",
+        "type": "nonfiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1717101866i/56269264.jpg"
+    },
+    {
+        "book_id": 34,
+        "book_title": "Stormlight Archives",
+        "author": "Brandon Sanderson",
+        "who_recommended": "Hank",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659905828i/7235533.jpg"
+    },
+    {
+        "book_id": 35,
+        "book_title": "Devil in a Blue Dress",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336545202i/37100.jpg"
+    },
+    {
+        "book_id": 323,
+        "book_title": "A Red Death",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1171055721i/84548.jpg"
+    },
+    {
+        "book_id": 324,
+        "book_title": "White Butterfly",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1641411642i/189086.jpg"
+    },
+    {
+        "book_id": 325,
+        "book_title": "Black Betty",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1645487891i/84555.jpg"
+    },
+    {
+        "book_id": 326,
+        "book_title": "A Little Yellow Dog",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336545412i/84549.jpg"
+    },
+    {
+        "book_id": 327,
+        "book_title": "Gone Fishin",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336545457i/64383.jpg"
+    },
+    {
+        "book_id": 328,
+        "book_title": "Bad Boy Brawly Brown",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1297740279i/84545.jpg"
+    },
+    {
+        "book_id": 329,
+        "book_title": "Six Easy Pieces",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336545504i/64381.jpg"
+    },
+    {
+        "book_id": 330,
+        "book_title": "Little Scarlet",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401251366i/102847.jpg"
+    },
+    {
+        "book_id": 331,
+        "book_title": "Cinnamon Kiss",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1389396218i/84530.jpg"
+    },
+    {
+        "book_id": 332,
+        "book_title": "Blonde Faith",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1425318611i/597170.jpg"
+    },
+    {
+        "book_id": 333,
+        "book_title": "Little Green",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542231146i/15981687.jpg"
+    },
+    {
+        "book_id": 334,
+        "book_title": "Rose Gold",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1393787135i/20342538.jpg"
+    },
+    {
+        "book_id": 335,
+        "book_title": "Charcoal Joe",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1449477643i/27068670.jpg"
+    },
+    {
+        "book_id": 336,
+        "book_title": "Blood Grove",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1592878866i/53915343.jpg"
+    },
+    {
+        "book_id": 337,
+        "book_title": "Farewell, Amethystine",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1705005881i/201559449.jpg"
+    },
+    {
+        "book_id": 338,
+        "book_title": "Gray Dawn",
+        "author": "Walter Mosley",
+        "who_recommended": "John",
+        "media_title": "DH&J November Patreon Livestream!",
+        "recommended_on": "Patreon",
+        "first_recommended": "11-01-2021",
+        "type": "fiction",
+        "cover_url": "https://m.media-amazon.com/images/I/81ZTURdBinL._UF1000,1000_QL80_.jpg"
     },
     {
         "book_id": 279,
@@ -3377,6 +3630,28 @@
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1652105350i/59575939.jpg"
     },
     {
+        "book_id": 39,
+        "book_title": "Between Two Kingdoms",
+        "author": "Suleika Jaouad",
+        "who_recommended": "Hank",
+        "media_title": "We're In Your Inbox!! ",
+        "recommended_on": "We're Here Newsletter",
+        "first_recommended": "03-29-2024",
+        "type": "nonfiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1579614170i/50743767.jpg"
+    },
+    {
+        "book_id": 40,
+        "book_title": "Warriors books",
+        "author": "Erin Hunter",
+        "who_recommended": "Hank",
+        "media_title": "Geese and Awesome Socks",
+        "recommended_on": "We're Here Newsletter",
+        "first_recommended": "04-26-2024",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552089220i/41571738.jpg"
+    },
+    {
         "book_id": 312,
         "book_title": "The Mars Trilogy",
         "author": "Kim Stanley Robinson",
@@ -3386,6 +3661,28 @@
         "first_recommended": "04-26-2024",
         "type": "fiction",
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403182454i/40364.jpg"
+    },
+    {
+        "book_id": 41,
+        "book_title": "A Body Made of Glass",
+        "author": "Caroline Crampton",
+        "who_recommended": "John",
+        "media_title": "Pelicans and World Records",
+        "recommended_on": "We're Here Newsletter",
+        "first_recommended": "05-17-2024",
+        "type": "nonfiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1691094866i/181109940.jpg"
+    },
+    {
+        "book_id": 42,
+        "book_title": "The Thursday Murder Club Series",
+        "author": "Richard Osman",
+        "who_recommended": "Hank",
+        "media_title": "Goldfish and Expensive Candles",
+        "recommended_on": "We're Here Newsletter",
+        "first_recommended": "06-07-2024",
+        "type": "fiction",
+        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/nophoto/book/111x148.png"
     },
     {
         "book_id": 313,
@@ -3454,26 +3751,15 @@
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1642217248i/58616830.jpg"
     },
     {
-        "book_id": 319,
-        "book_title": "Jurassic Park",
-        "author": "Michael Crichton",
-        "who_recommended": "Hank",
-        "media_title": null,
-        "recommended_on": null,
-        "first_recommended": null,
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529604411i/40604658.jpg"
-    },
-    {
-        "book_id": 321,
-        "book_title": "Mostly Dead Things",
-        "author": "Kristen Arnett",
-        "who_recommended": "Hank",
-        "media_title": null,
-        "recommended_on": "Twitter",
-        "first_recommended": null,
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1543595464i/41817578.jpg"
+        "book_id": 43,
+        "book_title": "Gratitude Journal",
+        "author": "Kurzgesagt",
+        "who_recommended": "John",
+        "media_title": "Gratitude Journal",
+        "recommended_on": "We're Here Newsletter",
+        "first_recommended": "11-29-2024",
+        "type": "nonfiction",
+        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1584097390i/50498399.jpg"
     },
     {
         "book_id": 322,
@@ -3485,291 +3771,5 @@
         "first_recommended": null,
         "type": "fiction",
         "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1668621616i/58388343.jpg"
-    },
-    {
-        "book_id": 323,
-        "book_title": "A Red Death",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1171055721i/84548.jpg"
-    },
-    {
-        "book_id": 324,
-        "book_title": "White Butterfly",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1641411642i/189086.jpg"
-    },
-    {
-        "book_id": 325,
-        "book_title": "Black Betty",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1645487891i/84555.jpg"
-    },
-    {
-        "book_id": 326,
-        "book_title": "A Little Yellow Dog",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336545412i/84549.jpg"
-    },
-    {
-        "book_id": 327,
-        "book_title": "Gone Fishin",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336545457i/64383.jpg"
-    },
-    {
-        "book_id": 328,
-        "book_title": "Bad Boy Brawly Brown",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1297740279i/84545.jpg"
-    },
-    {
-        "book_id": 329,
-        "book_title": "Six Easy Pieces",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336545504i/64381.jpg"
-    },
-    {
-        "book_id": 330,
-        "book_title": "Little Scarlet",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401251366i/102847.jpg"
-    },
-    {
-        "book_id": 331,
-        "book_title": "Cinnamon Kiss",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1389396218i/84530.jpg"
-    },
-    {
-        "book_id": 332,
-        "book_title": "Blonde Faith",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1425318611i/597170.jpg"
-    },
-    {
-        "book_id": 333,
-        "book_title": "Little Green",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542231146i/15981687.jpg"
-    },
-    {
-        "book_id": 334,
-        "book_title": "Rose Gold",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1393787135i/20342538.jpg"
-    },
-    {
-        "book_id": 335,
-        "book_title": "Charcoal Joe",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1449477643i/27068670.jpg"
-    },
-    {
-        "book_id": 336,
-        "book_title": "Blood Grove",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1592878866i/53915343.jpg"
-    },
-    {
-        "book_id": 337,
-        "book_title": "Farewell, Amethystine",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1705005881i/201559449.jpg"
-    },
-    {
-        "book_id": 338,
-        "book_title": "Gray Dawn",
-        "author": "Walter Mosley",
-        "who_recommended": "John",
-        "media_title": "DH&J November Patreon Livestream!",
-        "recommended_on": "Patreon",
-        "first_recommended": "11-01-2021",
-        "type": "fiction",
-        "cover_url": "https://m.media-amazon.com/images/I/81ZTURdBinL._UF1000,1000_QL80_.jpg"
-    },
-    {
-        "book_id": 339,
-        "book_title": "Gifts",
-        "author": "Ursula K. Le Guin",
-        "who_recommended": "Hank",
-        "media_title": "10 Book Reviews in 4 Minutes",
-        "recommended_on": "Youtube: Vlogbrothers",
-        "first_recommended": "04-28-2009",
-        "type": "fiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1441129920i/13648.jpg"
-    },
-    {
-        "book_id": 340,
-        "book_title": "Vioces",
-        "author": "Ursula K. Le Guin",
-        "who_recommended": "Hank",
-        "media_title": "10 Book Reviews in 4 Minutes",
-        "recommended_on": "Youtube: Vlogbrothers",
-        "first_recommended": "04-28-2009",
-        "type": "fiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1441499185i/13647.jpg"
-    },
-    {
-        "book_id": 341,
-        "book_title": "Powers",
-        "author": "Ursula K. Le Guin",
-        "who_recommended": "Hank",
-        "media_title": "10 Book Reviews in 4 Minutes",
-        "recommended_on": "Youtube: Vlogbrothers",
-        "first_recommended": "04-28-2009",
-        "type": "fiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1440562098i/68020.jpg"
-    },
-    {
-        "book_id": 342,
-        "book_title": "The Raven Boys",
-        "author": "Maggie Stiefvater ",
-        "who_recommended": "John",
-        "media_title": "Exactly Like the Human Sternum",
-        "recommended_on": "Youtube: Vlogbrothers",
-        "first_recommended": "12-06-2016",
-        "type": "fiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1573508485i/17675462.jpg"
-    },
-    {
-        "book_id": 343,
-        "book_title": "The Dream Thieves",
-        "author": "Maggie Stiefvater ",
-        "who_recommended": "John",
-        "media_title": "Exactly Like the Human Sternum",
-        "recommended_on": "Youtube: Vlogbrothers",
-        "first_recommended": "12-06-2016",
-        "type": "fiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1477103777i/17347389.jpg"
-    },
-    {
-        "book_id": 344,
-        "book_title": "Blue Lily, Lily Blue",
-        "author": "Maggie Stiefvater ",
-        "who_recommended": "John",
-        "media_title": "Exactly Like the Human Sternum",
-        "recommended_on": "Youtube: Vlogbrothers",
-        "first_recommended": "12-06-2016",
-        "type": "fiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1477103826i/17378508.jpg"
-    },
-    {
-        "book_id": 345,
-        "book_title": "The Raven King",
-        "author": "Maggie Stiefvater ",
-        "who_recommended": "John",
-        "media_title": "Exactly Like the Human Sternum",
-        "recommended_on": "Youtube: Vlogbrothers",
-        "first_recommended": "12-06-2016",
-        "type": "fiction",
-        "cover_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1477103790i/17378527.jpg"
-    },
-    {
-        "book_id": 346,
-        "book_title": "A Deadly Education",
-        "author": "Naomi Novik",
-        "who_recommended": "Hank",
-        "media_title": null,
-        "recommended_on": "Twitter",
-        "first_recommended": null,
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596909044i/50548197.jpg"
-    },
-    {
-        "book_id": 347,
-        "book_title": "The Last Graduate",
-        "author": "Naomi Novik",
-        "who_recommended": "Hank",
-        "media_title": null,
-        "recommended_on": "Twitter",
-        "first_recommended": null,
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1604391810i/55559887.jpg"
-    },
-    {
-        "book_id": 348,
-        "book_title": "The Golden Enclaves",
-        "author": "Naomi Novik",
-        "who_recommended": "Hank",
-        "media_title": null,
-        "recommended_on": "Twitter",
-        "first_recommended": null,
-        "type": "fiction",
-        "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1642265345i/55858638.jpg"
     }
 ]

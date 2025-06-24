@@ -1,1 +1,15 @@
-<p>vlogbrothers works!</p>
+<main>
+    <h2 class="year">{{bookCount}} Book{{ bookCount > 1 ? 's' : ''}} {{listTitle}}</h2>
+    @for (book of books; track $index) {
+        <div class="book">
+            <img [src]="book.cover_url" [alt]="book.book_title" class="bookCover"/>
+            <section class="info">
+                <p class="bookTitle"><b>{{book.book_title}}</b> by {{book.author}}</p>
+                <p>Recommended by {{book.who_recommended}} in "{{book.media_title}}"</p>
+                <p>{{book.recommended_on}}</p>
+                <p>First recommended on {{book.first_recommended}}</p>
+                <p>{{book.type}}</p>
+            </section>
+        </div>
+    }
+</main>
