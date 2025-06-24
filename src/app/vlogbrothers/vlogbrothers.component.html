@@ -1,15 +1,24 @@
 <main>
-    <h2 class="year">{{bookCount}} Book{{ bookCount > 1 ? 's' : ''}} {{listTitle}}</h2>
-    @for (book of books; track $index) {
-        <div class="book">
-            <img [src]="book.cover_url" [alt]="book.book_title" class="bookCover"/>
-            <section class="info">
-                <p class="bookTitle"><b>{{book.book_title}}</b> by {{book.author}}</p>
-                <p>Recommended by {{book.who_recommended}} in "{{book.media_title}}"</p>
-                <p>{{book.recommended_on}}</p>
-                <p>First recommended on {{book.first_recommended}}</p>
-                <p>{{book.type}}</p>
-            </section>
+    <ul>
+        <div id="filterButtons">
+            <button (click)="filterList('brother', 'Hank')">Just Hank</button>
+            <button (click)="filterList('brother', 'John')">Just John</button>
+            <button (click)="filterList('type', 'fiction')">Fiction</button>
+            <button (click)="filterList('type', 'nonfiction')">Nonfiction</button>
+            <button (click)="resetBooksList()">Reset</button>
         </div>
+    </ul>
+    <h2 class="year">{{bookCount}} {{listTitle}}</h2>
+    @for (book of booksToShow; track $index) {
+    <div class="book">
+        <img [src]="book.cover_url" [alt]="book.book_title" class="bookCover" />
+        <section class="info">
+            <p class="bookTitle"><b>{{book.book_title}}</b> by {{book.author}}</p>
+            <p>Recommended by {{book.who_recommended}} in "{{book.media_title}}"</p>
+            <p>{{book.recommended_on}}</p>
+            <p>First recommended on {{book.first_recommended}}</p>
+            <p>{{book.type}}</p>
+        </section>
+    </div>
     }
 </main>
