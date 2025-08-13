@@ -826,5 +826,32 @@
     "moreInfo": "https://app.thestorygraph.com/books/b3027e37-fa29-4149-9999-5478e74d3dc5",
     "dateRead": "06/20/2025",
     "tags": ["Fiction","Fantasy","Science Fiction","Funny","Fast-paced"]
+  },
+  {
+    "title": "Zoey Punches the Future in the Dick",
+    "authors": ["Jason Pargin"],
+    "isbn": 9781250195791,
+    "cover": "https://cdn.thestorygraph.com/plx92ipnlauhimk6ilbbqrvjgc7s",
+    "moreInfo": "https://beta.thestorygraph.com/books/c9444938-855f-4d04-b55c-e3c692f293e5",
+    "dateRead": "07/26/2025",
+    "tags": ["Fiction","Fantasy","Science Fiction","Funny","dark","Fast-paced"]
+  },
+  {
+    "title": "To Be Taught, If Fortunate",
+    "authors": ["Becky Chambers"],
+    "isbn": 9781473697164,
+    "cover": "https://cdn.thestorygraph.com/8ep9zjc581zefkzfyhtizqjnz8u5",
+    "moreInfo": "https://app.thestorygraph.com/books/fca2631f-b3e2-4b9d-a2fd-4c1ec5e4d3f7",
+    "dateRead": "08/02/2025",
+    "tags": ["Fiction","LGBTQA+","Science Fiction","Adventurous","Emotional","Reflective","Medium-paced"]
+  },
+  {
+    "title": "We Are Legion (We Are Bob) ",
+    "authors": ["Dennis E. Taylor"],
+    "isbn": 9781668221570,
+    "cover": "https://cdn.thestorygraph.com/hgfy6uy4amzzou4wx0w8gcqb4hwj",
+    "moreInfo": "https://app.thestorygraph.com/books/55afb1e7-3fac-41d1-af0d-d15ac2448d4b",
+    "dateRead": "08/13/2025",
+    "tags": ["Fiction","Science Fiction","Adventurous","Funny","Lighthearted","Medium-paced"]
   }
 ]
