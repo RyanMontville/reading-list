@@ -846,12 +846,30 @@
     "tags": ["Fiction","LGBTQA+","Science Fiction","Adventurous","Emotional","Reflective","Medium-paced"]
   },
   {
-    "title": "We Are Legion (We Are Bob) ",
+    "title": "We Are Legion (We Are Bob)",
     "authors": ["Dennis E. Taylor"],
     "isbn": 9781668221570,
     "cover": "https://cdn.thestorygraph.com/hgfy6uy4amzzou4wx0w8gcqb4hwj",
     "moreInfo": "https://app.thestorygraph.com/books/55afb1e7-3fac-41d1-af0d-d15ac2448d4b",
     "dateRead": "08/13/2025",
     "tags": ["Fiction","Science Fiction","Adventurous","Funny","Lighthearted","Medium-paced"]
+  },
+  {
+    "title": "For We Are Many",
+    "authors": ["Dennis E. Taylor"],
+    "isbn": 9781668221594,
+    "cover": "https://cdn.thestorygraph.com/4n0mfc00ja47zbhw4413fospu0hh",
+    "moreInfo": "https://app.thestorygraph.com/books/d6019bd4-3cc3-4d0b-b015-e0f5401244f2",
+    "dateRead": "08/13/2025",
+    "tags": ["Fiction","Science Fiction","Adventurous","Funny","Medium-paced"]
+  },
+  {
+    "title": "All These Worlds",
+    "authors": ["Dennis E. Taylor"],
+    "isbn": 9781668221617,
+    "cover": "https://cdn.thestorygraph.com/5nbcj3il66lnjzwlmyuo9mxejnnk",
+    "moreInfo": "https://app.thestorygraph.com/books/79979e0a-df98-4309-8346-dd970100d08b",
+    "dateRead": "08/13/2025",
+    "tags": ["Fiction","Science Fiction","Adventurous","Funny","Medium-paced"]
   }
 ]
