@@ -90,6 +90,16 @@ def create_database_and_tables(db_name):
         cursor.execute(create_table_sql)
         conn.commit()
         print("Table 'vlogbrothers_recommendations' created or already exists successfully.")
+
+        create_table_sql = """
+        CREATE TABLE IF NOT EXISTS years (
+            book_iyear_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            year INTEGER NOT NULL
+        );
+        """
+        cursor.execute(create_table_sql)
+        conn.commit()
+        print("Table 'years' created or already exists successfully.")
         
 #-----------------------------------------------------------------------------------------
     except sqlite3.Error as e:
@@ -103,4 +113,4 @@ def create_database_and_tables(db_name):
 
 
 if __name__ == "__main__":
-    create_database_and_tables("books.sqlite")
+    create_database_and_tables("database/books.sqlite")

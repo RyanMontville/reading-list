@@ -5,7 +5,9 @@ const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 let booksList: Book[] = [];
 let booksToDisplay: Book[] = [];
-let years = [2021, 2022, 2023, 2024, 2025];
+let years: number[] = [];
+let authors: string[] = [];
+let tags: string[] = [];
 const filterButtonsSection = document.getElementById('filter-buttons');
 const pageTitle: HTMLElement | null = document.getElementById('page-title');
 const booksContainer: HTMLElement | null = document.getElementById('books-contianer');
@@ -13,6 +15,7 @@ const booksContainer: HTMLElement | null = document.getElementById('books-contia
 function moreFilters() {
     if (filterButtonsSection) {
         filterButtonsSection.innerHTML = '';
+        //Filter by year
         const filterByYearButton = document.createElement('button');
         const filterByYear = document.createTextNode('Filter by Year');
         filterByYearButton.appendChild(filterByYear);
@@ -29,6 +32,22 @@ function moreFilters() {
             });
         });
         //Create filter by author
+        const filterByAuthorButton = document.createElement('button');
+        const filterByAuthor = document.createTextNode('Filter by Author');
+        filterByAuthorButton.appendChild(filterByAuthor);
+        filterByAuthorButton.setAttribute('type', 'button');
+        filterByAuthorButton.addEventListener('click', () => {
+            filterButtonsSection.innerHTML = '';
+            authors.forEach(author => {
+                let authorButton = document.createElement('button');
+                authorButton.setAttribute('type', 'button');
+                let authorText = document.createTextNode(author);
+                authorButton.appendChild(authorText);
+                authorButton.addEventListener('click', () => filterForAuthor(author));
+                filterButtonsSection.appendChild(authorButton);
+            });
+
+        });
         //Create filter by genre/tag
         //Maybe sort by title?
         let comingSoonP = document.createElement('p');
@@ -36,6 +55,7 @@ function moreFilters() {
         comingSoonP.appendChild(comingSoonText);
         filterButtonsSection.appendChild(comingSoonP);
         filterButtonsSection.appendChild(filterByYearButton);
+        filterButtonsSection.appendChild(filterByAuthorButton);
     }
 }
 
@@ -112,6 +132,49 @@ function filterForYear(year: number) {
     }
 }
 
+function filterForAuthor(author: string) {
+    if (filterButtonsSection) {
+        filterButtonsSection.innerHTML = '';
+        addResetButton();
+        addMoreFiltersButton();
+    }
+    if (booksContainer) {
+        booksContainer.innerHTML = '';
+        booksToDisplay = booksList.filter(book => book.authors.includes(author));
+    }
+    displayBooks();
+    if (pageTitle) {
+        const filtered = document.createTextNode(`Displaying ${booksToDisplay.length} books by ${author}`);
+        pageTitle.innerHTML = '';
+        pageTitle.appendChild(filtered);
+    }
+}
+
+function loadAuthors(bokList: Book[]) {
+    bokList.forEach((book: Book) => {
+        book.authors.forEach(author => {
+            if (!authors.includes(author)) {
+                authors.push(author);
+            }
+        })
+    });
+    authors.sort((a, b) => {
+        const lastNameA = a.split(" ").pop() ?? "";
+        const lastNameB = b.split(" ").pop() ?? "";
+        return lastNameA.localeCompare(lastNameB);
+    })
+}
+
+function loadTags(bokList: Book[]) {
+    bokList.forEach((book: Book) => {
+        book.tags.forEach(tag => {
+            if (!tags.includes(tag)) {
+                tags.push(tag);
+            }
+        })
+    })
+}
+
 async function loadBooks() {
     try {
         let response = await fetch(DATA_URL);
@@ -120,8 +183,11 @@ async function loadBooks() {
             throw new Error(`Error loading data. Status: ${response.status}`);
         }
         let data = await response.json();
-        booksList = data as Book[];
+        booksList = data['books'] as Book[];
         booksToDisplay = booksList;
+        years = data['years'];
+        loadAuthors(data['books'] as Book[]);
+        loadTags(data['books'] as Book[]);
         resetToDefault();
         displayBooks();
     } catch (error) {
@@ -149,7 +215,7 @@ function displayBooks() {
                 const bookInfo = document.createElement('section');
                 //Book Title
                 const h3: HTMLElement = document.createElement('h3');
-                const title = document.createTextNode(book['book_title']);
+                const title = document.createTextNode(book['bookTitle']);
                 h3.appendChild(title);
                 bookInfo.appendChild(h3);
                 //Authors

@@ -1,6 +1,6 @@
 import json
 import sqlite3
-conn = sqlite3.connect("books.sqlite")
+conn = sqlite3.connect("database/books.sqlite")
 cursor = conn.cursor()
 
 # book_id, book_title, isbn, cover_url, more_info, date_read = books
@@ -66,6 +66,14 @@ def get_next_id():
     result = cursor.fetchone()
     return result[0] + 1
 
+def get_years():
+    cursor.execute("SELECT year FROM years")
+    rows = cursor.fetchall()
+    years = []
+    for row in rows:
+        years.append(row[0])
+    return years
+
 # book_id, book_title, isbn, cover_url, more_info, date_read = books
 # author_id, author_name = authors
 # tag_id, tag_name = tags
@@ -80,6 +88,11 @@ def add_new_book():
     book_cover = input("Book Cover URL: ")
     more_info = input("Storygraph URL: ")
     date_read = input("Date Read: ")
+    year_read = int(date_read.split("/")[2])
+    all_years = get_years()
+    if year_read not in all_years:
+        cursor.execute(f"INSERT INTO years (year) VALUES ({year_read})")
+        conn.commit()
     book_tags_string = input("book tags (seperate with /): ")
     book_tags = book_tags_string.split("/")
 
@@ -130,6 +143,7 @@ def get_tags_for_book_id(book_id):
     return tags
 
 def generate_json_file():
+    all_years = get_years()
     book_list = []
     cursor.execute("SELECT * FROM BOOKS ORDER BY book_id ASC")
     books = cursor.fetchall()
@@ -138,7 +152,7 @@ def generate_json_file():
         authors = get_authors_for_book_id(book_id)
         tags = get_tags_for_book_id(book_id)
         new_book_object = {
-            "book_title": book_title,
+            "bookTitle": book_title,
             "authors": authors,
             "isbn": isbn,
             "cover": cover_url,
@@ -147,7 +161,12 @@ def generate_json_file():
             "tags": tags
         }
         book_list.append(new_book_object)
+    full_json_object = {
+        "years": all_years,
+        "books": book_list 
+    }
     with open("books.json", 'w') as f:
-        json.dump(book_list, f, ensure_ascii=False, indent=4)
+        json.dump(full_json_object, f, ensure_ascii=False, indent=4)
 
+# add_new_book()
 generate_json_file()

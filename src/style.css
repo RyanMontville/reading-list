@@ -47,10 +47,6 @@ body {
     z-index: 1;
 }
 
-body:has(#my-popup[open]) {
-    overflow: hidden;
-}
-
 .material-symbols-outlined {
     vertical-align: middle;
 }
@@ -73,6 +69,13 @@ header {
 header h1 {
     font-size: 2em;
     text-align: center;
+}
+
+#filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #page-title {
@@ -104,6 +107,7 @@ header h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #books-contianer article section ul li {
