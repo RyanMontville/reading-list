@@ -1734,7 +1734,9 @@
     },
     {
         "book_title": "Heaven's River ",
-        "authors": ["Dennis E. Taylor"],
+        "authors": [
+            "Dennis E. Taylor"
+        ],
         "isbn": 9781668221631,
         "cover": "https://cdn.thestorygraph.com/5nz6bytt1iwz6tkr4d98zz377aoy",
         "moreInfo": "https://app.thestorygraph.com/books/7abe319d-2250-4aa1-9600-60c9b7429acb",
@@ -1749,7 +1751,9 @@
     },
     {
         "book_title": "Everyone in My Family Has Killed Someone ",
-        "authors": ["Benjamin Stevenson"],
+        "authors": [
+            "Benjamin Stevenson"
+        ],
         "isbn": 9780063279025,
         "cover": "https://cdn.thestorygraph.com/m6fmgb5nto30om77k6fedtwun18v",
         "moreInfo": "https://app.thestorygraph.com/books/60c7a483-e994-4bc0-9656-6e1a637a8320",
@@ -1766,7 +1770,9 @@
     },
     {
         "book_title": "The Kaiju Preservation Society ",
-        "authors": ["John Scalzi"],
+        "authors": [
+            "John Scalzi"
+        ],
         "isbn": 9780765389121,
         "cover": "https://cdn.thestorygraph.com/l4fpys3g81k0zfzpcwksinsqqbgt",
         "moreInfo": "https://app.thestorygraph.com/books/af548a61-2cf5-4943-a51f-3531b94adac3",
@@ -1782,7 +1788,9 @@
     },
     {
         "book_title": "The Archive of the Forgotten ",
-        "authors": ["A.J. Hackwith"],
+        "authors": [
+            "A.J. Hackwith"
+        ],
         "isbn": 9781984806390,
         "cover": "https://cdn.thestorygraph.com/ngns6mzvzdfukyeqjfzdd2k6gcal",
         "moreInfo": "https://app.thestorygraph.com/books/27b188c6-db19-42d7-a363-ccdd8a391fce",

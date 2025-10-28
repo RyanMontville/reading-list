@@ -1,8 +1,0 @@
-<main>
-    <div [@listAnimation]="booksToShow.length">
-        <h2 class="year">{{bookCount}} Book{{ bookCount > 1 ? 's' : ''}} {{listTitle}}</h2>
-        @for (book of booksToShow; track book) {
-            <app-book [book]="book" />
-        }
-    </div>
-</main>

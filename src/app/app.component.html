@@ -1,8 +1,0 @@
-<h2 class="app-title"><span class="material-symbols-outlined header-icon"> menu_book </span> Reading List</h2>
-<button (click)="toggleMenu()" class="menu-button"><span class="material-symbols-outlined">
-    menu
-    </span></button>
-@if (isMenuOpen) {
-    <app-menu class="menu" [@menuAnimation]="menuState" />
-}
-<router-outlet />
