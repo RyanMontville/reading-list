@@ -3,15 +3,36 @@ const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 let booksList = [];
 let booksToDisplay = [];
+let years = [2021, 2022, 2023, 2024, 2025];
 const filterButtonsSection = document.getElementById('filter-buttons');
-const moreFiltersSection = document.getElementById('more-filters-section');
 const pageTitle = document.getElementById('page-title');
 const booksContainer = document.getElementById('books-contianer');
 function moreFilters() {
-    if (moreFiltersSection) {
-        moreFiltersSection.style.display = 'block';
-        moreFiltersSection.innerHTML = '';
+    if (filterButtonsSection) {
+        filterButtonsSection.innerHTML = '';
         const filterByYearButton = document.createElement('button');
+        const filterByYear = document.createTextNode('Filter by Year');
+        filterByYearButton.appendChild(filterByYear);
+        filterByYearButton.setAttribute('type', 'button');
+        filterByYearButton.addEventListener('click', () => {
+            filterButtonsSection.innerHTML = '';
+            years.forEach(year => {
+                let yearButton = document.createElement('button');
+                yearButton.setAttribute('type', 'button');
+                let yearText = document.createTextNode(`${year}`);
+                yearButton.appendChild(yearText);
+                yearButton.addEventListener('click', () => filterForYear(year));
+                filterButtonsSection.appendChild(yearButton);
+            });
+        });
+        //Create filter by author
+        //Create filter by genre/tag
+        //Maybe sort by title?
+        let comingSoonP = document.createElement('p');
+        let comingSoonText = document.createTextNode('More Filters coming soon');
+        comingSoonP.appendChild(comingSoonText);
+        filterButtonsSection.appendChild(comingSoonP);
+        filterButtonsSection.appendChild(filterByYearButton);
     }
 }
 function addMoreFiltersButton() {
@@ -27,6 +48,20 @@ function addMoreFiltersButton() {
         filterButtonsSection.appendChild(moreFiltersButton);
     }
 }
+function addResetButton() {
+    const resetButton = document.createElement('button');
+    resetButton.setAttribute('type', 'button');
+    const resetText = document.createTextNode('Display All Books');
+    resetButton.appendChild(resetText);
+    resetButton.addEventListener('click', () => {
+        booksToDisplay = booksList;
+        resetToDefault();
+        displayBooks();
+    });
+    if (filterButtonsSection) {
+        filterButtonsSection.appendChild(resetButton);
+    }
+}
 function resetToDefault() {
     if (filterButtonsSection) {
         filterButtonsSection.innerHTML = '';
@@ -39,7 +74,7 @@ function resetToDefault() {
         filterByYearButton.appendChild(filterByYear);
         filterButtonsSection.appendChild(filterByYearButton);
     }
-    //addMoreFiltersButton();
+    addMoreFiltersButton();
     if (pageTitle) {
         pageTitle.innerHTML = '';
         const allBooks = document.createTextNode(`Displaying ${booksList.length} books`);
@@ -49,28 +84,20 @@ function resetToDefault() {
 function filterForYear(year) {
     if (filterButtonsSection) {
         filterButtonsSection.innerHTML = '';
-        const resetButton = document.createElement('button');
-        resetButton.setAttribute('type', 'button');
-        const resetText = document.createTextNode('Display All Books');
-        resetButton.appendChild(resetText);
-        resetButton.addEventListener('click', () => {
-            booksToDisplay = booksList;
-            resetToDefault();
-            displayBooks();
-        });
-        filterButtonsSection.appendChild(resetButton);
-        //addMoreFiltersButton();
+        addResetButton();
+        addMoreFiltersButton();
     }
+    const yearToFilter = new Date(year, 0, 1).getFullYear();
     if (booksContainer) {
         booksContainer.innerHTML = '';
         booksToDisplay = booksList.filter(book => {
             const dateObj = new Date(book['dateRead']);
-            return dateObj.getFullYear() === currentYear;
+            return dateObj.getFullYear() === yearToFilter;
         });
         displayBooks();
     }
     if (pageTitle) {
-        const filtered = document.createTextNode(`Displaying ${booksToDisplay.length} books read in ${currentYear}`);
+        const filtered = document.createTextNode(`Displaying ${booksToDisplay.length} books read in ${yearToFilter}`);
         pageTitle.innerHTML = '';
         pageTitle.appendChild(filtered);
     }
