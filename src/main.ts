@@ -49,19 +49,36 @@ function moreFilters() {
 
         });
         //Create filter by genre/tag
+        const filterByTagButton = document.createElement('button');
+        const filterByTag = document.createTextNode('Filter by Tag');
+        filterByTagButton.appendChild(filterByTag);
+        filterByTagButton.setAttribute('type', 'button');
+        filterByTagButton.addEventListener('click', () => {
+            filterButtonsSection.innerHTML = '';
+            tags.forEach(tag => {
+                let tagButton = document.createElement('button');
+                tagButton.setAttribute('type', 'button');
+                let tagText = document.createTextNode(tag);
+                tagButton.appendChild(tagText);
+                tagButton.addEventListener('click', () => filterForTag(tag));
+                filterButtonsSection.appendChild(tagButton);
+            });
+        })
         //Maybe sort by title?
-        let comingSoonP = document.createElement('p');
-        let comingSoonText = document.createTextNode('More Filters coming soon');
-        comingSoonP.appendChild(comingSoonText);
-        filterButtonsSection.appendChild(comingSoonP);
-        filterButtonsSection.appendChild(filterByYearButton);
         filterButtonsSection.appendChild(filterByAuthorButton);
+        filterButtonsSection.appendChild(filterByTagButton);
+        filterButtonsSection.appendChild(filterByYearButton);
     }
 }
 
 function addMoreFiltersButton() {
     const moreFiltersButton: HTMLElement = document.createElement('button');
-    let moreText = document.createTextNode('More Filters');
+    const filterIcon = document.createElement('span');
+    filterIcon.setAttribute('class', 'material-symbols-outlined');
+    const filterIconName = document.createTextNode('filter_list');
+    filterIcon.appendChild(filterIconName);
+    moreFiltersButton.appendChild(filterIcon);
+    let moreText = document.createTextNode(' Filters');
     moreFiltersButton.appendChild(moreText);
     moreFiltersButton.setAttribute('id', 'more-filters');
     moreFiltersButton.setAttribute('type', 'button');
@@ -120,7 +137,6 @@ function filterForYear(year: number) {
         booksContainer.innerHTML = '';
         booksToDisplay = booksList.filter(book => {
             const dateObj: Date = new Date(book['dateRead']);
-
             return dateObj.getFullYear() === yearToFilter;
         });
         displayBooks();
@@ -150,6 +166,24 @@ function filterForAuthor(author: string) {
     }
 }
 
+function filterForTag(tag: string) {
+    if (filterButtonsSection) {
+        filterButtonsSection.innerHTML = '';
+        addResetButton();
+        addMoreFiltersButton();
+    }
+    if (booksContainer) {
+        booksContainer.innerHTML = '';
+        booksToDisplay = booksList.filter(book => book.tags.includes(tag));
+    }
+    displayBooks();
+    if (pageTitle) {
+        const filtered = document.createTextNode(`Displaying ${booksToDisplay.length} books matching ${tag}`);
+        pageTitle.innerHTML = '';
+        pageTitle.appendChild(filtered);
+    }
+}
+
 function loadAuthors(bokList: Book[]) {
     bokList.forEach((book: Book) => {
         book.authors.forEach(author => {
@@ -171,8 +205,9 @@ function loadTags(bokList: Book[]) {
             if (!tags.includes(tag)) {
                 tags.push(tag);
             }
-        })
-    })
+        });
+    });
+    tags.sort();
 }
 
 async function loadBooks() {
