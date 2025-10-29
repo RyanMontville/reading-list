@@ -1,3 +1,4 @@
+import { bookDB } from "./booksDatabase.js";
 const DATA_URL = 'books.json';
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
@@ -196,25 +197,29 @@ function loadTags(bokList) {
     });
     tags.sort();
 }
-async function loadBooks() {
-    try {
-        let response = await fetch(DATA_URL);
-        if (!response.ok) {
-            //Create error message here
-            throw new Error(`Error loading data. Status: ${response.status}`);
+function loadYears(bokList) {
+    bokList.forEach((book) => {
+        let year = new Date(book['dateRead']).getFullYear();
+        if (!years.includes(year)) {
+            years.push(year);
         }
-        let data = await response.json();
-        booksList = data['books'];
+    });
+    years.sort();
+}
+async function startApp() {
+    try {
+        await bookDB.initializeData();
+        booksList = await bookDB.getAllBooks();
         booksToDisplay = booksList;
-        years = data['years'];
-        loadAuthors(data['books']);
-        loadTags(data['books']);
+        loadTags(booksList);
+        loadAuthors(booksList);
+        loadYears(booksList);
         resetToDefault();
         displayBooks();
+        console.log("Application loaded with books:", booksList);
     }
-    catch (error) {
-        //Create error message here
-        console.error("Failed to load data: ", error);
+    catch (e) {
+        console.error("Critical error during application startup:", e);
     }
 }
 function displayBooks() {
@@ -278,5 +283,4 @@ function displayBooks() {
         }
     }
 }
-loadBooks();
-export {};
+startApp();

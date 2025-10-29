@@ -1,4 +1,5 @@
-import { Book } from "./utils";
+import { Book } from "./utils.js";
+import { bookDB } from "./booksDatabase.js";
 
 const DATA_URL = 'books.json';
 const currentDate = new Date();
@@ -210,24 +211,30 @@ function loadTags(bokList: Book[]) {
     tags.sort();
 }
 
-async function loadBooks() {
-    try {
-        let response = await fetch(DATA_URL);
-        if (!response.ok) {
-            //Create error message here
-            throw new Error(`Error loading data. Status: ${response.status}`);
+function loadYears(bokList: Book[]) {
+    bokList.forEach((book: Book) => {
+        let year = new Date(book['dateRead']).getFullYear();
+        if (!years.includes(year)) {
+            years.push(year);
         }
-        let data = await response.json();
-        booksList = data['books'] as Book[];
+    });
+    years.sort();
+}
+
+async function startApp() {
+    try {
+        await bookDB.initializeData();
+        booksList = await bookDB.getAllBooks();
         booksToDisplay = booksList;
-        years = data['years'];
-        loadAuthors(data['books'] as Book[]);
-        loadTags(data['books'] as Book[]);
+        loadTags(booksList);
+        loadAuthors(booksList);
+        loadYears(booksList);
         resetToDefault();
         displayBooks();
-    } catch (error) {
-        //Create error message here
-        console.error("Failed to load data: ", error);
+        console.log("Application loaded with books:", booksList);
+
+    } catch (e) {
+        console.error("Critical error during application startup:", e);
     }
 }
 
@@ -291,8 +298,7 @@ function displayBooks() {
                 booksContainer.appendChild(newBook);
             });
         }
-
     }
 }
 
-loadBooks();
+startApp();

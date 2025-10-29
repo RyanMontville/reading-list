@@ -143,15 +143,16 @@ def get_tags_for_book_id(book_id):
     return tags
 
 def generate_json_file():
-    all_years = get_years()
     book_list = []
     cursor.execute("SELECT * FROM BOOKS ORDER BY book_id ASC")
     books = cursor.fetchall()
+    json_book_id = 1
 
     for book_id, book_title, isbn, cover_url, more_info, date_read in books:
         authors = get_authors_for_book_id(book_id)
         tags = get_tags_for_book_id(book_id)
         new_book_object = {
+            "id": json_book_id,
             "bookTitle": book_title,
             "authors": authors,
             "isbn": isbn,
@@ -161,12 +162,9 @@ def generate_json_file():
             "tags": tags
         }
         book_list.append(new_book_object)
-    full_json_object = {
-        "years": all_years,
-        "books": book_list 
-    }
+        json_book_id += 1
     with open("books.json", 'w') as f:
-        json.dump(full_json_object, f, ensure_ascii=False, indent=4)
+        json.dump(book_list, f, ensure_ascii=False, indent=4)
 
 # add_new_book()
 generate_json_file()
