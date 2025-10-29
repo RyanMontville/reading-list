@@ -82,6 +82,10 @@ header h1 {
     text-align: center;
 }
 
+main {
+    margin-bottom: 70px;
+}
+
 #books-contianer {
     max-width: 900px;
     margin: 5px auto;

@@ -256,7 +256,6 @@ function displayBooks() {
                 const dateRead = document.createTextNode(`Date Read: ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`);
                 readP.appendChild(dateRead);
                 bookInfo.appendChild(readP);
-                newBook.appendChild(bookInfo);
                 //Storygraph link
                 const storyGraphLink = document.createElement('a');
                 const icon = document.createElement('span');
@@ -278,6 +277,7 @@ function displayBooks() {
                     tagsList.appendChild(tagLi);
                     bookInfo.appendChild(tagsList);
                 });
+                newBook.appendChild(bookInfo);
                 booksContainer.appendChild(newBook);
             });
         }

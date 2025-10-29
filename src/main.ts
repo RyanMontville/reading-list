@@ -253,7 +253,7 @@ function displayBooks() {
                 //book Cover
                 const coverImg: HTMLElement = document.createElement('img');
                 coverImg.setAttribute('src', book['cover']);
-                newBook.appendChild(coverImg)
+                newBook.appendChild(coverImg);
                 const bookInfo = document.createElement('section');
                 //Book Title
                 const h3: HTMLElement = document.createElement('h3');
@@ -271,7 +271,6 @@ function displayBooks() {
                 const dateRead = document.createTextNode(`Date Read: ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`);
                 readP.appendChild(dateRead)
                 bookInfo.appendChild(readP);
-                newBook.appendChild(bookInfo);
                 //Storygraph link
                 const storyGraphLink: HTMLElement = document.createElement('a');
                 const icon = document.createElement('span');
@@ -284,7 +283,6 @@ function displayBooks() {
                 let linkText = document.createTextNode('View on StoryGraph');
                 storyGraphLink.appendChild(linkText);
                 bookInfo.appendChild(storyGraphLink);
-
                 //tags
                 const tagsList: HTMLElement = document.createElement('ul');
                 book['tags'].forEach(tag => {
@@ -294,7 +292,7 @@ function displayBooks() {
                     tagsList.appendChild(tagLi);
                     bookInfo.appendChild(tagsList);
                 })
-
+                newBook.appendChild(bookInfo);
                 booksContainer.appendChild(newBook);
             });
         }
