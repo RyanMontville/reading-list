@@ -149,7 +149,7 @@ nav {
     right: 0;
     z-index: 2;
     background-color: var(--nav-background);
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--nav-color);
     border-radius: 10px;
     padding: 10px;
     max-width: 300px;
@@ -167,7 +167,7 @@ nav li {
 }
 
 nav a {
-    color: var(--main-color);
+    color: var(--nav-color);
     text-decoration: none;
     cursor: pointer;
     display: flex;
