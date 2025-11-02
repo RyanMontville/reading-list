@@ -277,7 +277,6 @@ function displayBooks() {
                 const dateRead = document.createTextNode(`Date Read: ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`);
                 readP.appendChild(dateRead)
                 bookInfo.appendChild(readP);
-                
                 //tags
                 const tagsList: HTMLElement = document.createElement('ul');
                 book['tags'].forEach(tag => {
