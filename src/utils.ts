@@ -20,6 +20,11 @@ export interface VBRecomendation {
     coverUrl: string;
 }
 
+export interface BooksByMonthCount { 
+    monthYear: string;
+    count: number; 
+}
+
 export function fixDate(dateString: string, dateFormat: string) {
     let dateObj: Date = new Date(dateString);
     let dateTimezoneFixed: Date = new Date(dateObj.getTime() - dateObj.getTimezoneOffset() * -60000);

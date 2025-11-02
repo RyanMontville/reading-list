@@ -77,11 +77,6 @@ async function loadList() {
         }
 
         const data: VBRecomendation[] = await response.json();
-        // data.forEach(book => {
-        //     if (typeof book.firstRecommended === 'string') {
-        //         book.firstRecommended = new Date(book.firstRecommended);
-        //     }
-        // });
         VBRecomendationList = data;
         booksToDisplay = data;
         displayBooks();

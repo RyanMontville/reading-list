@@ -73,11 +73,6 @@ async function loadList() {
             throw new Error(`Failed to fetch vlogbrothers_list.json: ${response.status} ${response.statusText}`);
         }
         const data = await response.json();
-        // data.forEach(book => {
-        //     if (typeof book.firstRecommended === 'string') {
-        //         book.firstRecommended = new Date(book.firstRecommended);
-        //     }
-        // });
         VBRecomendationList = data;
         booksToDisplay = data;
         displayBooks();

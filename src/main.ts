@@ -262,8 +262,14 @@ function displayBooks() {
                 bookInfo.appendChild(h3);
                 //Authors
                 const authorsh4: HTMLElement = document.createElement('h4');
-                const authors = document.createTextNode(book['authors'].join(', '));
-                authorsh4.appendChild(authors);
+                book['authors'].forEach(author => {
+                    const authorA = document.createElement('a');
+
+                    authorA.addEventListener('click', () => filterForAuthor(author));
+                    let authorName = document.createTextNode(author);
+                    authorA.appendChild(authorName);
+                    authorsh4.appendChild(authorA);
+                });
                 bookInfo.appendChild(authorsh4);
                 //Date Read
                 const readP: HTMLElement = document.createElement('p');
@@ -271,6 +277,16 @@ function displayBooks() {
                 const dateRead = document.createTextNode(`Date Read: ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`);
                 readP.appendChild(dateRead)
                 bookInfo.appendChild(readP);
+                
+                //tags
+                const tagsList: HTMLElement = document.createElement('ul');
+                book['tags'].forEach(tag => {
+                    let tagLi: HTMLElement = document.createElement('li');
+                    let tagName = document.createTextNode(tag);
+                    tagLi.appendChild(tagName);
+                    tagsList.appendChild(tagLi);
+                    bookInfo.appendChild(tagsList);
+                });
                 //Storygraph link
                 const storyGraphLink: HTMLElement = document.createElement('a');
                 const icon = document.createElement('span');
@@ -283,15 +299,6 @@ function displayBooks() {
                 let linkText = document.createTextNode('View on StoryGraph');
                 storyGraphLink.appendChild(linkText);
                 bookInfo.appendChild(storyGraphLink);
-                //tags
-                const tagsList: HTMLElement = document.createElement('ul');
-                book['tags'].forEach(tag => {
-                    let tagLi: HTMLElement = document.createElement('li');
-                    let tagName = document.createTextNode(tag);
-                    tagLi.appendChild(tagName);
-                    tagsList.appendChild(tagLi);
-                    bookInfo.appendChild(tagsList);
-                })
                 newBook.appendChild(bookInfo);
                 booksContainer.appendChild(newBook);
             });
