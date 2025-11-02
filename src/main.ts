@@ -1,7 +1,6 @@
 import { Book } from "./utils.js";
 import { bookDB } from "./booksDatabase.js";
 
-const DATA_URL = 'books.json';
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 let booksList: Book[] = [];
@@ -284,8 +283,8 @@ function displayBooks() {
                     let tagName = document.createTextNode(tag);
                     tagLi.appendChild(tagName);
                     tagsList.appendChild(tagLi);
-                    bookInfo.appendChild(tagsList);
                 });
+                bookInfo.appendChild(tagsList);
                 //Storygraph link
                 const storyGraphLink: HTMLElement = document.createElement('a');
                 const icon = document.createElement('span');

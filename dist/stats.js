@@ -158,10 +158,6 @@ function displayDefaultStats() {
         bookCountCell.appendChild(bookCount);
         newRow.appendChild(bookCountCell);
         tbody.appendChild(newRow);
-        // let monthCountP = document.createElement('p');
-        // let monthCountText = document.createTextNode(`${monthCount['monthYear']}: ${monthCount['count']} books`);
-        // monthCountP.appendChild(monthCountText);
-        // frequencyCard.appendChild(monthCountP);
     });
     frequencyCard.appendChild(table);
     cardsContainer.appendChild(frequencyCard);
