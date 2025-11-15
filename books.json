@@ -439,7 +439,7 @@
             "Neil Patrick Harris"
         ],
         "isbn": 9780316391955,
-        "cover": "https://cdn.thestorygraph.com/zu8v55nhb1df2h6kafxfvpjhvxw4",
+        "cover": "https://cdn.thestorygraph.com/rxmuqg0dvhfi1a1cw469af1hk8kt",
         "moreInfo": "https://app.thestorygraph.com/books/ff19e134-508d-4859-a228-77124663c0ac",
         "dateRead": "12/01/2022",
         "tags": [
@@ -1781,7 +1781,7 @@
             "Dennis E. Taylor"
         ],
         "isbn": 9781668221570,
-        "cover": "https://cdn.thestorygraph.com/hgfy6uy4amzzou4wx0w8gcqb4hwj",
+        "cover": "https://cdn.thestorygraph.com/pnlhp9mi9okvvyds2k8cniekwv6q",
         "moreInfo": "https://app.thestorygraph.com/books/55afb1e7-3fac-41d1-af0d-d15ac2448d4b",
         "dateRead": "08/13/2025",
         "tags": [
@@ -1800,7 +1800,7 @@
             "Dennis E. Taylor"
         ],
         "isbn": 9781668221594,
-        "cover": "https://cdn.thestorygraph.com/4n0mfc00ja47zbhw4413fospu0hh",
+        "cover": "https://cdn.thestorygraph.com/b9jfrwb7mre8h9pmeejdr372gbqc",
         "moreInfo": "https://app.thestorygraph.com/books/d6019bd4-3cc3-4d0b-b015-e0f5401244f2",
         "dateRead": "08/13/2025",
         "tags": [
@@ -1818,7 +1818,7 @@
             "Dennis E. Taylor"
         ],
         "isbn": 9781668221617,
-        "cover": "https://cdn.thestorygraph.com/5nbcj3il66lnjzwlmyuo9mxejnnk",
+        "cover": "https://cdn.thestorygraph.com/ty6dpf14jd0b06nxyviohe9i8pm9",
         "moreInfo": "https://app.thestorygraph.com/books/79979e0a-df98-4309-8346-dd970100d08b",
         "dateRead": "08/13/2025",
         "tags": [
@@ -1836,7 +1836,7 @@
             "Dennis E. Taylor"
         ],
         "isbn": 9781668221631,
-        "cover": "https://cdn.thestorygraph.com/5nz6bytt1iwz6tkr4d98zz377aoy",
+        "cover": "https://cdn.thestorygraph.com/82ri5ffazy6okmuerqqyhurtra7o",
         "moreInfo": "https://app.thestorygraph.com/books/7abe319d-2250-4aa1-9600-60c9b7429acb",
         "dateRead": "09/12/2025",
         "tags": [
@@ -1911,7 +1911,7 @@
             "Dennis E. Taylor"
         ],
         "isbn": 9781668223451,
-        "cover": "https://cdn.thestorygraph.com/zbcgc5qcxhzhz1l8e4vzjert0okz",
+        "cover": "https://cdn.thestorygraph.com/t674i639xkalibgvqaxr1rz1j9es",
         "moreInfo": "https://app.thestorygraph.com/books/8e74411a-a5e8-4e39-bddd-b32f508bde93",
         "dateRead": "10/27/2025",
         "tags": [
@@ -1920,6 +1920,43 @@
             "Adventurous",
             "Funny",
             "Lighthearted",
+            "Fast-paced"
+        ]
+    },
+    {
+        "id": 103,
+        "bookTitle": "Redshirts",
+        "authors": [
+            "John Scalzi"
+        ],
+        "isbn": 9780765316998,
+        "cover": "https://cdn.thestorygraph.com/e61no975zxm2jxdmgs4656c8iaut",
+        "moreInfo": "https://app.thestorygraph.com/books/c953af61-de33-431f-b312-b0914e363bb6",
+        "dateRead": "11/01/2025",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Medium-paced"
+        ]
+    },
+    {
+        "id": 104,
+        "bookTitle": "Dungeon Crawler Carl",
+        "authors": [
+            "Matt Dinniman"
+        ],
+        "isbn": 9780593820247,
+        "cover": "https://cdn.thestorygraph.com/z6kttw69es009oo7igyb74q898nk",
+        "moreInfo": "https://app.thestorygraph.com/books/25876d4a-055a-4baf-947f-b2c480293555",
+        "dateRead": "11/13/2025",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
             "Fast-paced"
         ]
     }

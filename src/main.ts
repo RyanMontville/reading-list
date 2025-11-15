@@ -10,7 +10,7 @@ let authors: string[] = [];
 let tags: string[] = [];
 const filterButtonsSection = document.getElementById('filter-buttons');
 const pageTitle: HTMLElement | null = document.getElementById('page-title');
-const booksContainer: HTMLElement | null = document.getElementById('books-contianer');
+const main = document.querySelector('main') as HTMLElement;
 
 function moreFilters() {
     if (filterButtonsSection) {
@@ -133,14 +133,11 @@ function filterForYear(year: number) {
         addMoreFiltersButton();
     }
     const yearToFilter = new Date(year, 0, 1).getFullYear();
-    if (booksContainer) {
-        booksContainer.innerHTML = '';
-        booksToDisplay = booksList.filter(book => {
-            const dateObj: Date = new Date(book['dateRead']);
-            return dateObj.getFullYear() === yearToFilter;
-        });
-        displayBooks();
-    }
+    booksToDisplay = booksList.filter(book => {
+        const dateObj: Date = new Date(book['dateRead']);
+        return dateObj.getFullYear() === yearToFilter;
+    });
+    displayBooks();
     if (pageTitle) {
         const filtered = document.createTextNode(`Displaying ${booksToDisplay.length} books read in ${yearToFilter}`);
         pageTitle.innerHTML = '';
@@ -154,10 +151,7 @@ function filterForAuthor(author: string) {
         addResetButton();
         addMoreFiltersButton();
     }
-    if (booksContainer) {
-        booksContainer.innerHTML = '';
-        booksToDisplay = booksList.filter(book => book.authors.includes(author));
-    }
+    booksToDisplay = booksList.filter(book => book.authors.includes(author));
     displayBooks();
     if (pageTitle) {
         const filtered = document.createTextNode(`Displaying ${booksToDisplay.length} books by ${author}`);
@@ -172,10 +166,7 @@ function filterForTag(tag: string) {
         addResetButton();
         addMoreFiltersButton();
     }
-    if (booksContainer) {
-        booksContainer.innerHTML = '';
-        booksToDisplay = booksList.filter(book => book.tags.includes(tag));
-    }
+    booksToDisplay = booksList.filter(book => book.tags.includes(tag));
     displayBooks();
     if (pageTitle) {
         const filtered = document.createTextNode(`Displaying ${booksToDisplay.length} books matching ${tag}`);
@@ -237,70 +228,75 @@ async function startApp() {
     }
 }
 
-function displayBooks() {
-    if (booksContainer) {
-        if (booksToDisplay.length === 0) {
-            booksContainer.innerHTML = '';
-            let p: HTMLElement = document.createElement('p');
-            let noBooks = document.createTextNode('No books found');
-            p.appendChild(noBooks);
-            booksContainer.appendChild(p);
-        } else {
-            booksContainer.innerHTML = '';
-            booksToDisplay.forEach(book => {
-                const newBook: HTMLElement = document.createElement('article');
-                //book Cover
-                const coverImg: HTMLElement = document.createElement('img');
-                coverImg.setAttribute('src', book['cover']);
-                newBook.appendChild(coverImg);
-                const bookInfo = document.createElement('section');
-                //Book Title
-                const h3: HTMLElement = document.createElement('h3');
-                const title = document.createTextNode(book['bookTitle']);
-                h3.appendChild(title);
-                bookInfo.appendChild(h3);
-                //Authors
-                const authorsh4: HTMLElement = document.createElement('h4');
-                book['authors'].forEach(author => {
-                    const authorA = document.createElement('a');
 
-                    authorA.addEventListener('click', () => filterForAuthor(author));
-                    let authorName = document.createTextNode(author);
-                    authorA.appendChild(authorName);
-                    authorsh4.appendChild(authorA);
-                });
-                bookInfo.appendChild(authorsh4);
-                //Date Read
-                const readP: HTMLElement = document.createElement('p');
-                const date: Date = new Date(book['dateRead']);
-                const dateRead = document.createTextNode(`Date Read: ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`);
-                readP.appendChild(dateRead)
-                bookInfo.appendChild(readP);
-                //tags
-                const tagsList: HTMLElement = document.createElement('ul');
-                book['tags'].forEach(tag => {
-                    let tagLi: HTMLElement = document.createElement('li');
-                    let tagName = document.createTextNode(tag);
-                    tagLi.appendChild(tagName);
-                    tagsList.appendChild(tagLi);
-                });
-                bookInfo.appendChild(tagsList);
-                //Storygraph link
-                const storyGraphLink: HTMLElement = document.createElement('a');
-                const icon = document.createElement('span');
-                icon.setAttribute('class', 'material-symbols-outlined');
-                const iconName = document.createTextNode('open_in_new');
-                icon.appendChild(iconName);
-                storyGraphLink.appendChild(icon);
-                storyGraphLink.setAttribute('href', book['moreInfo']);
-                storyGraphLink.setAttribute('target', '_blank')
-                let linkText = document.createTextNode('View on StoryGraph');
-                storyGraphLink.appendChild(linkText);
-                bookInfo.appendChild(storyGraphLink);
-                newBook.appendChild(bookInfo);
-                booksContainer.appendChild(newBook);
+function displayBooks() {
+    let booksContainer: HTMLElement | null = document.getElementById('books-contianer');
+    if (booksContainer) booksContainer.remove();
+
+    if (booksToDisplay.length === 0) {
+        let booksContainer = document.createElement('div');
+        let p: HTMLElement = document.createElement('p');
+        let noBooks = document.createTextNode('No books found');
+        p.appendChild(noBooks);
+        booksContainer.appendChild(p);
+    } else {
+        // booksContainer.innerHTML = '';
+        booksContainer = booksToDisplay.reduce((acc: HTMLElement, currentBook: Book) => {
+            const newBook: HTMLElement = document.createElement('article');
+            //book Cover
+            const coverImg: HTMLElement = document.createElement('img');
+            coverImg.setAttribute('src', currentBook['cover']);
+            newBook.appendChild(coverImg);
+            const bookInfo = document.createElement('section');
+            //Book Title
+            const h3: HTMLElement = document.createElement('h3');
+            const title = document.createTextNode(currentBook['bookTitle']);
+            h3.appendChild(title);
+            bookInfo.appendChild(h3);
+            //Authors
+            const authorsh4: HTMLElement = document.createElement('h4');
+            currentBook['authors'].forEach(author => {
+                const authorA = document.createElement('a');
+
+                authorA.addEventListener('click', () => filterForAuthor(author));
+                let authorName = document.createTextNode(author);
+                authorA.appendChild(authorName);
+                authorsh4.appendChild(authorA);
             });
-        }
+            bookInfo.appendChild(authorsh4);
+            //Date Read
+            const readP: HTMLElement = document.createElement('p');
+            const date: Date = new Date(currentBook['dateRead']);
+            const dateRead = document.createTextNode(`Date Read: ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`);
+            readP.appendChild(dateRead)
+            bookInfo.appendChild(readP);
+            //tags
+            const tagsList: HTMLElement = document.createElement('ul');
+            currentBook['tags'].forEach(tag => {
+                let tagLi: HTMLElement = document.createElement('li');
+                let tagName = document.createTextNode(tag);
+                tagLi.appendChild(tagName);
+                tagsList.appendChild(tagLi);
+            });
+            bookInfo.appendChild(tagsList);
+            //Storygraph link
+            const storyGraphLink: HTMLElement = document.createElement('a');
+            const icon = document.createElement('span');
+            icon.setAttribute('class', 'material-symbols-outlined');
+            const iconName = document.createTextNode('open_in_new');
+            icon.appendChild(iconName);
+            storyGraphLink.appendChild(icon);
+            storyGraphLink.setAttribute('href', currentBook['moreInfo']);
+            storyGraphLink.setAttribute('target', '_blank')
+            let linkText = document.createTextNode('View on StoryGraph');
+            storyGraphLink.appendChild(linkText);
+            bookInfo.appendChild(storyGraphLink);
+            newBook.appendChild(bookInfo);
+            acc.appendChild(newBook);
+            return acc;
+        }, document.createElement('div'));
+        booksContainer.setAttribute('id', 'books-contianer');
+        main.appendChild(booksContainer);
     }
 }
 
