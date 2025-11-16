@@ -130,6 +130,7 @@ main {
     padding: 5px;
     border: 1px solid var(--main-color);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #books-contianer article a {

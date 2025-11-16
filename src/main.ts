@@ -275,6 +275,7 @@ function displayBooks() {
             currentBook['tags'].forEach(tag => {
                 let tagLi: HTMLElement = document.createElement('li');
                 let tagName = document.createTextNode(tag);
+                tagLi.addEventListener('click', () => filterForTag(tag))
                 tagLi.appendChild(tagName);
                 tagsList.appendChild(tagLi);
             });
