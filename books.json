@@ -1959,5 +1959,42 @@
             "Funny",
             "Fast-paced"
         ]
+    },
+    {
+        "id": 105,
+        "bookTitle": "Carl's Doomsday Scenario",
+        "authors": [
+            "Matt Dinniman"
+        ],
+        "isbn": 9798217287178,
+        "cover": "https://cdn.thestorygraph.com/j1ugcsp4veofdk908wi8006lw7rn",
+        "moreInfo": "https://app.thestorygraph.com/books/83799d8d-451f-4c66-92ea-9a31479b3cc8",
+        "dateRead": "11/24/2025",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Fast-paced"
+        ]
+    },
+    {
+        "id": 106,
+        "bookTitle": "All Systems Red ",
+        "authors": [
+            "Martha Wells"
+        ],
+        "isbn": "9781250389824",
+        "cover": "https://cdn.thestorygraph.com/yztruznhrnuobb9b0at1xekr3mjn",
+        "moreInfo": "https://app.thestorygraph.com/books/0885d5f1-edc2-435f-b17c-7e881829dbc6",
+        "dateRead": "11/26/2025",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Fast-paced"
+        ]
     }
 ]

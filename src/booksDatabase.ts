@@ -2,7 +2,7 @@ const DB_NAME = "MyBookDB";
 const STORE_NAME = "books";
 const METADATA_STORE_NAME = "metadata";
 const DB_VERSION = 1;
-const CURRENT_DATA_VERSION = 5; 
+const CURRENT_DATA_VERSION = 6; 
 
 export interface Book {
     bookTitle: string;
