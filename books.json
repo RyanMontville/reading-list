@@ -1294,7 +1294,7 @@
         "dateRead": "12/01/2024",
         "tags": [
             "Fiction",
-            "Fatasy",
+            "Fantasy",
             "Science Fiction",
             "Adventurous",
             "Funny",
@@ -1841,7 +1841,7 @@
         "dateRead": "09/12/2025",
         "tags": [
             "Fiction",
-            "Scienc Fiction",
+            "Science Fiction",
             "Adventurous",
             "Tense",
             "Medium-paced"
@@ -1985,7 +1985,7 @@
         "authors": [
             "Martha Wells"
         ],
-        "isbn": "9781250389824",
+        "isbn": 9781250389824,
         "cover": "https://cdn.thestorygraph.com/yztruznhrnuobb9b0at1xekr3mjn",
         "moreInfo": "https://app.thestorygraph.com/books/0885d5f1-edc2-435f-b17c-7e881829dbc6",
         "dateRead": "11/26/2025",
