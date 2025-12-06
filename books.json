@@ -1996,5 +1996,41 @@
             "Funny",
             "Fast-paced"
         ]
+    },
+    {
+        "id": 107,
+        "bookTitle": "Artificial Condition",
+        "authors": [
+            "Martha Wells"
+        ],
+        "isbn": 9781250186928,
+        "cover": "https://cdn.thestorygraph.com/ums75ptk3n1646o5vundzkp4b6xk",
+        "moreInfo": "https://app.thestorygraph.com/books/4786f1fb-5910-4b9e-adf5-6af645ce17fb",
+        "dateRead": "11/28/2025",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Fast-paced"
+        ]
+    },
+    {
+        "id": 108,
+        "bookTitle": "Rogue Protocol ",
+        "authors": [
+            "Martha Wells"
+        ],
+        "isbn": 9781250191786,
+        "cover": "https://cdn.thestorygraph.com/z5gq3ac39pdjieychvtl4oibjp61",
+        "moreInfo": "https://app.thestorygraph.com/books/cdb671ee-99ce-4c7b-9f6f-fe291b237c71",
+        "dateRead": "12/04/2025",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Fast-paced"
+        ]
     }
 ]

@@ -2,7 +2,7 @@ const DB_NAME = "MyBookDB";
 const STORE_NAME = "books";
 const METADATA_STORE_NAME = "metadata";
 const DB_VERSION = 1;
-const CURRENT_DATA_VERSION = 6;
+const CURRENT_DATA_VERSION = 8;
 export class BookDatabase {
     constructor() {
         this.db = null;
