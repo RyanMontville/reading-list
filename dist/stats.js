@@ -1,11 +1,19 @@
+import { createyearSelect } from "./utils.js";
 import { bookDB } from "./booksDatabase.js";
 // import * as d3 from 'd3';
+class BarPercentage {
+    constructor(color, tag) {
+        this.color = color;
+        this.tag = tag;
+    }
+}
 let booksList = [];
 let booksToDisplay = [];
 let years = [];
 let authors = [];
 let tags = [];
 let mainElement = document.querySelector('main');
+let cardsContainer = document.getElementById('cards-container');
 async function startApp() {
     try {
         await bookDB.initializeData();
@@ -83,85 +91,113 @@ function countBooksForTag(tag, asPercent) {
         return tagCount;
     }
 }
-function displayDefaultStats() {
-    let cardsContainer = document.getElementById('cards-container');
-    //Fiction vs nonfiction bar
-    let fictionNonfictionCard = document.createElement('article');
-    fictionNonfictionCard.setAttribute('class', 'card');
-    let fictionNonfictionHeaderH2 = document.createElement('h2');
-    let fictionNonfictionHeader = document.createTextNode(`${countBooksForTag("Fiction", false)} Fiction vs ${countBooksForTag("Nonfiction", false)} Nonfiction`);
-    fictionNonfictionHeaderH2.appendChild(fictionNonfictionHeader);
-    fictionNonfictionCard.appendChild(fictionNonfictionHeaderH2);
-    let fictionVsBar = document.createElement('section');
-    fictionVsBar.setAttribute('class', 'vs-bar');
-    let fictionBarPercent = document.createElement('div');
-    fictionBarPercent.setAttribute('class', 'blue');
-    fictionBarPercent.style.width = `${countBooksForTag("Fiction", true)}%`;
-    fictionVsBar.appendChild(fictionBarPercent);
-    let nonfictionBarPercent = document.createElement('div');
-    nonfictionBarPercent.setAttribute('class', 'red');
-    nonfictionBarPercent.style.width = `${countBooksForTag("Nonfiction", true)}%`;
-    fictionVsBar.appendChild(nonfictionBarPercent);
-    fictionNonfictionCard.appendChild(fictionVsBar);
-    cardsContainer.appendChild(fictionNonfictionCard);
-    //Fast/Medium/Slow pace
-    let slowMediumFastCard = document.createElement('article');
-    slowMediumFastCard.setAttribute('class', 'card');
-    let slowMediumFastH2 = document.createElement('h2');
-    let slowMediumFastHeader = document.createTextNode(`${countBooksForTag('Slow-paced', false)} Slow-paced vs ${countBooksForTag('Medium-paced', false)} Medium-paced vs ${countBooksForTag('Fast-paced', false)} Fast-paced`);
-    slowMediumFastH2.appendChild(slowMediumFastHeader);
-    slowMediumFastCard.appendChild(slowMediumFastH2);
-    cardsContainer.appendChild(slowMediumFastCard);
-    let paceVsBar = document.createElement('section');
-    paceVsBar.setAttribute('class', 'vs-bar');
-    let slowPaced = document.createElement('div');
-    slowPaced.setAttribute('class', 'red');
-    slowPaced.style.width = `${countBooksForTag('Slow-paced', true)}%`;
-    paceVsBar.appendChild(slowPaced);
-    let mediumPaced = document.createElement('div');
-    mediumPaced.setAttribute('class', 'blue');
-    mediumPaced.style.width = `${countBooksForTag('Medium-paced', true)}%`;
-    paceVsBar.appendChild(mediumPaced);
-    let fastPaced = document.createElement('div');
-    fastPaced.setAttribute('class', 'green');
-    fastPaced.style.width = `${countBooksForTag('Fast-paced', true)}%`;
-    paceVsBar.appendChild(fastPaced);
-    slowMediumFastCard.appendChild(paceVsBar);
-    //Reading frequency by month (using D3)
-    let AllMonths = calculateFrequency(0);
-    let frequencyCard = document.createElement('article');
-    frequencyCard.setAttribute('class', 'card');
-    let table = document.createElement('table');
-    let thead = document.createElement('thead');
-    let headerRow = document.createElement('tr');
-    let monthYearHeader = document.createElement('th');
+function createBarCard(cardContents) {
+    const newCard = document.createElement('article');
+    newCard.setAttribute('class', 'card');
+    const cardHeader = document.createElement('h2');
+    cardHeader.textContent = cardContents['cardTitle'];
+    newCard.appendChild(cardHeader);
+    const vsBar = cardContents['pertencages'].reduce((acc, percentage) => {
+        const newPercent = document.createElement('div');
+        newPercent.setAttribute('class', percentage['color']);
+        newPercent.style.width = `${countBooksForTag(percentage['tag'], true)}%`;
+        acc.appendChild(newPercent);
+        return acc;
+    }, document.createElement('section'));
+    vsBar.setAttribute('class', 'vs-bar');
+    newCard.appendChild(vsBar);
+    return newCard;
+}
+function displayFrequencyRead(year, months, frequencyCard) {
+    const oldDiv = document.getElementById('frequency-div');
+    const frequencyDiv = document.createElement('div');
+    frequencyDiv.setAttribute('class', 'card');
+    frequencyDiv.setAttribute('id', 'frequency-div');
+    const table = document.createElement('table');
+    const thead = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    const monthYearHeader = document.createElement('th');
     monthYearHeader.setAttribute('style', 'width: 20%;');
-    let monthYear = document.createTextNode('Month Year');
-    monthYearHeader.appendChild(monthYear);
+    if (year === 0) {
+        monthYearHeader.textContent = "Month Year";
+    }
+    else {
+        monthYearHeader.textContent = "Month";
+    }
     headerRow.appendChild(monthYearHeader);
-    let booksReadHeader = document.createElement('th');
-    let booksRead = document.createTextNode("# Book Read");
+    const booksReadHeader = document.createElement('th');
+    const booksRead = document.createTextNode("# Book Read");
     booksReadHeader.appendChild(booksRead);
     headerRow.appendChild(booksReadHeader);
     headerRow.appendChild(booksReadHeader);
-    table.appendChild(headerRow);
-    let tbody = document.createElement('tbody');
-    table.appendChild(tbody);
-    AllMonths.forEach(monthCount => {
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+    const tbody = months.reduce((acc, monthCount) => {
         let newRow = document.createElement('tr');
         let monthCell = document.createElement('td');
-        let month = document.createTextNode(monthCount['monthYear']);
-        monthCell.appendChild(month);
+        if (year === 0) {
+            monthCell.textContent = monthCount['monthYear'];
+        }
+        else {
+            monthCell.textContent = monthCount['monthYear'].split(" ")[0];
+        }
         newRow.appendChild(monthCell);
         let bookCountCell = document.createElement('td');
         let bookCount = document.createTextNode("■".repeat(monthCount['count']));
         bookCountCell.appendChild(bookCount);
         newRow.appendChild(bookCountCell);
-        tbody.appendChild(newRow);
+        acc.appendChild(newRow);
+        return acc;
+    }, document.createElement('tbody'));
+    table.appendChild(tbody);
+    frequencyDiv.appendChild(table);
+    if (oldDiv) {
+        frequencyCard.replaceChild(frequencyDiv, oldDiv);
+    }
+    else {
+        frequencyCard.appendChild(frequencyDiv);
+    }
+}
+function displayDefaultStats() {
+    //Fiction vs nonfiction bar
+    const fictionNonfictionContents = {
+        cardTitle: `${countBooksForTag("Fiction", false)} Fiction vs ${countBooksForTag("Nonfiction", false)} Nonfiction`,
+        pertencages: [
+            new BarPercentage("blue", "Fiction"),
+            new BarPercentage("red", "Nonfiction")
+        ]
+    };
+    const slowMediumFastContents = {
+        cardTitle: `${countBooksForTag('Slow-paced', false)} Slow-paced vs ${countBooksForTag('Medium-paced', false)} Medium-paced vs ${countBooksForTag('Fast-paced', false)} Fast-paced`,
+        pertencages: [
+            new BarPercentage("red", "Slow-paced"),
+            new BarPercentage("blue", "Medium-paced"),
+            new BarPercentage("green", "Fast-paced")
+        ]
+    };
+    let fictionNonfictionCard = createBarCard(fictionNonfictionContents);
+    cardsContainer.appendChild(fictionNonfictionCard);
+    let slowMediumFastCard = createBarCard(slowMediumFastContents);
+    cardsContainer.appendChild(slowMediumFastCard);
+    //Reading frequency by month (using D3)
+    const frequencyCard = document.createElement('article');
+    frequencyCard.setAttribute('class', 'card');
+    const yearsLabel = document.createElement('label');
+    yearsLabel.setAttribute('for', 'year-select');
+    yearsLabel.textContent = "Filter year: ";
+    frequencyCard.appendChild(yearsLabel);
+    const yearFilter = createyearSelect(years);
+    yearFilter.setAttribute('id', 'year-select');
+    yearFilter.addEventListener('change', (e) => {
+        const target = e.target;
+        const yearSelected = target.value;
+        let months = calculateFrequency(parseInt(yearSelected));
+        displayFrequencyRead(parseInt(yearSelected), months, frequencyCard);
     });
-    frequencyCard.appendChild(table);
+    frequencyCard.appendChild(yearFilter);
+    let AllMonths = calculateFrequency(0);
+    displayFrequencyRead(0, AllMonths, frequencyCard);
     cardsContainer.appendChild(frequencyCard);
 }
 //-------------------------------------------------------------------//
 startApp();
-//comment

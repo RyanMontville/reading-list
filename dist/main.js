@@ -1,3 +1,4 @@
+import { createLink } from "./utils.js";
 import { bookDB } from "./booksDatabase.js";
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
@@ -218,13 +219,11 @@ function displayBooks() {
         booksContainer.remove();
     if (booksToDisplay.length === 0) {
         let booksContainer = document.createElement('div');
-        let p = document.createElement('p');
-        let noBooks = document.createTextNode('No books found');
-        p.appendChild(noBooks);
-        booksContainer.appendChild(p);
+        let noBooksP = document.createElement('p');
+        noBooksP.textContent = 'No books found';
+        booksContainer.appendChild(noBooksP);
     }
     else {
-        // booksContainer.innerHTML = '';
         booksContainer = booksToDisplay.reduce((acc, currentBook) => {
             const newBook = document.createElement('article');
             //book Cover
@@ -233,47 +232,36 @@ function displayBooks() {
             newBook.appendChild(coverImg);
             const bookInfo = document.createElement('section');
             //Book Title
-            const h3 = document.createElement('h3');
-            const title = document.createTextNode(currentBook['bookTitle']);
-            h3.appendChild(title);
-            bookInfo.appendChild(h3);
+            const titleH3 = document.createElement('h3');
+            titleH3.textContent = currentBook['bookTitle'];
+            bookInfo.appendChild(titleH3);
             //Authors
-            const authorsh4 = document.createElement('h4');
-            currentBook['authors'].forEach(author => {
+            const authorsh4 = currentBook['authors'].reduce((acc, author) => {
                 const authorA = document.createElement('a');
                 authorA.addEventListener('click', () => filterForAuthor(author));
                 let authorName = document.createTextNode(author);
                 authorA.appendChild(authorName);
-                authorsh4.appendChild(authorA);
-            });
+                acc.appendChild(authorA);
+                return acc;
+            }, document.createElement('h4'));
             bookInfo.appendChild(authorsh4);
             //Date Read
             const readP = document.createElement('p');
             const date = new Date(currentBook['dateRead']);
-            const dateRead = document.createTextNode(`Date Read: ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`);
-            readP.appendChild(dateRead);
+            readP.textContent = `Date Read: ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`;
             bookInfo.appendChild(readP);
             //tags
-            const tagsList = document.createElement('ul');
-            currentBook['tags'].forEach(tag => {
-                let tagLi = document.createElement('li');
-                let tagName = document.createTextNode(tag);
+            const tagsList = currentBook['tags'].reduce((acc, tag) => {
+                const tagLi = document.createElement('li');
+                const tagName = document.createTextNode(tag);
                 tagLi.addEventListener('click', () => filterForTag(tag));
                 tagLi.appendChild(tagName);
-                tagsList.appendChild(tagLi);
-            });
+                acc.appendChild(tagLi);
+                return acc;
+            }, document.createElement('ul'));
             bookInfo.appendChild(tagsList);
             //Storygraph link
-            const storyGraphLink = document.createElement('a');
-            const icon = document.createElement('span');
-            icon.setAttribute('class', 'material-symbols-outlined');
-            const iconName = document.createTextNode('open_in_new');
-            icon.appendChild(iconName);
-            storyGraphLink.appendChild(icon);
-            storyGraphLink.setAttribute('href', currentBook['moreInfo']);
-            storyGraphLink.setAttribute('target', '_blank');
-            let linkText = document.createTextNode('View on StoryGraph');
-            storyGraphLink.appendChild(linkText);
+            const storyGraphLink = createLink('View on StoryGraph', currentBook['moreInfo'], true, 'open_in_new');
             bookInfo.appendChild(storyGraphLink);
             newBook.appendChild(bookInfo);
             acc.appendChild(newBook);

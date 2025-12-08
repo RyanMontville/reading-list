@@ -224,3 +224,11 @@ th {
 tr:nth-child(even) {
     background-color: #000;
 }
+
+select {
+    padding: 5px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    background-color: var(--main-background);
+    color: var(--main-color);
+}
