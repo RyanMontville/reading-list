@@ -71,7 +71,7 @@ function displayBooks() {
 
 async function loadList() {
     try {
-        let response = await fetch('./vlogbrothers_list.json');
+        let response = await fetch('https://raw.githubusercontent.com/RyanMontville/reading-list/refs/heads/main/data/vlogbrothers_list.json');
         if (!response.ok) {
             throw new Error(`Failed to fetch vlogbrothers_list.json: ${response.status} ${response.statusText}`);
         }
