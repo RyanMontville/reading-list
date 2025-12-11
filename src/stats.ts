@@ -1,5 +1,6 @@
-import { Book, BooksByMonthCount, createyearSelect } from "./utils.js";
+import { createyearSelect } from "./utils.js";
 import { bookDB } from "./booksDatabase.js";
+import type { Book, ItemGroupCount } from "./models.js";
 // import * as d3 from 'd3';
 
 class BarPercentage {
@@ -15,24 +16,21 @@ interface VsBarCard {
 }
 
 let booksList: Book[] = [];
-let booksToDisplay: Book[] = [];
 let years: number[] = [];
 let authors: string[] = [];
 let tags: string[] = [];
 
-let mainElement = document.querySelector('main') as HTMLElement;
 let cardsContainer = document.getElementById('cards-container') as HTMLElement;
 
 async function startApp() {
     try {
         await bookDB.initializeData();
         booksList = await bookDB.getAllBooks();
-        booksToDisplay = booksList;
         loadTags(booksList);
         loadAuthors(booksList);
         loadYears(booksList);
         displayDefaultStats();
-
+        createGenreChart();
     } catch (e) {
         console.error("Critical error during application startup:", e);
     }
@@ -74,7 +72,7 @@ function loadYears(bokList: Book[]) {
     years.sort();
 }
 
-function calculateFrequency(year: number): BooksByMonthCount[] {
+function calculateFrequency(year: number): ItemGroupCount[] {
     let rangeToCount: Book[] = [];
     type IntermediateCount = { [key: string]: number };
     if (year === 0) {
@@ -90,10 +88,31 @@ function calculateFrequency(year: number): BooksByMonthCount[] {
     }, {});
 
     const monthKeys = Object.keys(monthlyCountsObject);
-    const result: BooksByMonthCount[] = monthKeys.map(key => ({
-        monthYear: key,
+    const result: ItemGroupCount[] = monthKeys.map(key => ({
+        itemKey: key,
         count: monthlyCountsObject[key],
     }));
+    return result;
+}
+
+function createGenreChart() {
+    type GenreCount = { [key: string]: number };
+    const genreCountsObject: GenreCount = booksList.reduce((acc: GenreCount, book: Book) => {
+        acc[book['mainTag']] = (acc[book['mainTag']] || 0) + 1;
+        return acc;
+    }, {});
+
+    const genreKeys = Object.keys(genreCountsObject);
+    const result: ItemGroupCount[] = genreKeys.map(key => ({
+        itemKey: key,
+        count: genreCountsObject[key],
+    }));
+    console.log(result);
+    const total = result.reduce((acc: number, currentCount: ItemGroupCount) => {
+        acc += currentCount['count'];
+        return acc;
+    }, 0);
+    console.log(total);
     return result;
 }
 
@@ -125,7 +144,7 @@ function createBarCard(cardContents: VsBarCard) {
     return newCard;
 }
 
-function displayFrequencyRead(year: number, months: BooksByMonthCount[], frequencyCard: HTMLElement) {
+function displayFrequencyRead(year: number, months: ItemGroupCount[], frequencyCard: HTMLElement) {
     const oldDiv = document.getElementById('frequency-div');
     const frequencyDiv = document.createElement('div');
     frequencyDiv.setAttribute('class', 'card');
@@ -148,13 +167,13 @@ function displayFrequencyRead(year: number, months: BooksByMonthCount[], frequen
     headerRow.appendChild(booksReadHeader);
     thead.appendChild(headerRow);
     table.appendChild(thead);
-    const tbody = months.reduce((acc: HTMLElement, monthCount: BooksByMonthCount) => {
+    const tbody = months.reduce((acc: HTMLElement, monthCount: ItemGroupCount) => {
         let newRow = document.createElement('tr');
         let monthCell = document.createElement('td');
         if (year === 0) {
-            monthCell.textContent = monthCount['monthYear'];
+            monthCell.textContent = monthCount['itemKey'];
         } else {
-            monthCell.textContent = monthCount['monthYear'].split(" ")[0];
+            monthCell.textContent = monthCount['itemKey'].split(" ")[0];
         }
         newRow.appendChild(monthCell);
         let bookCountCell = document.createElement('td');
@@ -206,11 +225,11 @@ function displayDefaultStats() {
     yearFilter.addEventListener('change', (e) => {
         const target = e.target as HTMLSelectElement;
         const yearSelected = target.value;
-        let months: BooksByMonthCount[] = calculateFrequency(parseInt(yearSelected));
+        let months: ItemGroupCount[] = calculateFrequency(parseInt(yearSelected));
         displayFrequencyRead(parseInt(yearSelected), months, frequencyCard);
     });
     frequencyCard.appendChild(yearFilter);
-    let AllMonths: BooksByMonthCount[] = calculateFrequency(0);
+    let AllMonths: ItemGroupCount[] = calculateFrequency(0);
     displayFrequencyRead(0, AllMonths, frequencyCard);
     cardsContainer.appendChild(frequencyCard);
 }

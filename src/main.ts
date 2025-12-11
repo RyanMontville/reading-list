@@ -1,5 +1,6 @@
-import { Book, createLink } from "./utils.js";
+import { createLink } from "./utils.js";
 import { bookDB } from "./booksDatabase.js";
+import type { Book } from "./models.js";
 
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
@@ -232,7 +233,6 @@ async function startApp() {
 function displayBooks() {
     let booksContainer: HTMLElement | null = document.getElementById('books-contianer');
     if (booksContainer) booksContainer.remove();
-
     if (booksToDisplay.length === 0) {
         let booksContainer = document.createElement('div');
         let noBooksP = document.createElement('p');

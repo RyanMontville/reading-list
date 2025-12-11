@@ -1,6 +1,6 @@
-import { VBRecomendation, fixDate } from "./utils.js";
+import type { VBRecomendation } from "./models.js";
 
-let VBRecomendationList: VBRecomendation[] = [];
+// let VBRecomendationList: VBRecomendation[] = [];
 let booksToDisplay: VBRecomendation[] = [];
 
 function setPageTitle(title: string) {
@@ -77,7 +77,7 @@ async function loadList() {
         }
 
         const data: VBRecomendation[] = await response.json();
-        VBRecomendationList = data;
+        // VBRecomendationList = data;
         booksToDisplay = data;
         displayBooks();
     } catch (error) {

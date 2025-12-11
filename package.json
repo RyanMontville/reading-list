@@ -1,18 +1,24 @@
 {
-  "name": "reading-list",
-  "version": "1.0.0",
-  "description": "A list of the books I have read since starting to keep track in 2021",
-  "main": "dist/main.js",
+  "name": "reading",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch",
-    "start": "npm run watch"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "author": "Ryan Montville",
-  "license": "ISC",
   "devDependencies": {
-    "@types/d3": "^7.4.3",
-    "typescript": "^5.9.3"
+    "@types/node": "^25.0.0",
+    "@vite-pwa/assets-generator": "^1.0.2",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.9",
+    "vite-plugin-pwa": "^1.1.0",
+    "workbox-window": "^7.4.0"
+  },
+  "overrides": {
+    "sharp": "^0.33.5",
+    "sharp-ico": "^0.1.5"
   },
   "dependencies": {
     "d3": "^7.9.0"

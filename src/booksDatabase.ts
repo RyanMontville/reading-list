@@ -1,18 +1,10 @@
+import type { Book } from "./models";
+
 const DB_NAME = "MyBookDB";
 const STORE_NAME = "books";
 const METADATA_STORE_NAME = "metadata";
 const DB_VERSION = 1;
-const CURRENT_DATA_VERSION = 9; 
-
-export interface Book {
-    bookTitle: string;
-    authors: string[];
-    isbn: number;
-    cover: string;
-    moreInfo: string;
-    dateRead: Date;
-    tags: string[];
-}
+const CURRENT_DATA_VERSION = 11; 
 
 export class BookDatabase {
     private db: IDBDatabase | null = null;
@@ -72,18 +64,18 @@ export class BookDatabase {
         });
     }
 
-    private async _setMetadata(key: string, value: any): Promise<void> {
-        const db = await this.open();
+    // private async _setMetadata(key: string, value: any): Promise<void> {
+    //     const db = await this.open();
         
-        return new Promise((resolve, reject) => {
-            const transaction = db.transaction([METADATA_STORE_NAME], "readwrite");
-            const store = transaction.objectStore(METADATA_STORE_NAME);
-            const request = store.put({ key: key, value: value });
+    //     return new Promise((resolve, reject) => {
+    //         const transaction = db.transaction([METADATA_STORE_NAME], "readwrite");
+    //         const store = transaction.objectStore(METADATA_STORE_NAME);
+    //         const request = store.put({ key: key, value: value });
             
-            request.onsuccess = () => resolve();
-            request.onerror = () => reject(request.error);
-        });
-    }
+    //         request.onsuccess = () => resolve();
+    //         request.onerror = () => reject(request.error);
+    //     });
+    // }
 
     public async initializeData(): Promise<void> {
         try {
@@ -164,5 +156,6 @@ export class BookDatabase {
         });
     }
 }
+
 
 export const bookDB = new BookDatabase();

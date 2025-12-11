@@ -16,7 +16,8 @@
             "Adventurous",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 2,
@@ -36,7 +37,8 @@
             "Dark",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 3,
@@ -55,7 +57,8 @@
             "Dark",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Horror"
     },
     {
         "id": 4,
@@ -73,7 +76,8 @@
             "Dark",
             "Reflective",
             "Slow-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 5,
@@ -92,7 +96,8 @@
             "Funny",
             "Lighthearted",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Short Stories"
     },
     {
         "id": 6,
@@ -111,7 +116,8 @@
             "Adventurous",
             "Dark",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 7,
@@ -129,7 +135,8 @@
             "Adventurous",
             "Dark",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 8,
@@ -147,7 +154,8 @@
             "Adventurous",
             "Dark",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 9,
@@ -164,7 +172,8 @@
             "Self Help",
             "Reflective",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Self Help"
     },
     {
         "id": 10,
@@ -183,7 +192,8 @@
             "Dark",
             "Tense",
             "Slow-paced"
-        ]
+        ],
+        "mainTag": "Horror"
     },
     {
         "id": 11,
@@ -199,7 +209,8 @@
             "Fiction",
             "Fantasy",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 12,
@@ -218,7 +229,8 @@
             "Adventurous",
             "Funny",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Thriller"
     },
     {
         "id": 13,
@@ -236,7 +248,8 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 14,
@@ -254,7 +267,8 @@
             "Adventurous",
             "Funny",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 15,
@@ -273,7 +287,8 @@
             "Adventurous",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 16,
@@ -293,7 +308,8 @@
             "Funny",
             "Lighthearted",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 17,
@@ -311,7 +327,8 @@
             "Adventurous",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 18,
@@ -329,7 +346,8 @@
             "Adventurous",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 19,
@@ -350,7 +368,8 @@
             "Dark",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Horror"
     },
     {
         "id": 20,
@@ -370,7 +389,8 @@
             "Dark",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Horror"
     },
     {
         "id": 21,
@@ -391,7 +411,8 @@
             "Dark",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Horror"
     },
     {
         "id": 22,
@@ -411,7 +432,8 @@
             "Dark",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Horror"
     },
     {
         "id": 23,
@@ -430,7 +452,8 @@
             "Adventurous",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 24,
@@ -449,7 +472,8 @@
             "Funny",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 25,
@@ -468,7 +492,8 @@
             "Adventurous",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 26,
@@ -487,7 +512,8 @@
             "Dark",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 27,
@@ -506,7 +532,8 @@
             "Dark",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 28,
@@ -525,7 +552,8 @@
             "Emotional",
             "Reflective",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 29,
@@ -545,7 +573,8 @@
             "Dark",
             "Tense",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 30,
@@ -565,7 +594,8 @@
             "Dark",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 31,
@@ -583,7 +613,8 @@
             "Science Fiction",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 32,
@@ -601,7 +632,8 @@
             "Science Fiction",
             "Adventurous",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 33,
@@ -621,7 +653,8 @@
             "Dark",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 34,
@@ -640,7 +673,8 @@
             "Funny",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 35,
@@ -659,7 +693,8 @@
             "Funny",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 36,
@@ -678,7 +713,8 @@
             "Funny",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 37,
@@ -698,7 +734,8 @@
             "Informative",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Informative"
     },
     {
         "id": 38,
@@ -718,7 +755,8 @@
             "Funny",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 39,
@@ -737,7 +775,8 @@
             "Graphic Novel",
             "Adventurous",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 40,
@@ -756,7 +795,8 @@
             "Thriller",
             "Tense",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Thriller"
     },
     {
         "id": 41,
@@ -776,7 +816,8 @@
             "Funny",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 42,
@@ -793,8 +834,10 @@
             "Historical",
             "Adventurous",
             "Dark",
-            "Fast-paced"
-        ]
+            "Fast-paced",
+            "Fantasy"
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 43,
@@ -814,7 +857,8 @@
             "Dark",
             "Tense",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 44,
@@ -833,7 +877,8 @@
             "Adventurous",
             "Tense",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 45,
@@ -852,7 +897,8 @@
             "Dark",
             "Funny",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 46,
@@ -871,7 +917,8 @@
             "Emotional",
             "Funny",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 47,
@@ -889,7 +936,8 @@
             "Dark",
             "Funny",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 48,
@@ -908,7 +956,8 @@
             "Adventurous",
             "Emotional",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 49,
@@ -928,7 +977,8 @@
             "Emotional",
             "Hopeful",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 50,
@@ -946,7 +996,8 @@
             "Emotional",
             "Reflective",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 51,
@@ -965,7 +1016,8 @@
             "Hopeful",
             "Reflective",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 52,
@@ -984,7 +1036,8 @@
             "Fantasy",
             "Adventurous",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 53,
@@ -1001,7 +1054,8 @@
             "Science Fiction",
             "Adventurous",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 54,
@@ -1020,7 +1074,8 @@
             "Thriller",
             "Tense",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Thriller"
     },
     {
         "id": 55,
@@ -1039,7 +1094,8 @@
             "Dark",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Thriller"
     },
     {
         "id": 56,
@@ -1057,7 +1113,8 @@
             "Adventurous",
             "Lighthearted",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 57,
@@ -1076,7 +1133,8 @@
             "Adventurous",
             "Funny",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Mystery"
     },
     {
         "id": 58,
@@ -1095,7 +1153,8 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 59,
@@ -1114,7 +1173,8 @@
             "Adventurous",
             "Reflective",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 60,
@@ -1134,7 +1194,8 @@
             "Dark",
             "Tense",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Thriller"
     },
     {
         "id": 61,
@@ -1154,7 +1215,8 @@
             "Dark",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Thriller"
     },
     {
         "id": 62,
@@ -1171,8 +1233,10 @@
             "Magical Realism",
             "Adventurous",
             "Dark",
-            "Medium-paced"
-        ]
+            "Medium-paced",
+            "Fantasy"
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 63,
@@ -1189,8 +1253,10 @@
             "Magical Realism",
             "Adventurous",
             "Dark",
-            "Medium-paced"
-        ]
+            "Medium-paced",
+            "Fantasy"
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 64,
@@ -1208,8 +1274,10 @@
             "Science Fiction",
             "Adventurous",
             "Funny",
-            "Fast-paced"
-        ]
+            "Fast-paced",
+            "Fantasy"
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 65,
@@ -1227,7 +1295,8 @@
             "Science Fiction",
             "Adventurous",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 66,
@@ -1244,7 +1313,8 @@
             "Science Fiction",
             "Adventurous",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 67,
@@ -1260,8 +1330,10 @@
             "Fiction",
             "Emotional",
             "Reflective",
-            "Medium-paced"
-        ]
+            "Medium-paced",
+            "Reflective"
+        ],
+        "mainTag": "Reflective"
     },
     {
         "id": 68,
@@ -1280,7 +1352,8 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Thriller"
     },
     {
         "id": 69,
@@ -1299,7 +1372,8 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 70,
@@ -1318,7 +1392,8 @@
             "Funny",
             "Lighthearted",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 71,
@@ -1337,7 +1412,8 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 72,
@@ -1356,7 +1432,8 @@
             "Dark",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Mystery"
     },
     {
         "id": 73,
@@ -1374,7 +1451,8 @@
             "Short Stories",
             "Adventurous",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 74,
@@ -1392,7 +1470,8 @@
             "Science Fiction",
             "Adventurous",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 75,
@@ -1411,7 +1490,8 @@
             "Adventurous",
             "Dark",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 76,
@@ -1430,7 +1510,8 @@
             "Self Help",
             "Reflective",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Autobiography"
     },
     {
         "id": 77,
@@ -1449,7 +1530,8 @@
             "Funny",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 78,
@@ -1468,7 +1550,8 @@
             "Funny",
             "Lighthearted",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 79,
@@ -1486,7 +1569,8 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 80,
@@ -1504,7 +1588,8 @@
             "Science Fiction",
             "Adventurous",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 81,
@@ -1523,7 +1608,8 @@
             "Funny",
             "Reflective",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 82,
@@ -1541,7 +1627,8 @@
             "Adventurous",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Mystery"
     },
     {
         "id": 83,
@@ -1559,7 +1646,8 @@
             "LGBTQA+",
             "Adventurous",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 84,
@@ -1579,7 +1667,8 @@
             "Hopeful",
             "Reflective",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 85,
@@ -1599,7 +1688,8 @@
             "Inpiring",
             "Reflective",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 86,
@@ -1617,7 +1707,8 @@
             "Funny",
             "Lighthearted",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 87,
@@ -1638,7 +1729,8 @@
             "Emotional",
             "Reflective",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 88,
@@ -1658,7 +1750,8 @@
             "Inpiring",
             "Reflective",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 89,
@@ -1677,7 +1770,8 @@
             "Adventurous",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Thriller"
     },
     {
         "id": 90,
@@ -1696,8 +1790,10 @@
             "Dark",
             "Emotional",
             "sad",
-            "Fast-paced"
-        ]
+            "Fast-paced",
+            "Science Fiction"
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 91,
@@ -1715,7 +1811,8 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 92,
@@ -1733,7 +1830,8 @@
             "Science Fiction",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 93,
@@ -1752,7 +1850,8 @@
             "Funny",
             "Dark",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 94,
@@ -1772,7 +1871,8 @@
             "Emotional",
             "Reflective",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 95,
@@ -1791,7 +1891,8 @@
             "Funny",
             "Lighthearted",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 96,
@@ -1809,7 +1910,8 @@
             "Adventurous",
             "Funny",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 97,
@@ -1827,7 +1929,8 @@
             "Adventurous",
             "Funny",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 98,
@@ -1845,7 +1948,8 @@
             "Adventurous",
             "Tense",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 99,
@@ -1865,7 +1969,8 @@
             "Dark",
             "Funny",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Mystery"
     },
     {
         "id": 100,
@@ -1884,7 +1989,8 @@
             "Funny",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 101,
@@ -1902,7 +2008,8 @@
             "LGBTQA",
             "Adventurous",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 102,
@@ -1921,7 +2028,8 @@
             "Funny",
             "Lighthearted",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 103,
@@ -1939,7 +2047,8 @@
             "Adventurous",
             "Funny",
             "Medium-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 104,
@@ -1958,7 +2067,8 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 105,
@@ -1977,7 +2087,8 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Fantasy"
     },
     {
         "id": 106,
@@ -1995,7 +2106,8 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 107,
@@ -2013,7 +2125,8 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
     },
     {
         "id": 108,
@@ -2031,6 +2144,26 @@
             "Adventurous",
             "Funny",
             "Fast-paced"
-        ]
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 109,
+        "bookTitle": "Exit Strategy",
+        "authors": [
+            "Martha Wells"
+        ],
+        "isbn": 9781250191854,
+        "cover": "https://cdn.thestorygraph.com/gxwcvg7f6xqdoblgo20jhfujfzjw",
+        "moreInfo": "https://app.thestorygraph.com/books/c3127cac-54ba-4e44-992e-1906a5672c82",
+        "dateRead": "12/07/2025",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Fast-paced"
+        ],
+        "mainTag": "Science Fiction"
     }
 ]
