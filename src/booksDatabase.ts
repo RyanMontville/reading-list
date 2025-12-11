@@ -88,7 +88,7 @@ export class BookDatabase {
 
             console.log(`Data version is outdated (v${currentStoredVersion}). Fetching books from books.json (v${CURRENT_DATA_VERSION})...`);
             
-            const response = await fetch('./books.json');
+            const response = await fetch('https://raw.githubusercontent.com/RyanMontville/reading-list/refs/heads/main/books.json');
             if (!response.ok) {
                 throw new Error(`Failed to fetch books.json: ${response.status} ${response.statusText}`);
             }
