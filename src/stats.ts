@@ -1,19 +1,11 @@
-import { createyearSelect } from "./utils.js";
+import { createyearSelect, createHeader } from "./modules/utils.js";
 import { bookDB } from "./booksDatabase.js";
 import type { Book, ItemGroupCount } from "./models.js";
-// import * as d3 from 'd3';
+import * as d3 from 'd3';
+import { createPieChart } from "./modules/d3Graphics.js";
 
-class BarPercentage {
-    constructor (
-        public color: string,
-        public tag: string
-    ) {}
-}
-
-interface VsBarCard {
-    cardTitle: string;
-    pertencages: BarPercentage[];
-}
+const genreColorScale = d3.scaleOrdinal<string>()
+    .range(d3.schemeCategory10);
 
 let booksList: Book[] = [];
 let years: number[] = [];
@@ -29,8 +21,40 @@ async function startApp() {
         loadTags(booksList);
         loadAuthors(booksList);
         loadYears(booksList);
+        const fictionNonfictionCounts: ItemGroupCount[] = [
+            {
+                itemKey: "Fiction",
+                count: countBooksForTag("Fiction", false),
+                color: "#3944bc"
+            },
+            {
+                itemKey: "Nonfiction",
+                count: countBooksForTag("Nonfiction", false),
+                color: "#ff0000"
+            }
+        ];
+        createPieChartCard('fiction', fictionNonfictionCounts, "Fiction vs Nonfiction");
+        const genresCount = groupGenres();
+        createPieChartCard('genres', genresCount, "Genres");
+        const paceCounts: ItemGroupCount[] = [
+            {
+                itemKey: "Slow-paced",
+                count: countBooksForTag('Slow-paced', false),
+                color: "#ff0000"
+            },
+            {
+                itemKey: "Medium-paced",
+                count: countBooksForTag('Medium-paced', false),
+                color: "#3944bc"
+            },
+            {
+                itemKey: "Fast-paced",
+                count: countBooksForTag('Fast-paced', false),
+                color: "#008000"
+            }
+        ];
+        createPieChartCard('pace', paceCounts, "Slow-paced vs Medium-paced vs Fast-paced");
         displayDefaultStats();
-        createGenreChart();
     } catch (e) {
         console.error("Critical error during application startup:", e);
     }
@@ -91,11 +115,12 @@ function calculateFrequency(year: number): ItemGroupCount[] {
     const result: ItemGroupCount[] = monthKeys.map(key => ({
         itemKey: key,
         count: monthlyCountsObject[key],
+        color: genreColorScale(key)
     }));
     return result;
 }
 
-function createGenreChart() {
+function groupGenres() {
     type GenreCount = { [key: string]: number };
     const genreCountsObject: GenreCount = booksList.reduce((acc: GenreCount, book: Book) => {
         acc[book['mainTag']] = (acc[book['mainTag']] || 0) + 1;
@@ -106,6 +131,7 @@ function createGenreChart() {
     const result: ItemGroupCount[] = genreKeys.map(key => ({
         itemKey: key,
         count: genreCountsObject[key],
+        color: genreColorScale(key)
     }));
     console.log(result);
     const total = result.reduce((acc: number, currentCount: ItemGroupCount) => {
@@ -126,22 +152,34 @@ function countBooksForTag(tag: string, asPercent: boolean): number {
     
 }
 
-function createBarCard(cardContents: VsBarCard) {
-    const newCard = document.createElement('article');
+function createPieChartCard(dataName: string, data: ItemGroupCount[], cardTitle: string) {
+    const newCard = document.createElement('div');
     newCard.setAttribute('class', 'card');
-    const cardHeader = document.createElement('h2');
-    cardHeader.textContent = cardContents['cardTitle'];
+    newCard.setAttribute('id', `${dataName}-card`);
+    const cardHeader = createHeader('h2', cardTitle);
     newCard.appendChild(cardHeader);
-    const vsBar = cardContents['pertencages'].reduce((acc: HTMLElement, percentage: BarPercentage) => {
-        const newPercent = document.createElement('div');
-        newPercent.setAttribute('class', percentage['color']);
-        newPercent.style.width = `${countBooksForTag(percentage['tag'], true)}%`;
-        acc.appendChild(newPercent);
+    const cardContent = document.createElement('section');
+    cardContent.setAttribute('class', 'pie-content');
+    const pieChart = document.createElement('section');
+    pieChart.setAttribute('id', `${dataName}-pie-chart`);
+    pieChart.setAttribute('class', 'pie-chart');
+    cardContent.appendChild(pieChart);
+    const legend = data.reduce((acc: HTMLElement, currItem: ItemGroupCount) => {
+        const itemKeySpan = document.createElement('span');
+        const colorDot = document.createElement('span');
+        colorDot.style.backgroundColor = currItem['color'];
+        colorDot.setAttribute('class', 'key-dot');
+        itemKeySpan.appendChild(colorDot);
+        const genreKeyText = document.createTextNode(`${currItem['itemKey']}: ${currItem['count']} books`);
+        itemKeySpan.appendChild(genreKeyText);
+        acc.appendChild(itemKeySpan);
         return acc;
-    }, document.createElement('section'));
-    vsBar.setAttribute('class', 'vs-bar');
-    newCard.appendChild(vsBar);
-    return newCard;
+    }, document.createElement('div'));
+    legend.setAttribute('class', 'legend');
+    cardContent.appendChild(legend);
+    newCard.appendChild(cardContent);
+    cardsContainer.appendChild(newCard);
+    createPieChart(`${dataName}-pie-chart`, data);
 }
 
 function displayFrequencyRead(year: number, months: ItemGroupCount[], frequencyCard: HTMLElement) {
@@ -193,26 +231,6 @@ function displayFrequencyRead(year: number, months: ItemGroupCount[], frequencyC
 }
 
 function displayDefaultStats() {
-    //Fiction vs nonfiction bar
-    const fictionNonfictionContents: VsBarCard = {
-        cardTitle: `${countBooksForTag("Fiction", false)} Fiction vs ${countBooksForTag("Nonfiction", false)} Nonfiction`,
-        pertencages: [
-            new BarPercentage("blue", "Fiction"),
-            new BarPercentage("red", "Nonfiction")
-        ]
-    }
-    const slowMediumFastContents: VsBarCard = {
-        cardTitle: `${countBooksForTag('Slow-paced', false)} Slow-paced vs ${countBooksForTag('Medium-paced', false)} Medium-paced vs ${countBooksForTag('Fast-paced', false)} Fast-paced`,
-        pertencages: [
-            new BarPercentage("red", "Slow-paced"),
-            new BarPercentage("blue", "Medium-paced"),
-            new BarPercentage("green", "Fast-paced")
-        ]
-    }
-    let fictionNonfictionCard = createBarCard(fictionNonfictionContents);
-    cardsContainer.appendChild(fictionNonfictionCard);
-    let slowMediumFastCard = createBarCard(slowMediumFastContents);
-    cardsContainer.appendChild(slowMediumFastCard);
     //Reading frequency by month (using D3)
     const frequencyCard = document.createElement('article');
     frequencyCard.setAttribute('class', 'card');

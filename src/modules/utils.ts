@@ -52,3 +52,9 @@ export function createyearSelect(years: number[]) {
     yearSelect.prepend(chooseOption);
     return yearSelect;
 }
+
+export function createHeader(heading: string, headerText: string) {
+    const headerElem = document.createElement(heading);
+    headerElem.textContent = headerText;
+    return headerElem;
+}

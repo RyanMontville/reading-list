@@ -24,4 +24,5 @@ export interface VBRecomendation {
 export interface ItemGroupCount {
     itemKey: string;
     count: number;
+    color: string;
 }
