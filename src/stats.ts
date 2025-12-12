@@ -2,7 +2,10 @@ import { createyearSelect, createHeader } from "./modules/utils.js";
 import { bookDB } from "./booksDatabase.js";
 import type { Book, ItemGroupCount } from "./models.js";
 import * as d3 from 'd3';
-import { createPieChart } from "./modules/d3Graphics.js";
+import { createPieChart, createLineGraph } from "./modules/d3Graphics.js";
+
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
 
 const genreColorScale = d3.scaleOrdinal<string>()
     .range(d3.schemeCategory10);
@@ -54,7 +57,7 @@ async function startApp() {
             }
         ];
         createPieChartCard('pace', paceCounts, "Slow-paced vs Medium-paced vs Fast-paced");
-        displayDefaultStats();
+        createFrequencyCard();
     } catch (e) {
         console.error("Critical error during application startup:", e);
     }
@@ -133,12 +136,6 @@ function groupGenres() {
         count: genreCountsObject[key],
         color: genreColorScale(key)
     }));
-    console.log(result);
-    const total = result.reduce((acc: number, currentCount: ItemGroupCount) => {
-        acc += currentCount['count'];
-        return acc;
-    }, 0);
-    console.log(total);
     return result;
 }
 
@@ -149,7 +146,7 @@ function countBooksForTag(tag: string, asPercent: boolean): number {
     } else {
         return tagCount;
     }
-    
+
 }
 
 function createPieChartCard(dataName: string, data: ItemGroupCount[], cardTitle: string) {
@@ -182,55 +179,7 @@ function createPieChartCard(dataName: string, data: ItemGroupCount[], cardTitle:
     createPieChart(`${dataName}-pie-chart`, data);
 }
 
-function displayFrequencyRead(year: number, months: ItemGroupCount[], frequencyCard: HTMLElement) {
-    const oldDiv = document.getElementById('frequency-div');
-    const frequencyDiv = document.createElement('div');
-    frequencyDiv.setAttribute('class', 'card');
-    frequencyDiv.setAttribute('id', 'frequency-div');
-    const table = document.createElement('table');
-    const thead = document.createElement('thead');
-    const headerRow = document.createElement('tr');
-    const monthYearHeader = document.createElement('th');
-    monthYearHeader.setAttribute('style', 'width: 20%;');
-    if (year === 0) {
-        monthYearHeader.textContent = "Month Year";
-    } else {
-        monthYearHeader.textContent = "Month";
-    }
-    headerRow.appendChild(monthYearHeader);
-    const booksReadHeader = document.createElement('th');
-    const booksRead = document.createTextNode("# Book Read");
-    booksReadHeader.appendChild(booksRead);
-    headerRow.appendChild(booksReadHeader);
-    headerRow.appendChild(booksReadHeader);
-    thead.appendChild(headerRow);
-    table.appendChild(thead);
-    const tbody = months.reduce((acc: HTMLElement, monthCount: ItemGroupCount) => {
-        let newRow = document.createElement('tr');
-        let monthCell = document.createElement('td');
-        if (year === 0) {
-            monthCell.textContent = monthCount['itemKey'];
-        } else {
-            monthCell.textContent = monthCount['itemKey'].split(" ")[0];
-        }
-        newRow.appendChild(monthCell);
-        let bookCountCell = document.createElement('td');
-        let bookCount = document.createTextNode("■".repeat(monthCount['count']));
-        bookCountCell.appendChild(bookCount);
-        newRow.appendChild(bookCountCell);
-        acc.appendChild(newRow);
-        return acc;
-    }, document.createElement('tbody'));
-    table.appendChild(tbody);
-    frequencyDiv.appendChild(table);
-    if (oldDiv) {
-        frequencyCard.replaceChild(frequencyDiv, oldDiv);
-    } else {
-        frequencyCard.appendChild(frequencyDiv);
-    }
-}
-
-function displayDefaultStats() {
+function createFrequencyCard() {
     //Reading frequency by month (using D3)
     const frequencyCard = document.createElement('article');
     frequencyCard.setAttribute('class', 'card');
@@ -244,12 +193,19 @@ function displayDefaultStats() {
         const target = e.target as HTMLSelectElement;
         const yearSelected = target.value;
         let months: ItemGroupCount[] = calculateFrequency(parseInt(yearSelected));
-        displayFrequencyRead(parseInt(yearSelected), months, frequencyCard);
+        const lineGraphDiv = document.getElementById('line-graph');
+        if (lineGraphDiv) {
+            lineGraphDiv.innerHTML = '';
+            createLineGraph('line-graph', months);
+        }
     });
     frequencyCard.appendChild(yearFilter);
-    let AllMonths: ItemGroupCount[] = calculateFrequency(0);
-    displayFrequencyRead(0, AllMonths, frequencyCard);
+    let currentYearMonths: ItemGroupCount[] = calculateFrequency(currentYear);
+    const lineGraph = document.createElement('div');
+    lineGraph.setAttribute('id', 'line-graph');
+    frequencyCard.appendChild(lineGraph);
     cardsContainer.appendChild(frequencyCard);
+    createLineGraph('line-graph', currentYearMonths);
 }
 
 //-------------------------------------------------------------------//

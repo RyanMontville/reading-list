@@ -38,18 +38,21 @@ export function createLink(linkText: string, linkHref: string, external: boolean
 }
 
 export function createyearSelect(years: number[]) {
-    const yearSelect = years.reduce((acc: HTMLElement, year: number) => {
+    const yearSelect = years.reduce((acc: HTMLSelectElement, year: number) => {
         const option = document.createElement('option');
         option.textContent = year.toString();
         option.setAttribute('value', year.toString());
         acc.appendChild(option);
         return acc;
     }, document.createElement('select'));
-    const chooseOption = document.createElement('option');
-    chooseOption.textContent = "All Years";
-    chooseOption.setAttribute('value', "0");
-    chooseOption.selected = true;
-    yearSelect.prepend(chooseOption);
+    //Select current year
+    yearSelect.options[yearSelect.length -1].selected = true;
+
+    // const chooseOption = document.createElement('option');
+    // chooseOption.textContent = "All Years";
+    // chooseOption.setAttribute('value', "0");
+    // chooseOption.selected = true;
+    // yearSelect.prepend(chooseOption);
     return yearSelect;
 }
 

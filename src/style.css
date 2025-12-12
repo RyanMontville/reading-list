@@ -20,8 +20,8 @@
     :root {
         --body-background: #e5e5e5;
         --header-background: #b81f24;
-        --nav-background: #808080;
-        --nav-color: #fff;
+        --nav-background: #fff;
+        --nav-color: #000;
         --header-color: #ffffff;
         --header-title: #ffffff;
         --main-background: #ffffff;

@@ -27,6 +27,24 @@
     border-radius: 20px;
 }
 
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  padding: 8px;
+  font: 12px sans-serif;
+  background: var(--main-background);
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0; 
+  z-index: 10;
+}
+
+#line-graph {
+    overflow-y: auto;
+}
+
 @media (min-width: 650px) {
     .pie-content {
         flex-direction: row;
