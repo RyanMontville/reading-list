@@ -1,3 +1,11 @@
+import type { Book } from "../models";
+
+export function createHeader(heading: string, headerText: string) {
+    const header = document.createElement(heading);
+    header.textContent = headerText;
+    return header;
+}
+
 export function fixDate(dateString: string, dateFormat: string) {
     let dateObj: Date = new Date(dateString);
     let dateTimezoneFixed: Date = new Date(dateObj.getTime() - dateObj.getTimezoneOffset() * -60000);
@@ -46,18 +54,50 @@ export function createyearSelect(years: number[]) {
         return acc;
     }, document.createElement('select'));
     //Select current year
-    yearSelect.options[yearSelect.length -1].selected = true;
-
-    // const chooseOption = document.createElement('option');
-    // chooseOption.textContent = "All Years";
-    // chooseOption.setAttribute('value', "0");
-    // chooseOption.selected = true;
-    // yearSelect.prepend(chooseOption);
+    yearSelect.options[yearSelect.length - 1].selected = true;
     return yearSelect;
 }
 
-export function createHeader(heading: string, headerText: string) {
-    const headerElem = document.createElement(heading);
-    headerElem.textContent = headerText;
-    return headerElem;
+export function createBookDiv(book: Book) {
+    const newBook = document.createElement('div');
+    newBook.setAttribute('class', 'book');
+    //book Cover
+    const coverImg = document.createElement('img');
+    coverImg.setAttribute('src', book['cover']);
+    newBook.appendChild(coverImg);
+    const bookInfo = document.createElement('section');
+    //Book Title
+    const titleH3 = document.createElement('h3');
+    titleH3.textContent = book['bookTitle'];
+    bookInfo.appendChild(titleH3);
+    //Authors
+    const authorsh4 = book['authors'].reduce((acc: HTMLElement, author: string) => {
+        const authorA = document.createElement('a');
+        authorA.addEventListener('click', () => window.location.href = `/?author=${author}`);
+        let authorName = document.createTextNode(author);
+        authorA.appendChild(authorName);
+        acc.appendChild(authorA);
+        return acc;
+    }, document.createElement('h4'));
+    bookInfo.appendChild(authorsh4);
+    //Date Read
+    const readP: HTMLElement = document.createElement('p');
+    const date: Date = new Date(book['dateRead']);
+    readP.textContent = `Date Read: ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`;
+    bookInfo.appendChild(readP);
+    //tags
+    const tagsList = book['tags'].reduce((acc: HTMLElement, tag: string) => {
+        const tagLi = document.createElement('li');
+        const tagName = document.createTextNode(tag);
+        tagLi.addEventListener('click', () => window.location.href = `/?tag=${tag}`);
+        tagLi.appendChild(tagName);
+        acc.appendChild(tagLi);
+        return acc;
+    }, document.createElement('ul'));
+    bookInfo.appendChild(tagsList);
+    //Storygraph link
+    const storyGraphLink = createLink('View on StoryGraph', book['moreInfo'], true, 'open_in_new');
+    bookInfo.appendChild(storyGraphLink);
+    newBook.appendChild(bookInfo);
+    return newBook
 }

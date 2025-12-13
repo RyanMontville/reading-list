@@ -18,6 +18,7 @@ function displayBooks() {
         setPageTitle(`Displaying ${booksToDisplay.length} books`);
         booksToDisplay.forEach(book => {
             const newBook = document.createElement('article');
+            newBook.setAttribute('class', 'book card hide-overflow');
             //book Cover
             const coverImg: HTMLElement = document.createElement('img');
             coverImg.setAttribute('src', book['coverUrl']);

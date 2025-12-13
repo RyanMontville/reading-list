@@ -28,6 +28,11 @@ export interface ItemGroupCount {
     color: string;
 }
 
+export interface BookPair {
+    index: string;
+    bookId: number;
+}
+
 export interface Challenge {
     id: number,
     challengeName: string,
@@ -35,5 +40,5 @@ export interface Challenge {
     startDate: string | null,
     endDate: string | null,
     goal: number,
-    books: Book[]
+    books: BookPair[]
 }

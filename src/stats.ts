@@ -151,7 +151,7 @@ function countBooksForTag(tag: string, asPercent: boolean): number {
 
 function createPieChartCard(dataName: string, data: ItemGroupCount[], cardTitle: string) {
     const newCard = document.createElement('div');
-    newCard.setAttribute('class', 'card');
+    newCard.setAttribute('class', 'card with-padding');
     newCard.setAttribute('id', `${dataName}-card`);
     const cardHeader = createHeader('h2', cardTitle);
     newCard.appendChild(cardHeader);
@@ -182,7 +182,7 @@ function createPieChartCard(dataName: string, data: ItemGroupCount[], cardTitle:
 function createFrequencyCard() {
     //Reading frequency by month (using D3)
     const frequencyCard = document.createElement('article');
-    frequencyCard.setAttribute('class', 'card');
+    frequencyCard.setAttribute('class', 'card with-padding');
     const cardHeader = createHeader("h2", "Book Read Per Month");
     frequencyCard.appendChild(cardHeader);
     const yearsLabel = document.createElement('label');

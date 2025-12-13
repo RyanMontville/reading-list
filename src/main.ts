@@ -1,4 +1,4 @@
-import { createLink } from "./modules/utils.js";
+import { createBookDiv } from "./modules/utils.js";
 import { bookDB } from "./booksDatabase.js";
 import type { Book } from "./models.js";
 
@@ -222,46 +222,11 @@ function displayBooks() {
         booksContainer.appendChild(noBooksP);
     } else {
         booksContainer = booksToDisplay.reduce((acc: HTMLElement, currentBook: Book) => {
-            const newBook = document.createElement('article');
-            //book Cover
-            const coverImg = document.createElement('img');
-            coverImg.setAttribute('src', currentBook['cover']);
-            newBook.appendChild(coverImg);
-            const bookInfo = document.createElement('section');
-            //Book Title
-            const titleH3 = document.createElement('h3');
-            titleH3.textContent = currentBook['bookTitle'];
-            bookInfo.appendChild(titleH3);
-            //Authors
-            const authorsh4 = currentBook['authors'].reduce((acc: HTMLElement, author: string) => {
-                const authorA = document.createElement('a');
-                authorA.addEventListener('click', () => filterForAuthor(author));
-                let authorName = document.createTextNode(author);
-                authorA.appendChild(authorName);
-                acc.appendChild(authorA);
-                return acc;
-            }, document.createElement('h4'));
-            bookInfo.appendChild(authorsh4);
-            //Date Read
-            const readP: HTMLElement = document.createElement('p');
-            const date: Date = new Date(currentBook['dateRead']);
-            readP.textContent = `Date Read: ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`;
-            bookInfo.appendChild(readP);
-            //tags
-            const tagsList = currentBook['tags'].reduce((acc: HTMLElement, tag: string) => {
-                const tagLi = document.createElement('li');
-                const tagName = document.createTextNode(tag);
-                tagLi.addEventListener('click', () => filterForTag(tag))
-                tagLi.appendChild(tagName);
-                acc.appendChild(tagLi);
-                return acc;
-            }, document.createElement('ul'));
-            bookInfo.appendChild(tagsList);
-            //Storygraph link
-            const storyGraphLink = createLink('View on StoryGraph', currentBook['moreInfo'], true, 'open_in_new');
-            bookInfo.appendChild(storyGraphLink);
-            newBook.appendChild(bookInfo);
-            acc.appendChild(newBook);
+            const bookArticle = document.createElement('article');
+            bookArticle.setAttribute('class', 'card hide-overflow')
+            const newBook = createBookDiv(currentBook);
+            bookArticle.appendChild(newBook);
+            acc.appendChild(bookArticle);
             return acc;
         }, document.createElement('div'));
         booksContainer.setAttribute('id', 'books-contianer');
@@ -278,7 +243,19 @@ async function startApp() {
         loadAuthors(booksList);
         loadYears(booksList);
         resetToDefault();
-        displayBooks();
+        const urlParams = new URLSearchParams(window.location.search);
+        const year = urlParams.get('year');
+        const author = urlParams.get('author');
+        const tag = urlParams.get('tag');
+        if (year) {
+            filterForYear(parseInt(year));
+        } else if (author) {
+            filterForAuthor(author);
+        } else if (tag) {
+            filterForTag(tag);
+        } else {
+            displayBooks();
+        }
         console.log("Application loaded with books:", booksList);
     } catch (e) {
         console.error("Critical error during application startup:", e);

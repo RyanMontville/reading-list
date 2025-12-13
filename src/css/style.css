@@ -84,11 +84,14 @@ main {
 .card {
     max-width: 900px;
     margin: 10px auto;
-    padding: 20px;
     background-color: var(--main-background);
     color: var(--main-color);
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.with-padding {
+    padding: 10px;
 }
 
 #books-contianer {
@@ -96,30 +99,25 @@ main {
     margin: 5px auto;
 }
 
-#books-contianer article {
-    background-color: var(--main-background);
-    color: var(--main-color);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    margin: 10px;
+.book {
     display: flex;
     align-items: center;
     border-radius: 20px;
-    overflow: hidden;
 }
 
-#books-contianer img {
+.book img {
     max-height: 150px;
     margin-right: 10px;
 }
 
-#books-contianer article section ul {
+.book section ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#books-contianer article section ul li {
+.book section ul li {
     list-style-type: none;
     margin: 5px;
     padding: 5px;
@@ -128,8 +126,12 @@ main {
     cursor: pointer;
 }
 
-#books-contianer article a {
+.book a {
     cursor: pointer;
+}
+
+.hide-overflow {
+    overflow: hidden;
 }
 
 button {
@@ -142,6 +144,24 @@ button {
     cursor: pointer;
 }
 
+.challenge-book {
+    border-top: 1px solid var(--main-color);
+    margin: 5px 0;
+    padding: 10px 0;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header button {
+    cursor: pointer;
+    border: 0;
+    font-size: 30px;
+}
+
 nav {
     position: fixed;
     bottom: 10px;
@@ -152,7 +172,7 @@ nav {
     border: 1px solid var(--nav-color);
     border-radius: 10px;
     padding: 10px;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
