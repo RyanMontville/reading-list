@@ -38,6 +38,10 @@ body {
     z-index: 1;
 }
 
+.hide {
+    display: none !important;
+}
+
 .material-symbols-outlined {
     vertical-align: middle;
 }

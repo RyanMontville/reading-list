@@ -10,6 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
+        challenges: resolve(__dirname, "challenges.html"),
         stats: resolve(__dirname, "stats.html"),
         vlogbrothers: resolve(__dirname, "vlogbrothers.html")
       },
