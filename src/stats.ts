@@ -183,6 +183,8 @@ function createFrequencyCard() {
     //Reading frequency by month (using D3)
     const frequencyCard = document.createElement('article');
     frequencyCard.setAttribute('class', 'card');
+    const cardHeader = createHeader("h2", "Book Read Per Month");
+    frequencyCard.appendChild(cardHeader);
     const yearsLabel = document.createElement('label');
     yearsLabel.setAttribute('for', 'year-select');
     yearsLabel.textContent = "Filter year: ";

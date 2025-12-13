@@ -3,23 +3,17 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --body-background: #000000;
-        --header-background: #333;
         --nav-background: #404040;
         --nav-color: #ccc;
-        --header-title: #b81f24;
-        --header-color: #ccc;
         --main-background: #333;
+        --main-headings: #ccc;
         --main-color: #ccc;
         --main-link: #9a97f3;
-        --dark-mode-icon: #b81f24;
-        --project-divider: #fff;
-        --links-background: #000000;
     }
 }
 @media (prefers-color-scheme: light) {
     :root {
         --body-background: #e5e5e5;
-        --header-background: #b81f24;
         --nav-background: #808080;
         --nav-color: #fff;
         --header-color: #ffffff;
@@ -28,9 +22,6 @@
         --main-headings: #b81f24;
         --main-color: #000000;
         --main-link: #302ae6;
-        --dark-mode-icon: #ffffff;
-        --project-divider: #000;
-        --links-background: #b81f24;
     }
 }
 
@@ -181,35 +172,6 @@ nav a {
 
 nav a:hover {
     color: var(--main-link);
-}
-
-.vs-header {
-    display: flex;
-    justify-content: space-around;
-}
-
-.vs-bar {
-    display: flex;
-    height: 30px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.vs-bar div {
-    display: block;
-    height: 30px;
-}
-
-.blue {
-    background-color: blue;
-}
-
-.green {
-    background-color: green;
-}
-
-.red {
-    background-color: red;
 }
 
 table {
