@@ -1,0 +1,159 @@
+[
+    {
+        "id": 1,
+        "challengeName": "A-Z 2025",
+        "challengeDescription": "Read a book for each letter of the alphabet",
+        "startDate": "01/01/2026",
+        "endDate": "12/31/2026",
+        "goal": 26,
+        "books": []
+    },
+    {
+        "id": 2,
+        "challengeName": "Disnay World Challenge",
+        "challengeDescription": "Read a book for each park.\\nBlizzard Beach: A book set at a ski lodge\\nTyphoon Lagoon: A book set on the beach or volcano\\nDisney Spring: A book set in a mall\\nMagic Kingdom: A book that has royalty or set in a kingdom\\nEpcot: Features traveling\\nHollywood Studios: Set in Hollywood or the main character is an actor\\nAnimal Kingdom: Set on a conservation site/zoo",
+        "startDate": null,
+        "endDate": null,
+        "goal": 7,
+        "books": [
+            {
+                "id": 1,
+                "bookTitle": "Everyone in My Family Has Killed Someone ",
+                "authors": [
+                    "Benjamin Stevenson"
+                ],
+                "isbn": 9780063279025,
+                "cover": "https://cdn.thestorygraph.com/m6fmgb5nto30om77k6fedtwun18v",
+                "moreInfo": "https://app.thestorygraph.com/books/60c7a483-e994-4bc0-9656-6e1a637a8320",
+                "dateRead": "09/17/2025",
+                "tags": [
+                    "Fiction",
+                    "Crime",
+                    "Mystery",
+                    "Thriller",
+                    "Dark",
+                    "Funny",
+                    "Medium-paced"
+                ],
+                "mainTag": "Mystery"
+            },
+            {
+                "id": 2,
+                "bookTitle": "Starter Villain",
+                "authors": [
+                    "John Scalzi"
+                ],
+                "isbn": 9780765389220,
+                "cover": "https://cdn.thestorygraph.com/kn5gtwecz6l5z46ig3awwkydxqjg",
+                "moreInfo": "https://app.thestorygraph.com/books/98affc66-6322-47fc-a006-52534dc2b4e9",
+                "dateRead": "02/10/2025",
+                "tags": [
+                    "Fiction",
+                    "Science Fiction",
+                    "Adventurous",
+                    "Funny",
+                    "Lighthearted",
+                    "Fast-paced"
+                ],
+                "mainTag": "Science Fiction"
+            },
+            {
+                "id": 3,
+                "bookTitle": "Johnny and the Dead",
+                "authors": [
+                    "Terry Pratchett"
+                ],
+                "isbn": 9780060541880,
+                "cover": "https://cdn.thestorygraph.com/p51hblzlzga4nrjy4rn7xvlqnydz",
+                "moreInfo": "https://app.thestorygraph.com/books/404e9f65-d240-4bdc-a328-b6dd5576e738",
+                "dateRead": "03/03/2025",
+                "tags": [
+                    "Fiction",
+                    "Fantasy",
+                    "Adventurous",
+                    "Funny",
+                    "Fast-paced"
+                ],
+                "mainTag": "Fantasy"
+            },
+            {
+                "id": 4,
+                "bookTitle": "Annabellia",
+                "authors": [
+                    "Sean O'Neill"
+                ],
+                "isbn": 9781649528094,
+                "cover": "https://cdn.thestorygraph.com/oywdmqg1k79bkomqme3bzvup70jk",
+                "moreInfo": "https://app.thestorygraph.com/books/4c1e1a91-9f2d-48bd-a60f-58de1a0e27a8?redirect=true",
+                "dateRead": "11/01/2021",
+                "tags": [
+                    "Fiction",
+                    "Fantasy",
+                    "Medium-paced"
+                ],
+                "mainTag": "Fantasy"
+            },
+            {
+                "id": 5,
+                "bookTitle": "Hotel Magnifique",
+                "authors": [
+                    "Emily J. Taylor"
+                ],
+                "isbn": 9780593404515,
+                "cover": "https://cdn.thestorygraph.com/gzutcyl8xrcolga3tazmzp6op4wg",
+                "moreInfo": "https://app.thestorygraph.com/books/d40ed751-e1ea-40d2-9f00-8827f9f43c69",
+                "dateRead": "02/01/2025",
+                "tags": [
+                    "Fiction",
+                    "Fantasy",
+                    "Mystery",
+                    "Adventurous",
+                    "Dark",
+                    "Medium-paced"
+                ],
+                "mainTag": "Fantasy"
+            },
+            {
+                "id": 6,
+                "bookTitle": "Not Quite the Classics",
+                "authors": [
+                    "Colin Mochrie"
+                ],
+                "isbn": 9780670066575,
+                "cover": "https://cdn.thestorygraph.com/29w43zjzd5znvlc06u6bzh2lrgdo",
+                "moreInfo": "https://app.thestorygraph.com/books/f5bb4765-a9a7-4c85-8d6f-ae7f4fea68a1",
+                "dateRead": "05/01/2021",
+                "tags": [
+                    "Fiction",
+                    "Short Stories",
+                    "Adventurous",
+                    "Funny",
+                    "Lighthearted",
+                    "Medium-paced"
+                ],
+                "mainTag": "Short Stories"
+            },
+            {
+                "id": 7,
+                "bookTitle": "A Psalm for the Wild-Built",
+                "authors": [
+                    "Becky Chambers"
+                ],
+                "isbn": 9781250236210,
+                "cover": "https://cdn.thestorygraph.com/crkyy7hkoah01xz5kyghu36eo8wf",
+                "moreInfo": "https://app.thestorygraph.com/books/e630cc5f-0870-41cd-a76c-52a4373fa254",
+                "dateRead": "04/10/2025",
+                "tags": [
+                    "Fiction",
+                    "LGBTQA+",
+                    "Science Fiction",
+                    "Hopeful",
+                    "Inpiring",
+                    "Reflective",
+                    "Medium-paced"
+                ],
+                "mainTag": "Science Fiction"
+            }
+        ]
+    }
+]

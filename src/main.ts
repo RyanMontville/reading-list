@@ -212,24 +212,6 @@ function loadYears(bokList: Book[]) {
     years.sort();
 }
 
-async function startApp() {
-    try {
-        await bookDB.initializeData();
-        booksList = await bookDB.getAllBooks();
-        booksToDisplay = booksList;
-        loadTags(booksList);
-        loadAuthors(booksList);
-        loadYears(booksList);
-        resetToDefault();
-        displayBooks();
-        console.log("Application loaded with books:", booksList);
-
-    } catch (e) {
-        console.error("Critical error during application startup:", e);
-    }
-}
-
-
 function displayBooks() {
     let booksContainer: HTMLElement | null = document.getElementById('books-contianer');
     if (booksContainer) booksContainer.remove();
@@ -284,6 +266,22 @@ function displayBooks() {
         }, document.createElement('div'));
         booksContainer.setAttribute('id', 'books-contianer');
         main.appendChild(booksContainer);
+    }
+}
+
+async function startApp() {
+    try {
+        await bookDB.initializeData();
+        booksList = await bookDB.getAllBooks();
+        booksToDisplay = booksList;
+        loadTags(booksList);
+        loadAuthors(booksList);
+        loadYears(booksList);
+        resetToDefault();
+        displayBooks();
+        console.log("Application loaded with books:", booksList);
+    } catch (e) {
+        console.error("Critical error during application startup:", e);
     }
 }
 

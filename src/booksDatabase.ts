@@ -64,19 +64,6 @@ export class BookDatabase {
         });
     }
 
-    // private async _setMetadata(key: string, value: any): Promise<void> {
-    //     const db = await this.open();
-        
-    //     return new Promise((resolve, reject) => {
-    //         const transaction = db.transaction([METADATA_STORE_NAME], "readwrite");
-    //         const store = transaction.objectStore(METADATA_STORE_NAME);
-    //         const request = store.put({ key: key, value: value });
-            
-    //         request.onsuccess = () => resolve();
-    //         request.onerror = () => reject(request.error);
-    //     });
-    // }
-
     public async initializeData(): Promise<void> {
         try {
             const currentStoredVersion = await this._getMetadata<number>("data_version") || 0;

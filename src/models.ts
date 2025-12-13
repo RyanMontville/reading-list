@@ -1,4 +1,5 @@
 export interface Book {
+    id: number;
     bookTitle: string;
     authors: string[];
     isbn: number;
@@ -25,4 +26,14 @@ export interface ItemGroupCount {
     itemKey: string;
     count: number;
     color: string;
+}
+
+export interface Challenge {
+    id: number,
+    challengeName: string,
+    challengeDescription: string,
+    startDate: string | null,
+    endDate: string | null,
+    goal: number,
+    books: Book[]
 }
