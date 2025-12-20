@@ -2165,5 +2165,45 @@
             "Fast-paced"
         ],
         "mainTag": "Science Fiction"
+    },
+    {
+        "id": 110,
+        "bookTitle": "Network Effect",
+        "authors": [
+            "Martha Wells"
+        ],
+        "isbn": 9781250229847,
+        "cover": "https://cdn.thestorygraph.com/q4v27bmqfao8zijo0cnmn6bq4bts",
+        "moreInfo": "https://app.thestorygraph.com/books/9fcaffe0-7f5b-48a8-96b4-6a741cfdeb23",
+        "dateRead": "12/15/2025",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Emotional",
+            "Funny",
+            "Fast-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 111,
+        "bookTitle": "Fugitive Telemetry",
+        "authors": [
+            "Martha Wells"
+        ],
+        "isbn": 9781250765383,
+        "cover": "https://cdn.thestorygraph.com/q4v27bmqfao8zijo0cnmn6bq4bts",
+        "moreInfo": "https://app.thestorygraph.com/books/51ce5ad2-cea4-4604-83c7-b5b2db29984d",
+        "dateRead": "12/17/2025",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Mysterious",
+            "Fast-paced"
+        ],
+        "mainTag": "Science Fiction"
     }
 ]
