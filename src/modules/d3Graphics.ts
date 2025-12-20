@@ -66,18 +66,22 @@ export function createLineGraph(selectorId: string, data: ItemGroupCount[]) {
   const xScale = d3.scaleTime()
     .domain(d3.extent(preparedData, d => d.date) as [Date, Date])
     .range([0, lineDrawingWidth]);
-  //Y-Scale: Linear Scale for the Count axis
-  const yScale = d3.scaleLinear()
-    .domain([0, d3.max(preparedData, d => d.count) || 10])
-    .range([lineDrawingHeight, 0]);
   //X-Axis
   svg.append('g')
   svg.append('g')
     .attr('transform', `translate(0, ${lineDrawingHeight})`)
     .call(d3.axisBottom(xScale).tickFormat(timeFormatter));
   //Y-Axis
+  const maxCount = d3.max(preparedData, d => d.count) || 1;
+  const yScale = d3.scaleLinear()
+    .domain([0, maxCount])
+    .range([lineDrawingHeight, 0]);
+
+  //Define the list of tick values
+  const tickValues = d3.range(0, maxCount + 1);
+  //Y-Axis
   svg.append('g')
-    .call(d3.axisLeft(yScale));
+    .call(d3.axisLeft(yScale).tickValues(tickValues).tickFormat(d3.format('d')));
   //Add Y-Axis label
   svg.append("text")
     .attr("transform", "rotate(-90)")
@@ -98,7 +102,7 @@ export function createLineGraph(selectorId: string, data: ItemGroupCount[]) {
     .attr('stroke', preparedData[0]?.color || '#1f77b4')
     .attr('stroke-width', 3)
     .attr('d', lineGenerator);
-    const tooltip = d3.select(`#${selectorId}`)
+  const tooltip = d3.select(`#${selectorId}`)
     .append("div")
     .attr("class", "tooltip");
   //Draw Circles
@@ -114,32 +118,32 @@ export function createLineGraph(selectorId: string, data: ItemGroupCount[]) {
     .attr("stroke-width", 2)
     .style("opacity", 0.9)
     //Add Event Handlers
-    .on("mouseover", function(event, d) {
-        //Show the tooltip and highlight the circle
-        event.preventDefault();
-        d3.select(this)
-            .attr("r", 8)
-            .style("fill", d.color || '#1f77b4');
+    .on("mouseover", function (event, d) {
+      //Show the tooltip and highlight the circle
+      event.preventDefault();
+      d3.select(this)
+        .attr("r", 8)
+        .style("fill", d.color || '#1f77b4');
 
-        tooltip.transition()
-            .duration(200)
-            .style("opacity", 0.9);
-            
-        tooltip.html(`
+      tooltip.transition()
+        .duration(200)
+        .style("opacity", 0.9);
+
+      tooltip.html(`
             <strong>${d.itemKey}</strong><br/>
             Books: ${d.count}
         `);
     })
-    .on("mousemove", function(event) {
-        tooltip.style("left", (event.pageX + 10) + "px")
-               .style("top", (event.pageY - 28) + "px");
+    .on("mousemove", function (event) {
+      tooltip.style("left", (event.pageX + 10) + "px")
+        .style("top", (event.pageY - 28) + "px");
     })
-    .on("mouseleave", function() {
-        d3.select(this)
-            .attr("r", 5)
-            .style("fill", "#fff");
-        tooltip.transition()
-            .duration(500)
-            .style("opacity", 0);
+    .on("mouseleave", function () {
+      d3.select(this)
+        .attr("r", 5)
+        .style("fill", "#fff");
+      tooltip.transition()
+        .duration(500)
+        .style("opacity", 0);
     });
 }
