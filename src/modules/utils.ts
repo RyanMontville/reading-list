@@ -73,7 +73,7 @@ export function createBookDiv(book: Book) {
     //Authors
     const authorsh4 = book['authors'].reduce((acc: HTMLElement, author: string) => {
         const authorA = document.createElement('a');
-        authorA.addEventListener('click', () => window.location.href = `/?author=${author}`);
+        authorA.addEventListener('click', () => window.location.href = `/reading-list/?author=${author}`);
         let authorName = document.createTextNode(author);
         authorA.appendChild(authorName);
         acc.appendChild(authorA);
@@ -89,7 +89,7 @@ export function createBookDiv(book: Book) {
     const tagsList = book['tags'].reduce((acc: HTMLElement, tag: string) => {
         const tagLi = document.createElement('li');
         const tagName = document.createTextNode(tag);
-        tagLi.addEventListener('click', () => window.location.href = `/?tag=${tag}`);
+        tagLi.addEventListener('click', () => window.location.href = `/reading-list/?tag=${tag}`);
         tagLi.appendChild(tagName);
         acc.appendChild(tagLi);
         return acc;
