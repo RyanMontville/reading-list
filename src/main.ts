@@ -234,6 +234,25 @@ function displayBooks() {
     }
 }
 
+export async function renderVersionFooter() {
+  const versions = await bookDB.getVersions();
+  const footer = document.querySelector('footer') as HTMLElement;
+  const versionP = document.createElement("p");
+  const schema = document.createElement('strong');
+  schema.textContent = "Schema: ";
+  versionP.appendChild(schema);
+  const schemaVersion = document.createElement("span");
+  schemaVersion.textContent = `${versions.dbVersion}`;
+  versionP.appendChild(schemaVersion);
+  const dataStrong = document.createElement('strong');
+  dataStrong.textContent = " | Data: ";
+  versionP.appendChild(dataStrong);
+  const dataSpan = document.createElement('span');
+  dataSpan.textContent = `${versions.storedDataVersion}`;
+  versionP.appendChild(dataSpan);
+  footer.appendChild(versionP);
+}
+
 async function startApp() {
     try {
         await bookDB.initializeData();
@@ -256,6 +275,7 @@ async function startApp() {
         } else {
             displayBooks();
         }
+        await renderVersionFooter();
         console.log("Application loaded with books:", booksList);
     } catch (e) {
         console.error("Critical error during application startup:", e);
