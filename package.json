@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/d3": "^7.4.3",
     "@types/node": "^25.0.0",
     "@vite-pwa/assets-generator": "^1.0.2",
     "typescript": "~5.9.3",
@@ -21,6 +22,7 @@
     "sharp-ico": "^0.1.5"
   },
   "dependencies": {
-    "d3": "^7.9.0"
+    "d3": "^7.9.0",
+    "idb": "^8.0.3"
   }
 }
