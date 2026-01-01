@@ -250,6 +250,12 @@ export async function renderVersionFooter() {
   const dataSpan = document.createElement('span');
   dataSpan.textContent = `${versions.storedDataVersion}`;
   versionP.appendChild(dataSpan);
+  const lastSyncStrong = document.createElement('strong');
+  lastSyncStrong.textContent = " | Last Sync: ";
+  versionP.appendChild(lastSyncStrong);
+  const lastSyncSpan = document.createElement("span");
+  lastSyncSpan.textContent = `${versions.lastUpdated}`;
+  versionP.appendChild(lastSyncSpan);
   footer.appendChild(versionP);
 }
 

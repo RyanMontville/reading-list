@@ -79,6 +79,10 @@ export class BookDatabase {
             // Start a single transaction for all operations
             const tx = db.transaction([STORE_NAME, CHALLENGES_STORE_NAME, METADATA_STORE_NAME], "readwrite");
 
+            const now = new Date().toLocaleString();
+            await tx.objectStore(METADATA_STORE_NAME).put({ key: "data_version", value: CURRENT_DATA_VERSION });
+            await tx.objectStore(METADATA_STORE_NAME).put({ key: "last_updated", value: now });
+
             // Import Books (converting date strings to Date objects)
             for (const book of initialBookData) {
                 if (typeof book.dateRead === 'string') {
@@ -122,12 +126,16 @@ export class BookDatabase {
 
     public async getVersions() {
         const db = await this.dbPromise;
-        const meta = await db.get(METADATA_STORE_NAME, "data_version");
+        const [versionMeta, updatedMeta] = await Promise.all([
+            db.get(METADATA_STORE_NAME, "data_version"),
+            db.get(METADATA_STORE_NAME, "last_updated")
+        ]);
 
         return {
             appDataVersion: CURRENT_DATA_VERSION,
-            storedDataVersion: meta?.value || 0,
-            dbVersion: DB_VERSION
+            storedDataVersion: versionMeta?.value || 0,
+            dbVersion: DB_VERSION,
+            lastUpdated: updatedMeta?.value || "Never"
         };
     }
 }

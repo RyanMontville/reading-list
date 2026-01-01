@@ -29,7 +29,7 @@ export default defineConfig({
       name: 'reading',
       short_name: 'reading',
       description: 'Books read since 2021',
-      theme_color: '#ffffff',
+      theme_color: '#000000',
     },
 
     workbox: {
@@ -37,10 +37,11 @@ export default defineConfig({
       cleanupOutdatedCaches: true,
       ignoreURLParametersMatching: [/^year$/, /^author$/, /^tag$/, /^utm_/, /^fbclid$/],
       clientsClaim: true,
+      skipWaiting: true,
     },
 
     devOptions: {
-      enabled: false,
+      enabled: true,
       navigateFallback: 'index.html',
       suppressWarnings: true,
       type: 'module',
