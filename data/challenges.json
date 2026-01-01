@@ -6,7 +6,12 @@
         "startDate": "01/01/2026",
         "endDate": "12/31/2026",
         "goal": 26,
-        "books": []
+        "books": [
+            {
+                "index": "D",
+                "bookId": 113
+            }
+        ]
     },
     {
         "id": 2,

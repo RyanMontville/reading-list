@@ -2173,7 +2173,7 @@
             "Martha Wells"
         ],
         "isbn": 9781250229847,
-        "cover": "https://cdn.thestorygraph.com/q4v27bmqfao8zijo0cnmn6bq4bts",
+        "cover": "https://cdn.thestorygraph.com/wvjdn4u4g3knrf9rj3orle5wfdop",
         "moreInfo": "https://app.thestorygraph.com/books/9fcaffe0-7f5b-48a8-96b4-6a741cfdeb23",
         "dateRead": "12/15/2025",
         "tags": [
@@ -2202,6 +2202,47 @@
             "Adventurous",
             "Funny",
             "Mysterious",
+            "Fast-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 112,
+        "bookTitle": "System Collapse",
+        "authors": [
+            "Martha Wells"
+        ],
+        "isbn": 9781250826978,
+        "cover": "https://cdn.thestorygraph.com/3pd6u1l9kjli5wgd1c6zcia60z4o",
+        "moreInfo": "https://app.thestorygraph.com/books/33d1b402-3875-4fff-b981-0cdc884d7a7c",
+        "dateRead": "12/24/2025",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Emotional",
+            "Funny",
+            "Fast-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 113,
+        "bookTitle": "The Dungeon Anarchist's Cookbook",
+        "authors": [
+            "Matt Dinniman"
+        ],
+        "isbn": 9780593820285,
+        "cover": "https://cdn.thestorygraph.com/wxoycbvlxlgqrb2zt9wvzgva75xr",
+        "moreInfo": "https://app.thestorygraph.com/books/a5fdc9de-ac9b-4de2-8dec-86bceaeb1ec2",
+        "dateRead": "01/01/2026",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Science Fiction",
+            "Adventurous",
+            "Dark",
+            "Funny",
             "Fast-paced"
         ],
         "mainTag": "Science Fiction"
