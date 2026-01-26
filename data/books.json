@@ -2246,5 +2246,46 @@
             "Fast-paced"
         ],
         "mainTag": "Science Fiction"
+    },
+    {
+        "id": 114,
+        "bookTitle": "The Gate of the Feral Gods",
+        "authors": [
+            "Matt Dinniman"
+        ],
+        "isbn": 9780593955970,
+        "cover": "https://cdn.thestorygraph.com/g58ii37b36h5lzk3zfmkuwee3kai",
+        "moreInfo": "https://app.thestorygraph.com/books/6f2d8551-d727-4367-8c87-505eb642908e",
+        "dateRead": "01/08/2026",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Medium-paced"
+        ],
+        "mainTag": "Fantasy"
+    },
+    {
+        "id": 115,
+        "bookTitle": "The Butcher's Masquerade",
+        "authors": [
+            "Matt Dinniman"
+        ],
+        "isbn": 9780593955994,
+        "cover": "https://cdn.thestorygraph.com/djbp3acnlc5e2o5hzi6401fzewyf",
+        "moreInfo": "https://app.thestorygraph.com/books/5bc3c916-b803-4573-9242-8b1ed9285318",
+        "dateRead": "01/19/2026",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Science Fiction",
+            "Adventurous",
+            "Dark",
+            "Funny",
+            "Fast-paced"
+        ],
+        "mainTag": "Fantasy"
     }
 ]

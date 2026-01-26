@@ -8,8 +8,16 @@
         "goal": 26,
         "books": [
             {
+                "index": "B",
+                "bookId": 115
+            },
+            {
                 "index": "D",
                 "bookId": 113
+            },
+            {
+                "index": "G",
+                "bookId": 114
             }
         ]
     },
