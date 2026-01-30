@@ -138,6 +138,27 @@ export class BookDatabase {
             lastUpdated: updatedMeta?.value || "Never"
         };
     }
+
+    public async resetDatabase(): Promise<void> {
+        try {
+            const db = await this.dbPromise;
+            const tx = db.transaction(
+                [STORE_NAME, CHALLENGES_STORE_NAME, METADATA_STORE_NAME],
+                "readwrite"
+            );
+            await Promise.all([
+                tx.objectStore(STORE_NAME).clear(),
+                tx.objectStore(CHALLENGES_STORE_NAME).clear(),
+                tx.objectStore(METADATA_STORE_NAME).clear(),
+                tx.done
+            ]);
+            console.log("Database stores cleared successfully.");
+            await this.initializeData();
+        } catch (error) {
+            console.error("Failed to reset database:", error);
+            throw error;
+        }
+    }
 }
 
 export const bookDB = new BookDatabase();

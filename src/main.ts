@@ -234,6 +234,11 @@ function displayBooks() {
     }
 }
 
+function resetData() {
+    bookDB.resetDatabase();
+    window.location.reload();
+}
+
 export async function renderVersionFooter() {
   const versions = await bookDB.getVersions();
   const footer = document.querySelector('footer') as HTMLElement;
@@ -256,6 +261,7 @@ export async function renderVersionFooter() {
   const lastSyncSpan = document.createElement("span");
   lastSyncSpan.textContent = `${versions.lastUpdated}`;
   versionP.appendChild(lastSyncSpan);
+  versionP.addEventListener('click', () => resetData());
   footer.appendChild(versionP);
 }
 
