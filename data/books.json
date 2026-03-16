@@ -2287,5 +2287,108 @@
             "Fast-paced"
         ],
         "mainTag": "Fantasy"
+    },
+    {
+        "id": 116,
+        "bookTitle": "The Eye of the Bedlam Bride",
+        "authors": [
+            "Matt Dinniman"
+        ],
+        "isbn": 9780593956014,
+        "cover": "https://cdn.thestorygraph.com/hx2hoeisscvjggr1c15seiql49gp",
+        "moreInfo": "https://app.thestorygraph.com/books/083382ff-c78e-4aab-bedd-7e14845c5816",
+        "dateRead": "01/31/2026",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Science Fiction",
+            "Adventurous",
+            "Dark",
+            "Funny",
+            "Fast-paced"
+        ],
+        "mainTag": "Fantasy"
+    },
+    {
+        "id": 117,
+        "bookTitle": "This Inevitable Ruin",
+        "authors": [
+            "Matt Dinniman"
+        ],
+        "isbn": 9798217190041,
+        "cover": "https://cdn.thestorygraph.com/0ehjula3pk3nb230yhx1ubsgwx02",
+        "moreInfo": "https://app.thestorygraph.com/books/47b7f5fa-fbc6-4f41-8dcf-e757c303e205",
+        "dateRead": "02/16/2026",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Science Fiction",
+            "Adventurous",
+            "Dark",
+            "Funny",
+            "Fast-paced"
+        ],
+        "mainTag": "Fantasy"
+    },
+    {
+        "id": 118,
+        "bookTitle": "Operation Bounce House",
+        "authors": [
+            "Matt Dinniman"
+        ],
+        "isbn": " ‎ 9780593820308",
+        "cover": "https://cdn.thestorygraph.com/olx7h8ktythuxjumaaybv4ww2fyc",
+        "moreInfo": "https://app.thestorygraph.com/books/68f90dd4-2424-44c5-a012-3ed866108669",
+        "dateRead": "02/22/2026",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Tense",
+            "Fast-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 119,
+        "bookTitle": "So You Had To Build A Time Machine",
+        "authors": [
+            "Jason Offutt"
+        ],
+        "isbn": 9780744300147,
+        "cover": "https://cdn.thestorygraph.com/nej0oql2pfs288a8ru2n67qvv6vb",
+        "moreInfo": "https://app.thestorygraph.com/books/59c617b4-21d7-4913-a837-2211e1a53224",
+        "dateRead": "03/01/2026",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Fast-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 120,
+        "bookTitle": "The Frugal Wizard's Handbook for Surviving Medieval England",
+        "authors": [
+            "Steve Argyle"
+        ],
+        "isbn": 9781250899675,
+        "cover": "https://cdn.thestorygraph.com/vbrxdcvniay7bh6t7afumumri0cw",
+        "moreInfo": "https://app.thestorygraph.com/books/4dec0993-2a65-406e-b564-70c48c0c7220",
+        "dateRead": "03/08/2026",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Lighthearted",
+            "Fast-paced"
+        ],
+        "mainTag": "Fantasy"
     }
 ]
