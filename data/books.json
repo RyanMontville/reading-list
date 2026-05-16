@@ -2390,5 +2390,231 @@
             "Fast-paced"
         ],
         "mainTag": "Fantasy"
+    },
+    {
+        "id": 121,
+        "bookTitle": "A Wizard's Guide to Defensive Baking",
+        "authors": [
+            "T. Kingfisher"
+        ],
+        "isbn": 9781614505242,
+        "cover": "https://cdn.thestorygraph.com/gb1t9yali8nfbw2thdqttnzhs4m3",
+        "moreInfo": "https://app.thestorygraph.com/books/79eff593-846b-46fc-880c-f5d76cbf1233",
+        "dateRead": "03/19/2026",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Young Adult",
+            "Adventurous",
+            "Funny",
+            "Lighthearted",
+            "Fast-paced"
+        ],
+        "mainTag": "Fantasy"
+    },
+    {
+        "id": 122,
+        "bookTitle": "The Long Way to a Small, Angry Planet",
+        "authors": [
+            "Becky Chambers"
+        ],
+        "isbn": " ‎ 9781473619791",
+        "cover": "https://cdn.thestorygraph.com/i52kgzga405r8tnfyg08uo14xppc",
+        "moreInfo": "https://app.thestorygraph.com/books/9a95c81f-7a91-4087-971c-5ff14d5403dd",
+        "dateRead": "03/27/2026",
+        "tags": [
+            "Fiction",
+            "Lgbtqia+",
+            "Science Fiction",
+            "Adventurous",
+            "Emotional",
+            "Hopeful",
+            "Medium-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 123,
+        "bookTitle": "You'd Look Better as a Ghost",
+        "authors": [
+            "Joanna Wallace"
+        ],
+        "isbn": 9781800811294,
+        "cover": "https://cdn.thestorygraph.com/6fy09pmiol7l9ipdmga5rbc05f9b",
+        "moreInfo": "https://app.thestorygraph.com/books/32d9975b-c92e-4c49-a01b-622ec8c83b27",
+        "dateRead": "03/31/2026",
+        "tags": [
+            "Fiction",
+            "Thriller",
+            "Dark",
+            "Funny",
+            "Mysterious",
+            "Medium-paced"
+        ],
+        "mainTag": "Thriller"
+    },
+    {
+        "id": 124,
+        "bookTitle": "A Closed and Common Orbit",
+        "authors": [
+            "Becky Chambers"
+        ],
+        "isbn": 9781473621442,
+        "cover": "https://cdn.thestorygraph.com/0s0fr01mar7f7yqo003wet81xurq",
+        "moreInfo": "https://app.thestorygraph.com/books/5421593f-b0f3-4898-94e5-d844c2318f3d",
+        "dateRead": "04/11/2026",
+        "tags": [
+            "Fiction",
+            "Lgbtqia+",
+            "Science Fiction",
+            "Adventurous",
+            "Emotional",
+            "Hopeful",
+            "Medium-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 125,
+        "bookTitle": "Randomize",
+        "authors": [
+            "Andy Weir"
+        ],
+        "isbn": 9781542044257,
+        "cover": "https://cdn.thestorygraph.com/3vl7rdr6rvduut161covol7gnfdv",
+        "moreInfo": "https://app.thestorygraph.com/books/ffe822db-6eab-4026-bd4e-fb1dfad1210b",
+        "dateRead": "04/11/2026",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Short Stories",
+            "Adventurous",
+            "Fast-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 126,
+        "bookTitle": "Summer Frost",
+        "authors": [
+            "Blake Crouch"
+        ],
+        "isbn": 9781542043632,
+        "cover": "https://cdn.thestorygraph.com/73347v44mzkkba7crclz49k7gd9d",
+        "moreInfo": "https://app.thestorygraph.com/books/e420f48e-027e-4065-b08e-ecaec0e08d63",
+        "dateRead": "04/12/2026",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Short Stories",
+            "Dark",
+            "Tense",
+            "Fast-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 127,
+        "bookTitle": "The Galaxy, and the Ground Within",
+        "authors": [
+            "Becky Chambers"
+        ],
+        "isbn": " ‎ 9781473647664",
+        "cover": "https://cdn.thestorygraph.com/f9tyqxg70kgu864pm6qs1m3lvwld",
+        "moreInfo": "https://app.thestorygraph.com/books/51bc97bb-0cd2-49ae-a8b3-03823f2072e6",
+        "dateRead": "04/16/2026",
+        "tags": [
+            "Fiction",
+            "Lgbtqia+",
+            "Science Fiction",
+            "Emotional",
+            "Hopeful",
+            "Reflective",
+            "Medium-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 128,
+        "bookTitle": "Mickey7",
+        "authors": [
+            "Edward Ashton"
+        ],
+        "isbn": 9781250275035,
+        "cover": "https://cdn.thestorygraph.com/cvz3tvy0wg310ru6z863yjbyuegq",
+        "moreInfo": "https://app.thestorygraph.com/books/84b2ea71-3965-4ba7-8a22-c3532df42c76",
+        "dateRead": "04/21/2026",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Medium-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 129,
+        "bookTitle": "Everyone's a Aliebn When Ur a Aliebn Too",
+        "authors": [
+            "Jomny Sun"
+        ],
+        "isbn": 9780062569028,
+        "cover": "https://cdn.thestorygraph.com/1g0gkgqtkiab8wrod3ylltu2hqjh",
+        "moreInfo": "https://app.thestorygraph.com/books/6ca2fe3d-9742-4bf3-91ac-fe15d223258f",
+        "dateRead": "04/27/2026",
+        "tags": [
+            "Fiction",
+            "Graphic Novel",
+            "Science Fiction",
+            "Adventurous",
+            "Lighthearted",
+            "Reflective",
+            "Fast-paced"
+        ],
+        "mainTag": "Graphic Novel"
+    },
+    {
+        "id": 130,
+        "bookTitle": "Ark",
+        "authors": [
+            "Veronica Roth"
+        ],
+        "isbn": " ‎ 9781542092067",
+        "cover": "https://cdn.thestorygraph.com/nmtzwcvukwz9unse372ylhyosi1s",
+        "moreInfo": "https://app.thestorygraph.com/books/122083d8-3ba4-48fd-8cbd-f686ddaaa063",
+        "dateRead": "04/27/2026",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Short Stories",
+            "Emotional",
+            "Reflective",
+            "Sad",
+            "Medium-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 131,
+        "bookTitle": "Anxious People",
+        "authors": [
+            "Neil Smith"
+        ],
+        "isbn": " ‎ 9781432879716",
+        "cover": "https://cdn.thestorygraph.com/1axqz4b5t5tg89wo1hfawd1uk1r2",
+        "moreInfo": "https://app.thestorygraph.com/books/054debf0-9fb4-4fab-b796-7fb980748108",
+        "dateRead": "05/2/2026",
+        "tags": [
+            "Fiction",
+            "Contemporary",
+            "Literary",
+            "Mystery",
+            "Emotional",
+            "Funny",
+            "Hopeful",
+            "Medium-paced"
+        ],
+        "mainTag": "Mystery"
     }
 ]
