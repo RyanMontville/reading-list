@@ -2616,5 +2616,247 @@
             "Medium-paced"
         ],
         "mainTag": "Mystery"
+    },
+    {
+        "id": 132,
+        "bookTitle": "A Parade of Horribles",
+        "authors": [
+            "Matt Dinniman"
+        ],
+        "isbn": 9798217190065,
+        "cover": "https://cdn.thestorygraph.com/zu1lf81ybr02zeeelnr18w5u8i23",
+        "moreInfo": "https://app.thestorygraph.com/books/ac40a044-e600-4877-8ab3-e1b32f14feec",
+        "dateRead": "05/29/2026",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Science Fiction",
+            "Adventurous",
+            "Dark",
+            "Funny",
+            "Fast-paced"
+        ],
+        "mainTag": "Fantasy"
+    },
+    {
+        "id": 133,
+        "bookTitle": "How to Become the Dark Lord and Die Trying",
+        "authors": [
+            "Django Wexler"
+        ],
+        "isbn": 9780316392204,
+        "cover": "https://cdn.thestorygraph.com/li0dxvi6t7o15zff225aktjj7jfo",
+        "moreInfo": "https://app.thestorygraph.com/books/de5810bb-af09-4fd8-8ad5-5be40af147be",
+        "dateRead": "06/12/2026",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Adventurous",
+            "Funny",
+            "Lighthearted",
+            "Medium-paced"
+        ],
+        "mainTag": "Fantasy"
+    },
+    {
+        "id": 134,
+        "bookTitle": "Old Man's War",
+        "authors": [
+            "John Scalzi"
+        ],
+        "isbn": 9780765394859,
+        "cover": "https://cdn.thestorygraph.com/fht5u9a4m0de4kuavejmhtr7pn3x",
+        "moreInfo": "https://app.thestorygraph.com/books/332929c6-7b62-4bc6-869b-0d775958d1d6",
+        "dateRead": "06/19/2026",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Fast-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 135,
+        "bookTitle": "I Got Abducted by Aliens and Now I'm Trapped in a Rom-Com",
+        "authors": [
+            "Kimberly Lemming"
+        ],
+        "isbn": 9780593818633,
+        "cover": "https://cdn.thestorygraph.com/40ihn71p72kzutwqndpld83db91y",
+        "moreInfo": "https://app.thestorygraph.com/books/360a7a1a-ffaf-47ac-a8ab-879c6f12109b",
+        "dateRead": "06/25/2026",
+        "tags": [
+            "Fiction",
+            "Lgbtqia+",
+            "Romance",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Lighthearted",
+            "Fast-paced"
+        ],
+        "mainTag": "Romance"
+    },
+    {
+        "id": 136,
+        "bookTitle": "7th Sigma",
+        "authors": [
+            "Steven Gould"
+        ],
+        "isbn": 9780312877156,
+        "cover": "https://cdn.thestorygraph.com/ifd2df9w0gdazpwdl0bu2sbxpw8g",
+        "moreInfo": "https://app.thestorygraph.com/books/5f3965f2-c9d8-4920-b382-100e91d65c0a",
+        "dateRead": "07/04/2026",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Young Adult",
+            "Adventurous",
+            "Fast-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 137,
+        "bookTitle": "Zero Stars, Do Not Recommend",
+        "authors": [
+            "MJ Wassmer"
+        ],
+        "isbn": 9781464218033,
+        "cover": "https://cdn.thestorygraph.com/ujdmpdnlhaus8ktene6oxuyuw9mc",
+        "moreInfo": "https://app.thestorygraph.com/books/bdbe4037-343a-4b96-8e6c-110ea2a00eba",
+        "dateRead": "07/11/2026",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Adventurous",
+            "Funny",
+            "Tense",
+            "Medium-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 138,
+        "bookTitle": "Questions for a Soldier",
+        "authors": [
+            "John Scalzi"
+        ],
+        "isbn": 9781596064683,
+        "cover": "https://cdn.thestorygraph.com/5l3gv8qq9rlmy36hg3zfwfsu1eo3",
+        "moreInfo": "https://app.thestorygraph.com/books/a32b19a5-31c2-47ac-b610-a4e5deb6c1d1",
+        "dateRead": "07/13/2026",
+        "tags": [
+            "Fiction",
+            "Science Fiction",
+            "Short Stories",
+            "Funny",
+            "Medium-paced"
+        ],
+        "mainTag": "Science Fiction"
+    },
+    {
+        "id": 139,
+        "bookTitle": "Discount Dan",
+        "authors": [
+            "James A. Hunter"
+        ],
+        "isbn": 9798313310367,
+        "cover": "https://cdn.thestorygraph.com/0qud253o4184op93kq8kieu7b7fa",
+        "moreInfo": "https://app.thestorygraph.com/books/9f75cc6f-457b-4220-9c11-50ea26f04ce3",
+        "dateRead": "08/10/2026",
+        "tags": [
+            "Fiction",
+            "Fantasy",
+            "Horror",
+            "Science Fiction",
+            "Adventurous",
+            "Dark",
+            "Funny",
+            "Fast-paced"
+        ],
+        "mainTag": "Horror"
+    },
+    {
+        "id": 140,
+        "bookTitle": "Jingo",
+        "authors": [
+            "Terry Pratchett"
+        ],
+        "isbn": " ‎ 9781473200258",
+        "cover": "https://cdn.thestorygraph.com/wckazw68igh9lvvmlwcmzkngx4xl",
+        "moreInfo": "https://app.thestorygraph.com/books/9edf842f-f3bd-49f8-b8ee-6eac897bb968",
+        "dateRead": "09/04/2026",
+        "tags": [
+            "fiction",
+            "fantasy",
+            "adventurous",
+            "funny",
+            "lighthearted",
+            "medium-paced"
+        ],
+        "mainTag": "fantasy"
+    },
+    {
+        "id": 141,
+        "bookTitle": "Kiki's Delivery Service ",
+        "authors": [
+            "Eiko Kadono",
+            "Emily Balistrieri"
+        ],
+        "isbn": 9781984896667,
+        "cover": "https://cdn.thestorygraph.com/e0f9vihfi2i7xakbxtxktbhnfhmw",
+        "moreInfo": "https://app.thestorygraph.com/books/6583b0e2-dca0-4d4d-965b-46e1614777ea",
+        "dateRead": "09/06/2026",
+        "tags": [
+            "fiction",
+            "fantasy",
+            "adventurous",
+            "lighthearted",
+            "fast-paced"
+        ],
+        "mainTag": "fantasy"
+    },
+    {
+        "id": 142,
+        "bookTitle": "Several People Are Typing ",
+        "authors": [
+            "Calvin Kasulke"
+        ],
+        "isbn": 9780385547222,
+        "cover": "https://cdn.thestorygraph.com/b56jfuj6dcd2aywk5qkrkxa7mmls",
+        "moreInfo": "https://app.thestorygraph.com/books/2beec0a3-d2a3-43e2-a7d3-b09ceba8c151",
+        "dateRead": "09/08/2026",
+        "tags": [
+            "fiction",
+            "contemporary",
+            "literary",
+            "funny",
+            "fast-paced",
+            "horror"
+        ],
+        "mainTag": "horror"
+    },
+    {
+        "id": 143,
+        "bookTitle": "Horrorstör ",
+        "authors": [
+            "Grady Hendrix"
+        ],
+        "isbn": 9781594745263,
+        "cover": "https://cdn.thestorygraph.com/p8jtz6q9ql8bqxz90azrp8oor54e",
+        "moreInfo": "https://app.thestorygraph.com/books/63601afe-08ba-4f9d-a97b-9990d114e11e",
+        "dateRead": "09/11/2026",
+        "tags": [
+            "fiction",
+            "horror",
+            "thriller",
+            "dark",
+            "tense",
+            "fast-paced"
+        ],
+        "mainTag": "horror"
     }
 ]

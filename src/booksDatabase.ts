@@ -6,7 +6,7 @@ const STORE_NAME = "books";
 const CHALLENGES_STORE_NAME = "challenges";
 const METADATA_STORE_NAME = "metadata";
 const DB_VERSION = 2;
-const CURRENT_DATA_VERSION = 20;
+const CURRENT_DATA_VERSION = 21;
 
 export class BookDatabase {
     /**
