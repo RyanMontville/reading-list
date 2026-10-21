@@ -2858,5 +2858,104 @@
             "fast-paced"
         ],
         "mainTag": "horror"
+    },
+    {
+        "id": 144,
+        "bookTitle": "Nine Goblins ",
+        "authors": [
+            "T. Kingfisher"
+        ],
+        "isbn": " ‎ 9781250400116",
+        "cover": "https://cdn.thestorygraph.com/ksicrxi39y6r471lggas6zzhattj",
+        "moreInfo": "https://app.thestorygraph.com/books/de0cb3f4-f872-4d70-b03e-29cc90aab5f9",
+        "dateRead": "09/25/2026",
+        "tags": [
+            "fiction",
+            "fantasy",
+            "adventurous",
+            "funny",
+            "lighthearted",
+            "fast-paced"
+        ],
+        "mainTag": "fantasy"
+    },
+    {
+        "id": 145,
+        "bookTitle": "Hollywood, Ending ",
+        "authors": [
+            "John Green"
+        ],
+        "isbn": 9780525426073,
+        "cover": "https://cdn.thestorygraph.com/tj3w0qsl973tp9cq31gb24ci9w0w",
+        "moreInfo": "https://app.thestorygraph.com/books/6fcbadd0-5d5a-4a2b-a237-5363e54b0a5a",
+        "dateRead": "09/29/2026",
+        "tags": [
+            "fiction",
+            "romance",
+            "emotional",
+            "hopeful",
+            "reflective",
+            "medium-paced"
+        ],
+        "mainTag": "hopeful"
+    },
+    {
+        "id": 146,
+        "bookTitle": "The Girl Who Could Move Sh*t with Her Mind ",
+        "authors": [
+            "Jackson Ford"
+        ],
+        "isbn": 9780316519151,
+        "cover": "https://cdn.thestorygraph.com/3w9xp44e51uv2hn6k5d61hs1ui7j",
+        "moreInfo": "https://app.thestorygraph.com/books/be479ed0-fcfb-4852-bd97-52de8f61ef70",
+        "dateRead": "10/07/2026",
+        "tags": [
+            "fiction",
+            "mystery",
+            "adventurous",
+            "funny",
+            "fast-paced"
+        ],
+        "mainTag": "adventurous"
+    },
+    {
+        "id": 147,
+        "bookTitle": "Under Falling Skies ",
+        "authors": [
+            "Kate MacLeod"
+        ],
+        "isbn": 9781951439408,
+        "cover": "https://cdn.thestorygraph.com/skgvu969rtw0jje2dhvl4ulzab0q",
+        "moreInfo": "https://app.thestorygraph.com/books/7f8028b1-3ded-4f18-afff-fa55c8c5fc76",
+        "dateRead": "10/11/2026",
+        "tags": [
+            "fiction",
+            "science fiction",
+            "adventurous",
+            "dark",
+            "mysterious",
+            "fast-paced"
+        ],
+        "mainTag": "science fiction"
+    },
+    {
+        "id": 148,
+        "bookTitle": "The Last Conversation ",
+        "authors": [
+            "Paul Tremblay"
+        ],
+        "isbn": 9781542005319,
+        "cover": "https://cdn.thestorygraph.com/m4cuapgzzxru3hzya6jozqfsvzdl",
+        "moreInfo": "https://app.thestorygraph.com/books/2ede45b3-4cf9-44bd-a0eb-e42c0597747f",
+        "dateRead": "10/12/2026",
+        "tags": [
+            "fiction",
+            "science fiction",
+            "short stories",
+            "dark",
+            "mysterious",
+            "medium-paced"
+        ],
+        "mainTag": "science fiction"
     }
 ]
